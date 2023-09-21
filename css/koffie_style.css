@@ -134,12 +134,13 @@ main section.nossa-equipe .thumb-imagens {
 }
 
 main section.nossa-equipe .thumb-imagens div {
-  margin: 50px 50px;
+  margin: 50px 100px;
 }
 
 main section.nossa-equipe .thumb-imagens img {
   height: 150px;
   width: 150px;
+  border-radius: 15px;
 }
 
 footer {
