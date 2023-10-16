@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 1400px;
+  height: 100px;
+  flex-shrink: 0;
+  padding: 30px 30px 30px 50px;
+  background-color: rgb(172, 150, 117);
+}
+ul {
+  display: flex;
+  align-items: center;
+  height: 50%;
+}
+nav ul li {
+  list-style-type: none;
+  text-decoration: none;
+  margin-left: 50px;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  color: #f00;
+}
+
+footer {
+  width: 1400px;
+
+  padding: 10px 10px 10px 50px;
+  background-color: rgb(172, 150, 117);
+}
