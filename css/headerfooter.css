@@ -3,10 +3,10 @@ header {
   justify-content: space-between;
   width: 1400px;
   height: 100px;
-  flex-shrink: 0;
   padding: 30px 30px 30px 50px;
   background-color: rgb(172, 150, 117);
 }
+
 ul {
   display: flex;
   align-items: center;

@@ -17,7 +17,7 @@ body {
 }
 .imagem1 {
   width: 500px;
-  height: 300px;
+  height: 200px;
   flex-shrink: 0;
 }
 .text1 {
@@ -60,7 +60,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1440px;
+  width: 1150px;
   height: 680px;
   flex-shrink: 0;
   border-radius: 0px 0px 0px 0px;
@@ -102,7 +102,7 @@ body {
 }
 .imagem2 {
   width: 507px;
-  height: 200px;
+  height: 100px;
   flex-shrink: 0;
 }
 
@@ -124,26 +124,11 @@ body {
   letter-spacing: 0.5px;
 }
 
-.tabelas {
-  justify-content: space-around;
-  align-items: center;
-}
-.tabela1 {
+.tabela {
+  width: 500px;
   display: flex;
-  width: 300px;
-  height: 100px;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 5px 10px;
-  padding-bottom: 20px;
-}
-.tabela2 {
-  display: flex;
-  width: 300px;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px 10px;
+  height: 400px;
+  gap: 40px 50px;
 }
 
 /* Nossas Marcas de cafes */
