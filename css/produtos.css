@@ -32,11 +32,27 @@ main {
   font-weight: 500;
   padding: 20px 0px 20px 0px;
 }
-.cafes {
+main section.cafes {
   display: flex;
   padding: 0px 50px 100px 50px;
   justify-content: center;
   gap: 0px 30px;
+}
+main section .cafes .tabela {
+  margin: 50px auto;
+  width: 500px;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+main section .cafes .tabela div {
+  margin: 50px 100px;
+}
+main section.cafes .tabela img {
+  height: 100px;
+  width: 100px;
 }
 
 .botao a {

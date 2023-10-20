@@ -1,0 +1,79 @@
+main section.nossa-historia {
+  width: 100%;
+  height: 600px;
+  padding: 150px 0;
+  background: #aab5c3;
+}
+main section.nossa-historia .texto {
+  padding-left: 300px;
+  width: 70%;
+  height: 200px;
+  float: left;
+}
+
+main section.nossa-historia .texto h1 {
+  color: #1a202c;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 121.2%;
+  text-transform: capitalize;
+  margin-top: 30px;
+}
+
+main section.nossa-historia .texto p {
+  color: #1a202c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: -0.32px;
+  opacity: 0.45;
+  margin-top: 40px;
+}
+
+main section.nossa-historia .imagem {
+  width: 30%;
+  height: 300px;
+  float: left;
+  background-image: url("../src/gallery.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+main section.nossa-equipe {
+  background: #ced7e4;
+  width: 100%;
+  height: 800px;
+  padding: 50px 0;
+}
+
+main section.nossa-equipe h1 {
+  color: #1a202c;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 121.2%;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+main section.nossa-equipe .thumb-imagens {
+  margin: 50px auto;
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+main section.nossa-equipe .thumb-imagens div {
+  margin: 50px 100px;
+}
+
+main section.nossa-equipe .thumb-imagens img {
+  height: 150px;
+  width: 150px;
+  border-radius: 15px;
+}
