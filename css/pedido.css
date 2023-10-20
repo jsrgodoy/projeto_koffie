@@ -75,7 +75,7 @@ main span {
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 36px */
+  line-height: 150%;
   letter-spacing: -0.72px;
   opacity: 0.9;
 }
@@ -128,7 +128,7 @@ label {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 24px */
+  line-height: 150%;
   letter-spacing: -0.48px;
   opacity: 0.9;
 }
