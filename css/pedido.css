@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Plus Jakarta Sans;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+div.clear {
+  clear: both;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  padding: 40px;
+  border: 1px solid #486284;
+  background-color: #ced7e4;
+}
+
+header .logo {
+  position: relative;
+  top: -10px;
+  float: left;
+  width: 160px;
+  height: 40px;
+  background-image: url("../src/bitmap.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header nav {
+  float: right;
+}
+
+header nav.menu ul {
+  list-style-type: none;
+}
+
+header nav.menu li {
+  float: left;
+  padding: 0 20px;
+}
+
+header nav.menu a {
+  color: #486284;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.48px;
+
+  text-decoration: none;
+}
+
+/*------ PEDIDO -----*/
+
+main {
+  padding-top: 50px;
+}
+
+main span {
+  color: #486284;
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.72px;
+  opacity: 0.9;
+}
+
+main section.pedido {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  gap: 5%;
+}
+
+main section.pedido .box1 {
+  width: 50%;
+  border-radius: 63px 0px 0px 0px;
+  background: #aab5c3;
+  padding: 40px 30px;
+}
+
+main section.pedido .box1 .box1-parte1 {
+  display: flex;
+  gap: 5%;
+}
+
+main section.pedido .box1 .box1-parte2 .endereco-entrega {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 10px;
+}
+
+main section.pedido .box1 img {
+  width: 40px;
+  height: 40px;
+}
+
+main section.pedido h1 {
+  color: #486284;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 121.2%;
+  text-transform: uppercase;
+}
+
+main section.pedido p,
+label {
+  color: #486284;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.48px;
+  opacity: 0.9;
+}
+
+main section.pedido input {
+  font-size: 16px;
+  padding: 12px;
+  display: block;
+  width: 100%;
+  height: 47px;
+  background: #ced7e4;
+  outline: none;
+
+  border: 1px solid
+    rgb(
+      var(--wix-ui-tpa-text-field-main-border-color-rgb, var(--wix-color-5)),
+      calc(
+        var(--wix-ui-tpa-text-field-main-border-color-opacity, 1) *
+          var(--wix-ui-tpa-text-field-main-border-opacity, 0.6)
+      )
+    );
+}
+
+main section.pedido select {
+  border: none;
+  color: #486284;
+  font-size: 16px;
+  padding: 12px;
+  display: block;
+  width: 100%;
+  height: 47px;
+  background: #ced7e4;
+  outline: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAeCAYAAABuUU38AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUxJREFUeNrM1sEJwkAQBdCsngXPHsQO9O5FS7AAMVYgdqAd2IGCDWgFnryLFQiCZ8EGnJUNimiyM/tnk4HNEAg/8y6ZmMRVqz9eUJvRaSbvutCZ347bXVJy/ZnvTmdJ862Me+hAbZCTs6GHpyUi1tTSvPnqTpoWZPUa7W7ncT3vK4h4zVejy8QzM3WhVUO8ykI6jOxoGA4ig3BLHcNFSCGqGAkig2yqgpEiMsjSfY9LxYQg7L6r0X6wS29YJiYQYecemY+wHrXD1+bklGhpAhBDeu/JfIVGxaAQ9sb8CI+CQSJ+QmJg0Ii/EE2MBiIXooHRQhRCkBhNhBcEhLkwf05ZCG8ICCOpk0MULmvDSY2M8UawIRExLIQIEgHDRoghihgRIgiigBEjgiFATBACAgFgghEwSAAGgoBCBBgYAg5hYKAIFYgHBo6w9RRgAFfy160QuV8NAAAAAElFTkSuQmCC");
+  background-size: 12px;
+  background-position: 96% center;
+  background-repeat: no-repeat;
+}
+
+main section.pedido input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+main section.pedido input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+main section.pedido .box2 {
+  width: 50%;
+  border-radius: 63px 0px 0px 0px;
+  background: #aab5c3;
+  padding: 40px 30px;
+}
+
+main section.pedido .box2 .box2-parte1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+main section.pedido .box2 .box2-parte1 img {
+  width: 140px;
+  height: 140px;
+}
+
+main section.pedido .box2 .box2-parte1 h1 {
+  padding-top: 20px;
+}
+
+main section.pedido .box2 .box2-parte1 input {
+  margin-top: 20px;
+}
+
+main section.pedido .box2 .box2-parte1 input::-webkit-inner-spin-button {
+  all: unset;
+  min-width: 21px;
+  min-height: 45px;
+  margin: 17px;
+  padding: 0px;
+  background-image: linear-gradient(
+      to top,
+      transparent 0px,
+      transparent 16px,
+      #ced7e4 16px,
+      #ced7e4 26px,
+      transparent 26px,
+      transparent 35px,
+      #000 35px,
+      #000 36px,
+      transparent 36px,
+      transparent 40px
+    ),
+    linear-gradient(
+      to right,
+      transparent 0px,
+      transparent 10px,
+      #000 10px,
+      #000 11px,
+      transparent 11px,
+      transparent 21px
+    );
+  transform: rotate(90deg) scale(0.8, 0.9);
+  cursor: pointer;
+}
+
+main section.pedido .box2 hr {
+  width: 479px;
+  height: 2px;
+  margin-top: 40px;
+  background: #486284;
+}
+
+main section.pedido .box2 .box2-parte2 {
+  display: flex;
+  justify-content: space-between;
+}
+main section.pedido .box2 .titulo {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+main section.pedido .box2 .valores {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  text-align: right;
+}
+
+main section.pedido .box2 .botao {
+  display: flex;
+  justify-content: center;
+}
+
+main section.pedido .box2 input[type="submit"] {
+  background-color: #22487c;
+  border: 0;
+  width: 90%;
+  height: 55px;
+  font-size: 22px;
+  color: #ced7e4;
+  margin-top: 100px;
+  font-style: normal;
+  font-weight: 500;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 200ms linear;
+  letter-spacing: 0.2em;
+  box-shadow: 3px 10px 20px 0px rgba(35, 100, 210, 0.3);
+}
+
+main section.pedido .box2 input[type="submit"]:hover {
+  background-color: #003985;
+  color: #fff;
+  width: 100%;
+  height: 60px;
+}
+
+/*---*/
+
+footer {
+  width: 100%;
+  height: 450px;
+  background-color: #aab5c3;
+}
+
+footer .footer-section-logo {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  margin-top: 50px;
+  float: left;
+}
+
+footer .footer-section-logo img {
+  width: 160px;
+  height: 40px;
+}
+
+footer .footer-section-logo p {
+  margin-top: 50px;
+  color: #1a202c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+
+footer .footer-section-logo .icons-social {
+  margin-top: 60px;
+}
+
+footer .footer-section-logo .icons-social a {
+  text-decoration: none;
+  color: #aab5c3;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+}
+
+footer .footer-section-logo .icons-social i {
+  line-height: 40px;
+}
+
+footer h1 {
+  color: #1a202c;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+}
+
+footer nav.menu ul {
+  list-style-type: none;
+}
+
+footer nav.menu li {
+  margin-top: 20px;
+}
+
+footer nav.menu a {
+  color: #486284;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.48px;
+
+  text-decoration: none;
+}
+
+footer .footer-section-servicos {
+  display: inline-block;
+  margin-top: 80px;
+  margin-left: 300px;
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+footer .footer-section-horarios {
+  display: inline-block;
+  margin-top: 80px;
+  margin-left: 50px;
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+footer .footer-section-redes-sociais {
+  display: inline-block;
+  margin-top: 80px;
+  margin-left: 50px;
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+hr {
+  width: 60%;
+  border-color: #6a6c6d;
+  opacity: 0.4;
+  box-sizing: border-box;
+  margin: 20px auto;
+}
+
+footer .direitos-reservados {
+  color: #1a202c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+  text-align: center;
+}

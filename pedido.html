@@ -1,106 +1,185 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pedidos Koffie</title>
-  </head>
-  <body>
-    <header>
-      <a href="/">
-        <img src="src/bitmap.png" alt="logoKoffie" />
-      </a>
-      <nav>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/pedido.css" />
+  <link rel="stylesheet" href="css/font-awesome.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" />
+
+  <title>Pedido</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo"></div>
+      <nav class="menu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="sobre.html">Sobre Nós</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
-          <li>Pedido</li>
+          <li>Sobre Nós</li>
+          <li><a href="produtos.html">Menu</a></li>
+          <li><a href="pedido.html">Cadastro</a></li>
           <li><a href="contato.html">Contato</a></li>
         </ul>
       </nav>
-    </header>
-    <main>
-      <div>
-        <hr />
-        <h3>Complete seu pedido</h3>
-        <h4>Endereço de Entrega</h4>
-        <p>Informe o endereço onde deseja receber seu pedido</p>
-        <form action="#" method="POST">
-          <label for="CEP"></label>CEP<input
-            type="text"
-            name=""
-            id=""
-            placeholder="Digite seu Cep"
-          />
-          <label for="CEP"></label>Endereço<input
-            type="text"
-            name=""
-            id=""
-            placeholder="Digite o endereço"
-          />
-          <label for="CEP"></label>Número<input
-            type="text"
-            name=""
-            id=""
-            placeholder="Digite o número"
-          />
-          <label for="CEP"></label>Bairro<input
-            type="text"
-            name=""
-            id=""
-            placeholder="Digite o bairro"
-          />
-          <label for="CEP"></label>Cidade<input
-            type="text"
-            name=""
-            id=""
-            placeholder="Cidade"
-          />
-          <label for="CEP"></label>Estado<input
-            type="text"
-            name=""
-            id=""
-            maxlength="2"
-            placeholder="SP"
-          />
-        </form>
-        <br />
-      </div>
-      <div>
-        <img src="src/img-menu.png" alt="" />
-        <p>Expresso Tradicional</p>
-        <p>R$ 9,99</p>
-        <input type="number" name="" placeholder="Quantidade" />
-        <button>Remover</button>
-        <hr />
-        <p>Total de Itens</p>
-        <p>Entrega</p>
-        <br />
-        <p><b>Total</b></p>
-        <a href="confirmar-pedido.html"><button>Confirmar Pedido</button></a>
-        <br />
-        <hr />
-      </div>
-      <footer>
-        <img src="src/logo.png" alt="" />
-
-        <h3>Serviços</h3>
-        <p>Reuniões</p>
-        <p>Eventos</p>
-        <p>Parceiros</p>
-        <h3>Horários</h3>
-        <p>Dias de Semana</p>
-        <p>Finais de Semana</p>
-        <h3>Redes Sociais</h3>
-        <img src="src/facebook (1).png" alt="" />
-        <img src="src/instagram.png" alt="" />
-        <img src="src/twitter.png" alt="" />
-        <hr />
-        <div>
-          <p>&reg; GrupoDois | Proz</p>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <span>Complete seu pedido</span>
+      <section class="pedido">
+        <div class="box1">
+          <form action="submit">
+            <div class="box1-parte1">
+              <img src="src/icon-park-solid_local.svg" alt="icone-localização" />
+              <div>
+                <h1>Endereço de entrega</h1>
+                <p>Informe o endereço onde deseja receber seu pedido</p>
+              </div>
+            </div>
+            <div class="box1-parte2">
+              <div class="endereco-entrega">
+                <label for="endereco">Endereço*</label>
+                <input type="text" name="endereco" id="endereco" autofocus required />
+                <label for="numero">Número*</label>
+                <input type="number" name="numero" id="numero" required />
+                <label for="cidade">Cidade*</label>
+                <input type="text" name="cidade" id="cidade" required />
+                <label for="estado">Estado*</label>
+                <select id="estado" name="estado" required>
+                  <option value="" disabled selected>Selecione</option>
+                  <option value="alagoas">Alagoas</option>
+                  <option value="amapa">Amapá</option>
+                  <option value="amazonas">Amazonas</option>
+                  <option value="bahia">Bahia</option>
+                  <option value="ceara">Ceará</option>
+                  <option value="distrito-federal">Distrito Federal</option>
+                  <option value="espirito-santo">Espírito Santo</option>
+                  <option value="goias">Goiás</option>
+                  <option value="maranhao">Maranhão</option>
+                  <option value="mato-grosso">Mato Grosso</option>
+                  <option value="mato-grosso-sul">Mato Grosso do Sul</option>
+                  <option value="minas-gerais">Minas Gerais</option>
+                  <option value="para">Pará</option>
+                  <option value="paraiba">Paraíba</option>
+                  <option value="parana">Paraná</option>
+                  <option value="pernambuco">Pernambuco</option>
+                  <option value="piaui">Piauí</option>
+                  <option value="rio-de-janeiro">Rio de Janeiro</option>
+                  <option value="rio-grande-do-norte">
+                    Rio Grande do Norte
+                  </option>
+                  <option value="rio-grande-do-sul">Rio Grande do Sul</option>
+                  <option value="rondonia">Rondônia</option>
+                  <option value="roraima">Roraima</option>
+                  <option value="santa-catarina">Santa Catarina</option>
+                  <option value="sao-paulo">São Paulo</option>
+                  <option value="sergipe">Sergipe</option>
+                  <option value="tocantins">Tocantins</option>
+                </select>
+                <label for="cep">Código Postal(CEP)*</label>
+                <input type="text" name="cep" id="cep" required />
+                <h1>FORMA DE PAGAMENTO*</h1>
+                <select id="estado" name="estado" required>
+                  <option value="" disabled selected>Selecione</option>
+                  <option value="boleto">Boleto</option>
+                  <option value="cartao">Cartão</option>
+                  <option value="pix">Pix</option>
+                </select>
+              </div>
+            </div>
         </div>
-      </footer>
-    </main>
-  </body>
+
+        <div class="box2">
+          <div class="box2-parte1">
+            <img src="src/gallery.png" alt="" />
+            <div>
+              <h1>Expresso Tradicional</h1>
+              <input type="number" value="1" name="quantidade" class="quantidade" id="quantidade" required />
+            </div>
+            <div class="valores">
+              <h1>R$ 9,99</h1>
+            </div>
+          </div>
+          <hr>
+          <div class="box2-parte2">
+            <div class="titulo">
+              <p>Total dos itens</p>
+              <p>Entrega</p>
+              <h1>Total</h1>
+            </div>
+            <div class="valores">
+              <p>R$ 9,99</p>
+              <p>R$ 9,99</p>
+              <h1>R$ 9,99</h1>
+            </div>
+          </div>
+          <div class="botao"><input type="submit" value="Confirmar  Pedido"></div>
+          </form>
+      </section>
+    </div>
+
+  </main>
+  <div class="clear"></div>
+  <footer>
+    <div class="container">
+      <div class="footer-section-logo">
+        <img src="src/bitmap.png" alt="" />
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="icons-social">
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section-servicos">
+        <h1>Serviços</h1>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Reuniões</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Parceiros</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-section-horarios">
+        <h1>Horários</h1>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Dias de Semana</a></li>
+            <li><a href="#">Finais de Semana</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-section-redes-sociais">
+        <h1>Redes Sociais</h1>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <hr />
+    <div class="direitos-reservados">
+      <p>©Grupo Dois - PROZ | Todos os direitos reservados</p>
+    </div>
+  </footer>
+</body>
+
 </html>
