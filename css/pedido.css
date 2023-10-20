@@ -142,14 +142,8 @@ main section.pedido input {
   background: #ced7e4;
   outline: none;
 
-  border: 1px solid
-    rgb(
-      var(--wix-ui-tpa-text-field-main-border-color-rgb, var(--wix-color-5)),
-      calc(
-        var(--wix-ui-tpa-text-field-main-border-color-opacity, 1) *
-          var(--wix-ui-tpa-text-field-main-border-opacity, 0.6)
-      )
-    );
+  border: 1px solid rgb(var(--wix-ui-tpa-text-field-main-border-color-rgb, var(--wix-color-5)),
+      calc(var(--wix-ui-tpa-text-field-main-border-color-opacity, 1) * var(--wix-ui-tpa-text-field-main-border-opacity, 0.6)));
 }
 
 main section.pedido select {
@@ -173,11 +167,13 @@ main section.pedido input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
   -webkit-appearance: none;
-  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 main section.pedido input[type="number"] {
-  -moz-appearance: textfield; /* Firefox */
+  -moz-appearance: textfield;
+  /* Firefox */
 }
 
 main section.pedido .box2 {
@@ -211,8 +207,7 @@ main section.pedido .box2 .box2-parte1 input::-webkit-inner-spin-button {
   min-height: 45px;
   margin: 17px;
   padding: 0px;
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       transparent 0px,
       transparent 16px,
       #ced7e4 16px,
@@ -222,17 +217,14 @@ main section.pedido .box2 .box2-parte1 input::-webkit-inner-spin-button {
       #000 35px,
       #000 36px,
       transparent 36px,
-      transparent 40px
-    ),
-    linear-gradient(
-      to right,
+      transparent 40px),
+    linear-gradient(to right,
       transparent 0px,
       transparent 10px,
       #000 10px,
       #000 11px,
       transparent 11px,
-      transparent 21px
-    );
+      transparent 21px);
   transform: rotate(90deg) scale(0.8, 0.9);
   cursor: pointer;
 }
@@ -248,11 +240,13 @@ main section.pedido .box2 .box2-parte2 {
   display: flex;
   justify-content: space-between;
 }
+
 main section.pedido .box2 .titulo {
   display: flex;
   flex-direction: column;
   gap: 80px;
 }
+
 main section.pedido .box2 .valores {
   display: flex;
   flex-direction: column;
