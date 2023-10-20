@@ -1,24 +1,13 @@
-body {
-  margin: 2px;
-  padding-left: 40px;
-  padding-right: 40px;
-  background-color: #aea393;
-}
-
 /* sinta-se melhor */
 .sintasemelhor {
   background-color: rgb(174, 163, 147);
-  width: 1440px;
-  height: 833px;
-  flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 150px 0px 150px 50px;
 }
 .imagem1 {
-  width: 500px;
-  height: 200px;
-  flex-shrink: 0;
+  padding: 20px 100px 0px 0px;
 }
 .text1 {
   color: var(--Black, #1a202c);
@@ -29,6 +18,7 @@ body {
   line-height: 121.2%; /* 55.752px */
 }
 .text1 p {
+  text-align: justify;
   color: var(--Black, #1a202c);
   font-family: Plus Jakarta Sans;
   font-size: 16px;
@@ -36,11 +26,12 @@ body {
   font-weight: 500;
   line-height: 160%; /* 25.6px */
   letter-spacing: -0.32px;
+  width: 400px;
+  padding: 40px 0px 40px 10px;
 }
 .text1 a {
   flex-direction: column;
   justify-content: center;
-  flex-shrink: 0;
   color: white;
   background-color: #2a130a;
   border-radius: 3px;
@@ -58,12 +49,9 @@ body {
 /* que tal um koffie */
 .quetal {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  width: 1150px;
-  height: 680px;
-  flex-shrink: 0;
-  border-radius: 0px 0px 0px 0px;
+  padding: 100px 0px 100px 0px;
   background-color: rgb(174, 163, 147);
 }
 .text2 {
@@ -71,6 +59,7 @@ body {
   font-family: Plus Jakarta Sans;
   font-size: 35px;
   font-style: normal;
+  padding: 20px 0px 20px 0px;
   font-weight: 800;
   line-height: 121.2%; /* 55.752px */
 }
@@ -82,6 +71,7 @@ body {
   font-weight: 500;
   line-height: 160%; /* 25.6px */
   letter-spacing: -0.32px;
+  padding: 30px 0px 20px 20px;
 }
 .text2 a {
   flex-direction: column;
@@ -101,20 +91,16 @@ body {
   letter-spacing: -0.32px;
 }
 .imagem2 {
-  width: 507px;
-  height: 100px;
-  flex-shrink: 0;
+  padding: 150px 0px 0px 100px;
 }
 
 /* Mais pedidos */
 .maispedidos {
-  width: 1547px;
-  height: 680px;
-  flex-shrink: 0;
+  padding: 150px 0px 150px 50px;
   background-color: rgb(174, 163, 147);
 }
 .text3 {
-  width: 1216px;
+  padding: 0px 0px 40px 0px;
   color: #1f2401;
   font-family: DM Sans;
   font-size: 35px;
@@ -133,11 +119,9 @@ body {
 
 /* Nossas Marcas de cafes */
 .parceiros {
-  width: 1547px;
-  height: 680px;
+  padding: 50px 0px 150px 50px;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
 }
 .text4 {
   color: #1f2401;
@@ -150,19 +134,16 @@ body {
   letter-spacing: -0.96px;
 }
 .imagem4 {
-  padding-top: 100px;
-  gap: 20px;
-  flex-shrink: 0;
+  justify-content: center;
+  padding: 80px 0px 0px 0px;
+  gap: 0px 20px;
 }
 
 /* O que nossos clientes dizem */
 .clientesdizem {
-  width: 1440px;
-  height: 651px;
-
+  padding: 50px 0px 150px 0px;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
   background-color: rgb(174, 163, 147);
 }
 .text5 {
@@ -174,9 +155,9 @@ body {
   font-weight: 500;
   line-height: 150%; /* 72px */
   letter-spacing: -0.96px;
+  padding: 50px 0px 50px 0px;
 }
 .imagem5 {
   width: 405px;
   height: 241px;
-  flex-shrink: 0;
 }

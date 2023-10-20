@@ -1,13 +1,9 @@
-body {
-  margin: 2px;
-  padding-left: 40px;
-  padding-right: 40px;
-  background-color: #aea393;
+main {
+  padding: 0px 20px 150px 20px;
 }
 
 .text {
-  width: 1547px;
-  height: 300px;
+  padding: 80px 0px 50px 50px;
   flex-shrink: 0;
 }
 .text1 {
@@ -17,6 +13,7 @@ body {
   font-style: normal;
   font-weight: 800;
   text-align: center;
+  padding: 0px 0px 50px 0px;
 }
 
 .text2 {
@@ -25,30 +22,37 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
+  padding: 30px 0px 20px 0px;
+}
+.text2 p {
+  color: var(--Black, #1a202c);
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 20px 0px 20px 0px;
 }
 .cafes {
-  width: 1024px;
   display: flex;
-  height: 400px;
-  gap: 40px 50px;
+  padding: 0px 50px 100px 50px;
+  justify-content: center;
+  gap: 0px 30px;
 }
-.botao {
-  display: flex;
+
+.botao a {
   width: 100px;
-  flex-direction: column;
+  height: 100px;
   align-items: center;
   color: white;
   background-color: #2a130a;
   border-radius: 5px;
   padding: 8px 10px 10px 10px;
-  margin-bottom: 30px;
-  margin-left: 200px;
+  margin-left: 100px;
   text-align: center;
-  /* Semibold/Type@16 */
   font-family: Plus Jakarta Sans;
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
-  line-height: 150%; /* 24px */
+  line-height: 150%;
   letter-spacing: -0.32px;
 }
