@@ -23,7 +23,7 @@ main section.pedido {
 main section.pedido .box1 {
   width: 50%;
   border-radius: 63px 0px 0px 0px;
-  background: #aab5c3;
+  background: rgb(172, 150, 117);
   padding: 40px 30px;
 }
 
@@ -116,7 +116,7 @@ main section.pedido input[type="number"] {
 main section.pedido .box2 {
   width: 50%;
   border-radius: 63px 0px 0px 0px;
-  background: #aab5c3;
+  background: rgb(172, 150, 117);
   padding: 40px 30px;
 }
 

@@ -1,0 +1,62 @@
+/*------ PEDIDO -----*/
+
+main {
+  padding-top: 50px;
+}
+
+main span {
+  color: #486284;
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  /* 36px */
+  letter-spacing: -0.72px;
+  opacity: 0.9;
+}
+
+main section.pedido {
+  display: flex;
+  margin-top: 65px;
+  margin-bottom: 100px;
+  gap: 5%;
+}
+
+main section.pedido .box1 {
+  display: flex;
+  width: 50%;
+  padding: 40px 30px;
+  flex-direction: column;
+  gap: 15%;
+}
+
+main section.pedido h1 {
+  color: #486284;
+  font-family: Plus Jakarta Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 121.2%;
+  text-transform: uppercase;
+}
+
+main section.pedido p {
+  color: #486284;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.48px;
+  opacity: 0.9;
+}
+
+main section.pedido .box2 {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  border-radius: 63px 0px 0px 0px;
+  background: #aab5c3;
+  padding: 50px 50px;
+}

@@ -1,4 +1,8 @@
 /* sinta-se melhor */
+main {
+  padding: 50px 0px 0px 0px;
+  margin: auto;
+}
 .sintasemelhor {
   background-color: rgb(174, 163, 147);
   display: flex;
