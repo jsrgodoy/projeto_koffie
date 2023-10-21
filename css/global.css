@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: auto;
   padding: 0;
   box-sizing: border-box;
   font-family: Plus Jakarta Sans;
@@ -74,7 +74,7 @@ a:hover {
 
 footer {
   width: auto;
-  height: 450px;
+
   background-color: rgb(172, 150, 117);
 }
 

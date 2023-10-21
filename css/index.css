@@ -13,10 +13,10 @@ main {
 .imagem1 {
   padding: 20px 100px 0px 0px;
 }
-.text1 {
+.text1 h1 {
   color: var(--Black, #1a202c);
   font-family: Plus Jakarta Sans;
-  font-size: 35px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 800;
   line-height: 121.2%; /* 55.752px */
