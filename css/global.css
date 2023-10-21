@@ -16,8 +16,8 @@ body {
 .container {
   margin: 0;
   width: auto;
-  padding: 0px 20px 0px 40px;
-  justify-content: space-between;
+  padding: 0px 0px 0px 0px;
+  justify-content: space-around;
 }
 
 div.clear {
@@ -74,7 +74,7 @@ a:hover {
 
 footer {
   width: auto;
-
+  padding: 0px 0px 0px 40px;
   background-color: rgb(172, 150, 117);
 }
 
@@ -162,7 +162,7 @@ footer .footer-section-horarios {
   display: inline-block;
   margin-top: 80px;
   margin-left: 20px;
-  width: 200px;
+  width: 180px;
   height: 200px;
   float: left;
 }
@@ -171,7 +171,7 @@ footer .footer-section-redes-sociais {
   display: inline-block;
   margin-top: 80px;
   margin-left: 20px;
-  width: 200px;
+  width: 180px;
   height: 200px;
   float: left;
 }

@@ -1,5 +1,5 @@
 main {
-  padding: 0px 20px 150px 20px;
+  padding: 0px 20px 150px 40px;
 }
 
 .text {
@@ -32,27 +32,28 @@ main {
   font-weight: 500;
   padding: 20px 0px 20px 0px;
 }
-main section.cafes {
-  display: flex;
-  padding: 0px 50px 100px 50px;
-  justify-content: center;
-  gap: 0px 30px;
+.cafes {
+  padding: 50px 0;
 }
-main section .cafes .tabela {
-  margin: 50px auto;
-  width: 500px;
-  height: 800px;
+.tabela {
+  width: auto;
+
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 0px 0px 10px 0px;
 }
-main section .cafes .tabela div {
-  margin: 50px 100px;
-}
-main section.cafes .tabela img {
-  height: 100px;
-  width: 100px;
+
+.tabela div {
+  margin: 20px;
+  padding: 20px 0px 20px 0px;
+  background-color: rgb(172, 150, 117);
+  border-radius: 5px 30px;
+  width: 250px;
+  height: 250px;
+  justify-content: center;
 }
 
 .botao a {

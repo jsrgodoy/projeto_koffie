@@ -1,7 +1,43 @@
-@media (max-width: 608px) {
+.menuproduto {
+  width: 820px;
+  height: 400px;
+  padding-left: 23px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
   .menuproduto {
+    width: 740px;
+  }
+}
+
+@media (max-width: 688px) {
+  .menuproduto {
+    width: 660px;
+  }
+}
+
+@media (max-width: 414px) {
+  .menuproduto {
+    width: 386px;
     flex-direction: column;
-    height: 700px;
+    height: 500px;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 393px) {
+  .menuproduto {
+    width: 365px;
+  }
+}
+
+@media (max-width: 375px) {
+  .menuproduto {
+    width: 320px;
   }
 }
 
@@ -11,8 +47,21 @@
   height: 300px;
 }
 
+@media (max-width: 414px) {
+  .textomenu {
+    max-width: 400px;
+    height: 250px;
+  }
+}
+
 .textomenu h1 {
   font-size: 46px;
+}
+
+@media (max-width: 414px) {
+  .textomenu h1 {
+    font-size: 24px;
+  }
 }
 
 .textomenu p {
@@ -20,9 +69,10 @@
   font-size: 20px;
 }
 
-@media (max-width: 608px) {
+@media (max-width: 414px) {
   .textomenu p {
-    font-size: 30px;
+    padding: 32px 0 32px;
+    font-size: 16px;
   }
 }
 
@@ -41,6 +91,13 @@
   min-height: 150px;
 }
 
+@media (max-width: 414px) {
+  .imagemmenu {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 .imagemmenu img {
   width: 100%;
   height: 100%;
@@ -57,41 +114,94 @@
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .mapa {
+    width: 740px;
+  }
+}
+
+@media (max-width: 688px) {
+  .mapa {
+    width: 660px;
+  }
+}
+
+@media (max-width: 414px) {
+  .mapa {
+    width: 386px;
+  }
+}
+
+@media (max-width: 393px) {
+  .mapa {
+    width: 365px;
+  }
+}
+
+@media (max-width: 375px) {
+  .mapa {
+    width: 319px;
+  }
+}
+
 .mapa h2 {
   padding-bottom: 20px;
 }
 
 .mapa iframe {
-  width: 98%;
+  width: 100%;
   height: 400px;
+  border-radius: 10px;
 }
 
-.logo-form figure img {
+.logo-form {
+  display: flex;
   width: 160px;
   height: 40px;
+  margin: 0 auto;
   margin-bottom: 70px;
 }
 
-@media (max-width: 608px) {
-  .logo-form figure img {
-    margin-left: 105px;
-  }
+.logo-form img {
+  min-width: 160px;
+  min-height: 40px;
 }
 
 .section-form {
-  width: 830px;
+  max-width: 830px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 30px 23px;
+  padding: 30px 0;
   margin: 0 auto;
   gap: 220px;
 }
 
-@media (max-width: 608px) {
+@media (max-width: 768px) {
   .section-form {
+    width: 732px;
+    gap: 2px;
+  }
+}
+
+@media (max-width: 688px) {
+  .section-form {
+    width: 96vw;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 414px) {
+  .section-form {
+    width: 378px;
     flex-direction: column-reverse;
-    justify-content: center;
     gap: 50px;
+  }
+}
+
+@media (max-width: 393px) {
+  .section-form {
+    width: 357px;
   }
 }
 
@@ -102,6 +212,29 @@ textarea {
   border-radius: 5px;
   background-color: #f5f5f5;
   margin-left: 2rem;
+}
+
+@media (max-width: 414px) {
+  .form-group input,
+  textarea {
+    width: 289px;
+    margin-left: 0.1rem;
+  }
+}
+
+@media (max-width: 393px) {
+  .form-group input,
+  textarea {
+    width: 268px;
+    margin-left: 2px;
+  }
+}
+
+@media (max-width: 375px) {
+  .form-group input,
+  textarea {
+    width: 210px;
+  }
 }
 
 .form-group {
@@ -123,4 +256,16 @@ textarea {
   background-color: #2a130a;
   border: none;
   border-radius: 8px;
+}
+
+@media (max-width: 414px) {
+  .formulario button {
+    margin-left: 170px;
+  }
+}
+
+@media (max-width: 375px) {
+  .formulario button {
+    margin-left: 135px;
+  }
 }

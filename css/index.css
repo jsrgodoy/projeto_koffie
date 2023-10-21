@@ -10,13 +10,39 @@ main {
   align-items: center;
   padding: 150px 0px 150px 50px;
 }
-.imagem1 {
-  padding: 20px 100px 0px 0px;
+
+@media (max-width: 800px) {
+  .sintasemelhor {
+    flex-direction: column-reverse;
+    padding: 50px 0px 50px 50px;
+  }
 }
+.imagem1 {
+  padding: 0px 150px 0px 0px;
+  background-image: url("../src/home.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  width: 500px;
+  height: 250px;
+}
+@media (max-width: 800px) {
+  .sintasemelhor .imagem1 {
+    background-image: url("../src/home.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    width: 400px;
+    height: 150px;
+  }
+}
+
 .text1 h1 {
   color: var(--Black, #1a202c);
   font-family: Plus Jakarta Sans;
-  font-size: 40px;
+  font-size: 45px;
   font-style: normal;
   font-weight: 800;
   line-height: 121.2%; /* 55.752px */
@@ -53,15 +79,24 @@ main {
 /* que tal um koffie */
 .quetal {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  padding: 100px 0px 100px 0px;
+  padding: 100px 30px 100px 0px;
   background-color: rgb(174, 163, 147);
 }
-.text2 {
+
+@media (max-width: 800px) {
+  .quetal {
+    justify-content: center;
+    padding-right: 100px;
+    padding-left: 180px;
+  }
+}
+
+.text2 h1 {
   color: #1f2401;
   font-family: Plus Jakarta Sans;
-  font-size: 35px;
+  font-size: 30px;
   font-style: normal;
   padding: 20px 0px 20px 0px;
   font-weight: 800;
@@ -95,7 +130,19 @@ main {
   letter-spacing: -0.32px;
 }
 .imagem2 {
-  padding: 150px 0px 0px 100px;
+  background-image: url("../src/menuImg1.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  width: 350px;
+  height: 200px;
+}
+@media (max-width: 800px) {
+  .quetal .imagem2 {
+    width: 450px;
+    height: 100px;
+  }
 }
 
 /* Mais pedidos */
@@ -103,19 +150,26 @@ main {
   padding: 150px 0px 150px 50px;
   background-color: rgb(174, 163, 147);
 }
+
 .text3 {
-  padding: 0px 0px 40px 0px;
+  padding: 0px 0px 40px 50px;
   color: #1f2401;
   font-family: DM Sans;
-  font-size: 35px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 76px; /* 158.333% */
   letter-spacing: 0.5px;
 }
 
+@media (max-width: 800px) {
+  .text3 {
+    padding: 10px 0px 10px 180px;
+  }
+}
+
 .tabela {
-  width: 500px;
+  width: 700px;
   display: flex;
   height: 400px;
   gap: 40px 50px;
@@ -131,18 +185,32 @@ main {
   color: #1f2401;
   text-align: center;
   font-family: Plus Jakarta Sans;
-  font-size: 35px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 72px */
   letter-spacing: -0.96px;
 }
+@media (max-width: 800px) {
+  .text4 {
+    font-size: 25px;
+  }
+}
+
 .imagem4 {
   justify-content: center;
   padding: 80px 0px 0px 0px;
   gap: 0px 20px;
 }
-
+/* @media (max-width: 800px) {
+  .imagem4 {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    image-rendering: 100px;
+    padding: 50px 20px 0px 0px;
+  }
+} */
 /* O que nossos clientes dizem */
 .clientesdizem {
   padding: 50px 0px 150px 0px;
@@ -161,6 +229,12 @@ main {
   letter-spacing: -0.96px;
   padding: 50px 0px 50px 0px;
 }
+@media (max-width: 800px) {
+  .text5 h2 {
+    font-size: 25px;
+  }
+}
+
 .imagem5 {
   width: 405px;
   height: 241px;

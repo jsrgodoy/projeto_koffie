@@ -18,8 +18,14 @@ main {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  padding: 50px 0px 50px 0px;
+  padding: 50px 20px 50px 0px;
 }
+@media (max-width: 800px) {
+  .text5 h2 {
+    font-size: 16px;
+  }
+}
+
 .wiki a {
   color: rgb(67, 30, 0);
 }
