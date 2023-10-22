@@ -49,7 +49,7 @@ header .menu {
   justify-content: right;
   align-items: center;
   flex-shrink: 0;
-  gap: 20px;
+  gap: 60px;
 }
 
 header .menu-itens ul {
@@ -58,7 +58,7 @@ header .menu-itens ul {
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
-  gap: 20px;
+  gap: 60px;
 }
 
 header .menu-itens a {
@@ -130,13 +130,12 @@ main {
 
 main span {
   color: #486284;
-  font-family: Plus Jakarta Sans;
-  font-size: 18px;
+  font-size: 30px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: -0.72px;
-  opacity: 0.9;
+  font-weight: 800;
+  line-height: 121.2%;
+  text-transform: capitalize;
+  margin-top: 30px;
 }
 
 main section.pedido {
@@ -172,7 +171,6 @@ main section.pedido .box1 img {
 
 main section.pedido h1 {
   color: #486284;
-  font-family: Plus Jakarta Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
@@ -183,7 +181,6 @@ main section.pedido h1 {
 main section.pedido p,
 label {
   color: #486284;
-  font-family: Plus Jakarta Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -370,7 +367,7 @@ footer .footer-section-logo img {
 
 footer .footer-section-logo p {
   margin-top: 50px;
-  color: #1a202c;
+  color: #486284;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -387,15 +384,7 @@ footer h1 {
   letter-spacing: -0.4px;
 }
 
-footer nav ul {
-  list-style-type: none;
-}
-
-footer nav li {
-  margin-top: 20px;
-}
-
-footer nav a {
+footer nav {
   color: #486284;
   font-size: 16px;
   font-style: normal;
@@ -405,22 +394,35 @@ footer nav a {
   text-decoration: none;
 }
 
-footer .footer-section-servicos {
-  margin-top: 80px;
+footer nav ul {
+  list-style-type: none;
+}
+
+footer nav li {
+  margin-top: 20px;
+}
+
+footer nav i {
+  margin-right: 10px;
+}
+
+
+footer .footer-section-endereco {
+  margin-top: 50px;
   margin-left: 300px;
   width: 200px;
   height: 200px;
 }
 
 footer .footer-section-horarios {
-  margin-top: 80px;
+  margin-top: 50px;
   margin-left: 50px;
   width: 200px;
   height: 200px;
 }
 
-footer .footer-section-redes-sociais {
-  margin-top: 80px;
+footer .footer-section-contato {
+  margin-top: 50px;
   margin-left: 50px;
   width: 200px;
   height: 200px;

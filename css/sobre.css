@@ -8,7 +8,7 @@
 html,
 body {
   width: 100%;
-  height: 100%;
+  height: 100vw;
 }
 
 .container {
@@ -28,6 +28,8 @@ header {
   padding: 40px;
   border: 1px solid #486284;
   background-color: #ced7e4;
+  box-shadow: 0px 5px 7px -1px rgba(0,0,0,.35);
+  z-index: 3;
 }
 
 header .logo {
@@ -49,7 +51,7 @@ header .menu {
   justify-content: right;
   align-items: center;
   flex-shrink: 0;
-  gap: 20px;
+  gap: 60px;
 }
 
 header .menu-itens ul {
@@ -58,7 +60,7 @@ header .menu-itens ul {
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
-  gap: 20px;
+  gap: 60px;
 }
 
 header .menu-itens a {
@@ -69,6 +71,130 @@ header .menu-itens a {
   line-height: 150%;
   letter-spacing: -0.48px;
   text-decoration: none;
+}
+
+
+/*------ MNUE MOBILE -----*/
+.menu-mobile a {
+  color: #fff;
+}
+
+.menu-mobile {
+  background-color: #f36b25;
+  box-shadow: 0px 5px 7px -1px rgba(0,0,0,.35);
+  position: relative;
+  width: 100%;
+  z-index: 3;
+  
+  
+}
+
+.menu-mobile ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #f36b25;
+}
+
+.menu-mobile li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f36b25;
+  text-decoration: none;
+}
+
+.menu-mobile li a:hover,
+.menu-mobile .menu-btn:hover {
+  font-weight: 700;
+}
+
+.menu-mobile .menu-mobile-itens {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+.menu-mobile .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.menu-mobile .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.menu-mobile .menu-icon .navicon:before,
+.menu-mobile .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.menu-mobile .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.menu-mobile .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.menu-mobile .menu-btn {
+  display: none;
+}
+
+.menu-mobile .menu-btn:checked ~ .menu-mobile-itens {
+  max-height: 240px;
+}
+
+.menu-mobile .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.menu-mobile .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.menu-mobile .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.menu-mobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-mobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .menu-mobile li {
+    float: left;
+  }
+  .menu-mobile li a {
+    padding: 20px 30px;
+  }
+  .menu-mobile .menu-mobile-itens {
+    clear: none;
+    float: right;
+    max-height: none;
+    display: block;
+  }
+
+  
+  header .menu {
+    display: none;
+  }
 }
 
 /*------ ACCOUNT -----*/
@@ -127,7 +253,7 @@ header .cart i {
 
 main section.nossa-historia {
   width: 100%;
-  height: 600px;
+  height: 100%;
   padding: 150px 0;
   background: #aab5c3;
 }
@@ -135,12 +261,14 @@ main section.nossa-historia {
 main section.nossa-historia .container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 main section.nossa-historia .texto {
   padding: 0 10%;
   width: 70%;
-  height: 200px;
+  height: 100%;
 }
 
 main section.nossa-historia .texto h1 {
@@ -172,7 +300,19 @@ main section.nossa-historia .imagem {
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
-  
+
+}
+
+@media only screen and (max-width: 780px) {
+
+  main section.nossa-historia .texto {
+    width: 100%;
+  }
+
+  main section.nossa-historia .imagem {
+    width: 50%;
+    margin-top: 5%;
+  }
 }
 
 /*------ NOSSA EQUIPE -----*/
@@ -180,7 +320,7 @@ main section.nossa-historia .imagem {
 main section.nossa-equipe {
   background: #ced7e4;
   width: 100%;
-  height: 900px;
+  height: 100%;
   padding: 50px 0;
   display: flex;
   flex-wrap: wrap;
@@ -194,7 +334,7 @@ h2 {
   font-weight: 800;
   line-height: 121.2%;
   text-transform: capitalize;
-  text-align: center; 
+  text-align: center;
 }
 
 main section.nossa-equipe h2 {
@@ -227,7 +367,6 @@ main section.nossa-equipe .thumb-imagens img {
 
 footer {
   width: 100%;
-  height: 450px;
   background-color: #aab5c3;
 
 }
@@ -235,28 +374,48 @@ footer {
 footer .container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 10%;
 }
+
+footer .container div {
+  margin-top: 50px;
+  width: 200px;
+
+}
+
+@media only screen and (max-width: 1280px) {
+  footer .container div {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+
+/*--- FOOTER-BOX-1 ---*/
 
 footer .footer-section-logo {
   width: 200px;
-  height: 300px;
+  height: 100%;
   margin-top: 50px;
 }
 
 footer .footer-section-logo img {
   width: 160px;
-  height: 40px;
+  height: 100%;
 }
 
 footer .footer-section-logo p {
   margin-top: 50px;
-  color: #1a202c;
+  color: #486284;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
   letter-spacing: -0.32px;
 }
+
+/*--- FOOTER-BOX-2 ---*/
 
 footer h1 {
   color: #1a202c;
@@ -267,15 +426,7 @@ footer h1 {
   letter-spacing: -0.4px;
 }
 
-footer nav ul {
-  list-style-type: none;
-}
-
-footer nav li {
-  margin-top: 20px;
-}
-
-footer nav a {
+footer nav {
   color: #486284;
   font-size: 16px;
   font-style: normal;
@@ -285,26 +436,19 @@ footer nav a {
   text-decoration: none;
 }
 
-footer .footer-section-servicos {
-  margin-top: 80px;
-  margin-left: 300px;
-  width: 200px;
-  height: 200px;
+footer nav ul {
+  list-style-type: none;
 }
 
-footer .footer-section-horarios {
-  margin-top: 80px;
-  margin-left: 50px;
-  width: 200px;
-  height: 200px;
+footer nav li {
+  margin-top: 20px;
 }
 
-footer .footer-section-redes-sociais {
-  margin-top: 80px;
-  margin-left: 50px;
-  width: 200px;
-  height: 200px;
+footer nav i {
+  margin-right: 10px;
 }
+
+/*------ DIREITOS RESERVADOS -----*/
 
 footer hr {
   width: 60%;
@@ -322,11 +466,14 @@ footer .direitos-reservados {
   line-height: 150%;
   letter-spacing: -0.32px;
   text-align: center;
+  padding-bottom: 1%;
 }
+
 
 /*------ ICON SOCIAL -----*/
 
 .icons-social {
+  width: 100%;
   margin-top: 60px;
 }
 
@@ -344,4 +491,13 @@ footer .direitos-reservados {
 
 .icons-social i {
   line-height: 40px;
+}
+
+@media only screen and (max-width: 1280px) {
+  footer .footer-section-logo .icons-social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
 }
