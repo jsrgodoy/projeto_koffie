@@ -325,6 +325,7 @@ footer .container {
   justify-content: center;
   flex-wrap: wrap;
   gap: 10%;
+  max-width: 80%;
 }
 
 footer .container div {
