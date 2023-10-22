@@ -7,11 +7,12 @@
 
 html,
 body {
+  width: 100%;
   height: 100%;
 }
 
 .container {
-  max-width: 95%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -129,17 +130,17 @@ main section.nossa-historia {
   height: 600px;
   padding: 150px 0;
   background: #aab5c3;
+}
+
+main section.nossa-historia .container {
   display: flex;
-  
-  
-  
+  justify-content: center;
 }
 
 main section.nossa-historia .texto {
-  
+  padding: 0 10%;
   width: 70%;
   height: 200px;
-  
 }
 
 main section.nossa-historia .texto h1 {
@@ -161,6 +162,7 @@ main section.nossa-historia .texto p {
   letter-spacing: -0.32px;
   opacity: 0.45;
   margin-top: 40px;
+  text-align: justify;
 }
 
 main section.nossa-historia .imagem {
@@ -177,8 +179,10 @@ main section.nossa-historia .imagem {
 main section.nossa-equipe {
   background: #ced7e4;
   width: 100%;
-  height: 800px;
+  height: 900px;
   padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 main section.nossa-equipe h1 {
@@ -193,15 +197,16 @@ main section.nossa-equipe h1 {
 
 main section.nossa-equipe .thumb-imagens {
   margin: 50px auto;
-  width: 800px;
+  width: 100%;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
+  gap: 50%;
 }
 
 main section.nossa-equipe .thumb-imagens div {
-  margin: 50px 100px;
+  margin: 30px 0;
 }
 
 main section.nossa-equipe .thumb-imagens img {
@@ -216,14 +221,17 @@ footer {
   width: 100%;
   height: 450px;
   background-color: #aab5c3;
+  
+}
+footer .container{
+  display: flex;
+  justify-content: center;
 }
 
 footer .footer-section-logo {
-  display: inline-block;
   width: 200px;
   height: 300px;
   margin-top: 50px;
-  float: left;
 }
 
 footer .footer-section-logo img {
@@ -239,26 +247,6 @@ footer .footer-section-logo p {
   font-weight: 500;
   line-height: 150%;
   letter-spacing: -0.32px;
-}
-
-footer .footer-section-logo .icons-social {
-  margin-top: 60px;
-}
-
-footer .footer-section-logo .icons-social a {
-  text-decoration: none;
-  color: #aab5c3;
-  background-color: #fff;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  display: inline-block;
-  margin: 0 10px;
-  text-align: center;
-}
-
-footer .footer-section-logo .icons-social i {
-  line-height: 40px;
 }
 
 footer h1 {
@@ -285,38 +273,31 @@ footer nav a {
   font-weight: 500;
   line-height: 150%;
   letter-spacing: -0.48px;
-
   text-decoration: none;
 }
 
 footer .footer-section-servicos {
-  display: inline-block;
   margin-top: 80px;
   margin-left: 300px;
   width: 200px;
   height: 200px;
-  float: left;
 }
 
 footer .footer-section-horarios {
-  display: inline-block;
   margin-top: 80px;
   margin-left: 50px;
   width: 200px;
   height: 200px;
-  float: left;
 }
 
 footer .footer-section-redes-sociais {
-  display: inline-block;
   margin-top: 80px;
   margin-left: 50px;
   width: 200px;
   height: 200px;
-  float: left;
 }
 
-hr {
+footer hr {
   width: 60%;
   border-color: #6a6c6d;
   opacity: 0.4;
@@ -332,4 +313,26 @@ footer .direitos-reservados {
   line-height: 150%;
   letter-spacing: -0.32px;
   text-align: center;
+}
+
+/*------ ICON SOCIAL -----*/
+
+.icons-social {
+  margin-top: 60px;
+}
+
+.icons-social a {
+  text-decoration: none;
+  color: #aab5c3;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.icons-social i {
+  line-height: 40px;
 }
