@@ -333,7 +333,7 @@ footer .container div {
 
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1270px) {
   footer .container div {
     flex-basis: 100%;
     text-align: center;
@@ -442,7 +442,7 @@ footer .direitos-reservados {
   line-height: 40px;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1270px) {
   footer .footer-section-logo .icons-social {
     width: 100%;
     display: flex;

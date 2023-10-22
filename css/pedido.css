@@ -94,7 +94,7 @@ header .menu-itens a {
     z-index: 3;
   }
 
-   .menu-mobile ul {
+  .menu-mobile ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -467,6 +467,22 @@ main section.pedido .box2 input[type="submit"]:hover {
   height: 60px;
 }
 
+@media only screen and (max-width: 1024px) {
+  main section.pedido {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  main section.pedido .box1,
+  main section.pedido .box2 {
+    width: 100%;
+    margin-top: 5%;
+  }
+
+}
+
 /*------ FOOTER -----*/
 
 footer {
@@ -488,7 +504,7 @@ footer .container div {
 
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1270px) {
   footer .container div {
     flex-basis: 100%;
     text-align: center;
@@ -597,7 +613,7 @@ footer .direitos-reservados {
   line-height: 40px;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1270px) {
   footer .footer-section-logo .icons-social {
     width: 100%;
     display: flex;
