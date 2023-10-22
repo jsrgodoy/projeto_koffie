@@ -6,6 +6,7 @@ main {
   padding: 80px 0px 50px 50px;
   flex-shrink: 0;
 }
+
 .text1 {
   color: var(--Black, #1a202c);
   font-family: Plus Jakarta Sans;
@@ -24,6 +25,7 @@ main {
   font-weight: 500;
   padding: 30px 0px 20px 0px;
 }
+
 .text2 p {
   color: var(--Black, #1a202c);
   font-family: Plus Jakarta Sans;
@@ -32,6 +34,7 @@ main {
   font-weight: 500;
   padding: 20px 0px 20px 0px;
 }
+
 .cafes {
   padding: 50px 0;
 }
@@ -55,6 +58,7 @@ main {
   height: 290px;
   justify-content: center;
 }
+
 .btn-subtrair,
 .btn-adicionar {
   margin-top: 30px;
@@ -85,4 +89,85 @@ main {
   padding: 8px 40px;
   border-radius: 8px;
   text-decoration: none;
+}
+
+/* Responsividade para telas menores que 800px */
+@media (max-width: 800px) {
+  main {
+    padding: 20px;
+  }
+
+  .text {
+    padding: 50px 0px 20px 20px;
+  }
+
+  .text1 {
+    font-size: 20px;
+    padding: 20px 0px 20px 0px;
+  }
+
+  .text2 {
+    font-size: 18px;
+    padding: 20px 0px 20px 0px;
+  }
+
+  .text2 p {
+    font-size: 18px;
+    padding: 20px 0px 20px 0px;
+  }
+
+  .tabela div {
+    width: 200px;
+    height: 250px;
+  }
+}
+
+/* Responsividade para telas menores que 400px */
+@media (max-width: 400px) {
+  main {
+    padding: 10px;
+  }
+
+  .text {
+    padding: 40px 0px 10px 10px;
+  }
+
+  .text1 {
+    font-size: 16px;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .text2 {
+    font-size: 14px;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .text2 p {
+    font-size: 14px;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .tabela div {
+    width: 160px;
+    height: 220px;
+  }
+
+  .btn-subtrair,
+  .btn-adicionar {
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+  }
+
+  .quantidade {
+    width: 30px;
+    height: 20px;
+  }
+
+  .botao a {
+    font-size: 14px;
+    margin-left: 300px;
+    margin-top: 15px;
+    padding: 6px 30px;
+  }
 }

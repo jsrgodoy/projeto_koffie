@@ -1,9 +1,5 @@
-/* sinta-se melhor */
-main {
-  padding: 50px 0px 0px 0px;
-  margin: auto;
-}
-.sintasemelhor .container {
+/* Estilos comuns para .sintasemelhor */
+.sintasemelhor {
   background-color: rgb(174, 163, 147);
   display: flex;
   justify-content: center;
@@ -11,20 +7,7 @@ main {
   padding: 150px 0px 150px 50px;
 }
 
-@media (max-width: 800px) {
-  .sintasemelhor {
-    flex-direction: column-reverse;
-    padding: 50px 0px 50px 50px;
-  }
-}
-
-@media (max-width: 400px) {
-  .sintasemelhor {
-    flex-direction: column-reverse;
-    padding: 20px 0px 20px 20px;
-  }
-}
-
+/* Estilos comuns para .imagem1 */
 .imagem1 {
   padding: 0px 150px 0px 0px;
   background-image: url("../src/home.png");
@@ -35,17 +18,6 @@ main {
   width: 500px;
   height: 250px;
 }
-@media (max-width: 800px) {
-  .sintasemelhor .imagem1 {
-    background-image: url("../src/home.png");
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat;
-    justify-content: flex-end;
-    width: 400px;
-    height: 150px;
-  }
-}
 
 .text1 h1 {
   color: var(--Black, #1a202c);
@@ -55,6 +27,7 @@ main {
   font-weight: 800;
   line-height: 121.2%; /* 55.752px */
 }
+
 .text1 p {
   text-align: justify;
   color: var(--Black, #1a202c);
@@ -67,6 +40,7 @@ main {
   width: 400px;
   padding: 40px 0px 40px 10px;
 }
+
 .text1 a {
   flex-direction: column;
   justify-content: center;
@@ -93,14 +67,6 @@ main {
   background-color: rgb(174, 163, 147);
 }
 
-@media (max-width: 800px) {
-  .quetal {
-    justify-content: center;
-    padding-right: 100px;
-    padding-left: 180px;
-  }
-}
-
 .text2 h1 {
   color: #1f2401;
   font-family: Plus Jakarta Sans;
@@ -110,6 +76,7 @@ main {
   font-weight: 800;
   line-height: 121.2%; /* 55.752px */
 }
+
 .text2 p {
   color: #1f2401;
   font-family: Plus Jakarta Sans;
@@ -120,6 +87,7 @@ main {
   letter-spacing: -0.32px;
   padding: 30px 0px 20px 20px;
 }
+
 .text2 a {
   flex-direction: column;
   justify-content: center;
@@ -137,20 +105,14 @@ main {
   line-height: 150%; /* 24px */
   letter-spacing: -0.32px;
 }
+
 .imagem2 {
   background-image: url("../src/menuImg1.png");
   background-size: contain;
-  background-position: left;
   background-repeat: no-repeat;
   justify-content: flex-start;
   width: 350px;
   height: 200px;
-}
-@media (max-width: 800px) {
-  .quetal .imagem2 {
-    width: 450px;
-    height: 100px;
-  }
 }
 
 /* Mais pedidos */
@@ -171,12 +133,6 @@ main {
   letter-spacing: 0.5px;
 }
 
-@media (max-width: 800px) {
-  .text3 {
-    padding: 10px 0px 10px 180px;
-  }
-}
-
 .tabela {
   width: 700px;
   display: flex;
@@ -190,6 +146,7 @@ main {
   justify-content: center;
   align-items: center;
 }
+
 .text4 {
   color: #1f2401;
   text-align: center;
@@ -200,26 +157,13 @@ main {
   line-height: 150%; /* 72px */
   letter-spacing: -0.96px;
 }
-@media (max-width: 800px) {
-  .text4 {
-    font-size: 25px;
-  }
-}
 
 .imagem4 {
   justify-content: center;
   padding: 80px 0px 0px 0px;
   gap: 0px 20px;
 }
-/* @media (max-width: 800px) {
-  .imagem4 {
-    display: flex;
-    width: 50px;
-    height: 50px;
-    image-rendering: 100px;
-    padding: 50px 20px 0px 0px;
-  }
-} */
+
 /* O que nossos clientes dizem */
 .clientesdizem .container {
   padding: 50px 0px 150px 0px;
@@ -227,6 +171,7 @@ main {
   align-items: center;
   background-color: rgb(174, 163, 147);
 }
+
 .text5 {
   color: #1f2401;
   text-align: center;
@@ -238,13 +183,116 @@ main {
   letter-spacing: -0.96px;
   padding: 50px 0px 50px 0px;
 }
-@media (max-width: 800px) {
-  .text5 h2 {
-    font-size: 25px;
-  }
-}
 
 .imagem5 {
   width: 405px;
   height: 241px;
+}
+
+/* Responsividade para telas menores que 800px */
+@media (max-width: 800px) {
+  .sintasemelhor .container {
+    padding: 100px 0px 100px 20px;
+  }
+
+  .imagem1 {
+    width: 400px;
+    height: 150px;
+  }
+
+  .text1 p {
+    width: auto;
+    padding: 20px 0px 20px 10px;
+  }
+
+  .quetal .container {
+    padding: 100px 20px 100px 20px;
+  }
+
+  .imagem2 {
+    width: 300px;
+    height: 150px;
+  }
+
+  .text2 a {
+    padding: 8px 20px;
+  }
+
+  .text2 p {
+    padding: 20px 0px 10px 20px;
+  }
+
+  .text3 {
+    padding: 20px 0px 10px 20px;
+  }
+
+  .tabela {
+    width: 100%;
+  }
+
+  .parceiros .container {
+    padding: 50px 0px 100px 20px;
+  }
+
+  .text4 {
+    font-size: 25px;
+  }
+
+  .imagem4 {
+    padding: 50px 0px 0px 0px;
+  }
+}
+
+/* Responsividade para telas menores que 400px */
+@media (max-width: 400px) {
+  .sintasemelhor .container {
+    padding: 50px 0px 50px 20px;
+  }
+
+  .imagem1 {
+    width: 250px;
+    height: 100px;
+  }
+
+  .text1 p {
+    width: auto;
+    padding: 10px 0px 10px 10px;
+  }
+
+  .quetal .container {
+    padding: 50px 20px 50px 20px;
+  }
+
+  .imagem2 {
+    width: 200px;
+    height: 100px;
+  }
+
+  .text2 a {
+    padding: 8px 20px;
+  }
+
+  .text2 p {
+    padding: 10px 0px 10px 20px;
+  }
+
+  .text3 {
+    padding: 10px 0px 10px 20px;
+  }
+
+  .tabela {
+    width: 100%;
+  }
+
+  .parceiros .container {
+    padding: 30px 0px 50px 20px;
+  }
+
+  .text4 {
+    font-size: 20px;
+  }
+
+  .imagem4 {
+    padding: 30px 0px 0px 0px;
+  }
 }
