@@ -28,6 +28,8 @@ header {
   padding: 40px;
   border: 1px solid #486284;
   background-color: #ced7e4;
+  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
+  z-index: 3;
 }
 
 header .logo {
@@ -69,6 +71,131 @@ header .menu-itens a {
   line-height: 150%;
   letter-spacing: -0.48px;
   text-decoration: none;
+}
+
+
+/*------ MENU MOBILE -----*/
+
+.menu-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  header .menu {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
+    position: relative;
+    width: 100%;
+    z-index: 3;
+  }
+
+   .menu-mobile ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #486284;
+  }
+
+  .menu-mobile-itens li {
+    float: left;
+  }
+
+  .menu-mobile-itens li a {
+    padding: 20px 30px;
+    color: #fff;
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #ced7e4;
+    text-decoration: none;
+  }
+
+  .menu-mobile .menu-mobile-itens {
+    clear: none;
+    float: right;
+    max-height: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+
+  .menu-mobile li a:hover,
+  .menu-mobile .menu-btn:hover {
+    font-weight: 700;
+  }
+
+  .menu-mobile .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+
+  .menu-mobile .menu-icon .navicon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+
+  .menu-mobile .menu-icon .navicon:before,
+  .menu-mobile .menu-icon .navicon:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+
+  .menu-mobile .menu-icon .navicon:before {
+    top: 5px;
+  }
+
+  .menu-mobile .menu-icon .navicon:after {
+    top: -5px;
+  }
+
+  .menu-mobile .menu-btn {
+    display: none;
+  }
+
+  .menu-mobile .menu-btn:checked~.menu-mobile-itens {
+    max-height: 240px;
+  }
+
+  .menu-mobile .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+  }
+
+  .menu-mobile .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+
+  .menu-mobile .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+
+  .menu-mobile .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+  .menu-mobile .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
 }
 
 /*------ ACCOUNT -----*/
@@ -189,7 +316,6 @@ main section.pedido .box2 {
 
 footer {
   width: 100%;
-  height: 450px;
   background-color: #aab5c3;
 
 }
@@ -197,17 +323,35 @@ footer {
 footer .container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 10%;
 }
+
+footer .container div {
+  margin-top: 50px;
+  width: 200px;
+
+}
+
+@media only screen and (max-width: 1280px) {
+  footer .container div {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+
+/*--- FOOTER-BOX-1 ---*/
 
 footer .footer-section-logo {
   width: 200px;
-  height: 300px;
+  height: 100%;
   margin-top: 50px;
 }
 
 footer .footer-section-logo img {
   width: 160px;
-  height: 40px;
+  height: 100%;
 }
 
 footer .footer-section-logo p {
@@ -219,6 +363,8 @@ footer .footer-section-logo p {
   line-height: 150%;
   letter-spacing: -0.32px;
 }
+
+/*--- FOOTER-BOX-2 ---*/
 
 footer h1 {
   color: #1a202c;
@@ -251,27 +397,7 @@ footer nav i {
   margin-right: 10px;
 }
 
-
-footer .footer-section-endereco {
-  margin-top: 50px;
-  margin-left: 300px;
-  width: 200px;
-  height: 200px;
-}
-
-footer .footer-section-horarios {
-  margin-top: 50px;
-  margin-left: 50px;
-  width: 200px;
-  height: 200px;
-}
-
-footer .footer-section-contato {
-  margin-top: 50px;
-  margin-left: 50px;
-  width: 200px;
-  height: 200px;
-}
+/*------ DIREITOS RESERVADOS -----*/
 
 footer hr {
   width: 60%;
@@ -289,11 +415,14 @@ footer .direitos-reservados {
   line-height: 150%;
   letter-spacing: -0.32px;
   text-align: center;
+  padding-bottom: 1%;
 }
+
 
 /*------ ICON SOCIAL -----*/
 
 .icons-social {
+  width: 100%;
   margin-top: 60px;
 }
 
@@ -311,4 +440,13 @@ footer .direitos-reservados {
 
 .icons-social i {
   line-height: 40px;
+}
+
+@media only screen and (max-width: 1280px) {
+  footer .footer-section-logo .icons-social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
 }
