@@ -124,8 +124,8 @@ header .menu-itens a {
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 100%;
     width: 100%;
+    height: 100%;
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
@@ -151,7 +151,7 @@ header .menu-itens a {
     height: 2px;
     position: relative;
     transition: background .2s ease-out;
-    width: 18px;
+    width: 26px;
   }
 
   .menu-mobile .menu-icon .navicon:before,
@@ -178,7 +178,7 @@ header .menu-itens a {
   }
 
   .menu-mobile .menu-btn:checked~.menu-mobile-itens {
-    max-height: 240px;
+    max-height: 100%;
   }
 
   .menu-mobile .menu-btn:checked~.menu-icon .navicon {
