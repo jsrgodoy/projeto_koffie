@@ -1,5 +1,5 @@
 * {
-  margin: auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Plus Jakarta Sans;
@@ -7,10 +7,7 @@
 
 html,
 body {
-  padding: 0px 0px 0px 0px;
-  width: 1000px;
-  height: 100%;
-  background-color: rgb(174, 163, 147);
+  background: #e4d7ce;
 }
 
 .container {

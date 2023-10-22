@@ -3,7 +3,7 @@ main {
   padding: 50px 0px 0px 0px;
   margin: auto;
 }
-.sintasemelhor {
+.sintasemelhor .container {
   background-color: rgb(174, 163, 147);
   display: flex;
   justify-content: center;
@@ -17,6 +17,14 @@ main {
     padding: 50px 0px 50px 50px;
   }
 }
+
+@media (max-width: 400px) {
+  .sintasemelhor {
+    flex-direction: column-reverse;
+    padding: 20px 0px 20px 20px;
+  }
+}
+
 .imagem1 {
   padding: 0px 150px 0px 0px;
   background-image: url("../src/home.png");
@@ -77,7 +85,7 @@ main {
 }
 
 /* que tal um koffie */
-.quetal {
+.quetal .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -146,9 +154,10 @@ main {
 }
 
 /* Mais pedidos */
-.maispedidos {
+.maispedidos .container {
   padding: 150px 0px 150px 50px;
   background-color: rgb(174, 163, 147);
+  width: 100%;
 }
 
 .text3 {
@@ -176,7 +185,7 @@ main {
 }
 
 /* Nossas Marcas de cafes */
-.parceiros {
+.parceiros .container {
   padding: 50px 0px 150px 50px;
   justify-content: center;
   align-items: center;
@@ -212,7 +221,7 @@ main {
   }
 } */
 /* O que nossos clientes dizem */
-.clientesdizem {
+.clientesdizem .container {
   padding: 50px 0px 150px 0px;
   justify-content: center;
   align-items: center;

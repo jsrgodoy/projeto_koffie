@@ -35,9 +35,9 @@ main {
 .cafes {
   padding: 50px 0;
 }
+
 .tabela {
   width: auto;
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -52,24 +52,37 @@ main {
   background-color: rgb(172, 150, 117);
   border-radius: 5px 30px;
   width: 250px;
-  height: 250px;
+  height: 290px;
   justify-content: center;
+}
+.btn-subtrair,
+.btn-adicionar {
+  margin-top: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #2a130a;
+  color: white;
+  border: none;
+}
+
+.quantidade {
+  width: 40px;
+  height: 30px;
+  text-align: center;
 }
 
 .botao a {
-  width: 100px;
-  height: 100px;
-  align-items: center;
   color: white;
   background-color: #2a130a;
-  border-radius: 5px;
-  padding: 8px 10px 10px 10px;
-  margin-left: 100px;
+  margin-left: 398px;
   text-align: center;
   font-family: Plus Jakarta Sans;
-  font-size: 15px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 150%;
-  letter-spacing: -0.32px;
+  margin-top: 25px;
+  padding: 8px 40px;
+  border-radius: 8px;
+  text-decoration: none;
 }
