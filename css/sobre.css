@@ -221,9 +221,10 @@ footer {
   width: 100%;
   height: 450px;
   background-color: #aab5c3;
-  
+
 }
-footer .container{
+
+footer .container {
   display: flex;
   justify-content: center;
 }

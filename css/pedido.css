@@ -7,11 +7,12 @@
 
 html,
 body {
+  width: 100%;
   height: 100%;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -41,41 +42,55 @@ header .logo {
   background-repeat: no-repeat;
 }
 
-header nav {
-  float: right;
+/*------ MENU -----*/
+
+header .menu {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 20px;
 }
 
-header nav.menu ul {
+header .menu-itens ul {
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 20px;
 }
 
-header nav.menu li {
-  float: left;
-  padding: 0 20px;
-}
-
-header nav.menu a {
+header .menu-itens a {
   color: #486284;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
   letter-spacing: -0.48px;
-
   text-decoration: none;
+}
+
+/*------ ACCOUNT -----*/
+
+header .user-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+header .user-profile+svg {
+  width: 14px;
+  cursor: pointer;
 }
 
 /*------ CARRINHO -----*/
 
-.cart i {
-  font-size: 25px;
-  color: white;
-}
-
-.cart {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+header .cart {
+  position: relative;
   width: 50px;
   height: 50px;
   background: #292d48;
@@ -85,21 +100,26 @@ header nav.menu a {
   border-radius: 5px;
 
   &:before {
-      content: attr(data-totalitems);
-      font-size: 12px;
-      font-weight: 600;
-      position: absolute;
-      top: -12px;
-      right: -12px;
-      background: #2bd156;
-      line-height: 24px;
-      padding: 0 1px;
-      height: 24px;
-      min-width: 24px;
-      color: white;
-      text-align: center;
-      border-radius: 24px;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    content: attr(data-totalitems);
+    font-size: 12px;
+    font-weight: 600;
+    background: #2bd156;
+    line-height: 24px;
+    padding: 0 1px;
+    height: 24px;
+    min-width: 24px;
+    color: white;
+    text-align: center;
+    border-radius: 24px;
   }
+}
+
+header .cart i {
+  font-size: 25px;
+  color: white;
 }
 
 /*------ PEDIDO -----*/
@@ -181,14 +201,8 @@ main section.pedido input {
   background: #ced7e4;
   outline: none;
 
-  border: 1px solid
-    rgb(
-      var(--wix-ui-tpa-text-field-main-border-color-rgb, var(--wix-color-5)),
-      calc(
-        var(--wix-ui-tpa-text-field-main-border-color-opacity, 1) *
-          var(--wix-ui-tpa-text-field-main-border-opacity, 0.6)
-      )
-    );
+  border: 1px solid rgb(var(--wix-ui-tpa-text-field-main-border-color-rgb, var(--wix-color-5)),
+      calc(var(--wix-ui-tpa-text-field-main-border-color-opacity, 1) * var(--wix-ui-tpa-text-field-main-border-opacity, 0.6)));
 }
 
 main section.pedido select {
@@ -212,11 +226,13 @@ main section.pedido input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
   -webkit-appearance: none;
-  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 main section.pedido input[type="number"] {
-  -moz-appearance: textfield; /* Firefox */
+  -moz-appearance: textfield;
+  /* Firefox */
 }
 
 main section.pedido .box2 {
@@ -250,8 +266,7 @@ main section.pedido .box2 .box2-parte1 input::-webkit-inner-spin-button {
   min-height: 45px;
   margin: 17px;
   padding: 0px;
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       transparent 0px,
       transparent 16px,
       #ced7e4 16px,
@@ -261,17 +276,14 @@ main section.pedido .box2 .box2-parte1 input::-webkit-inner-spin-button {
       #000 35px,
       #000 36px,
       transparent 36px,
-      transparent 40px
-    ),
-    linear-gradient(
-      to right,
+      transparent 40px),
+    linear-gradient(to right,
       transparent 0px,
       transparent 10px,
       #000 10px,
       #000 11px,
       transparent 11px,
-      transparent 21px
-    );
+      transparent 21px);
   transform: rotate(90deg) scale(0.8, 0.9);
   cursor: pointer;
 }
@@ -287,11 +299,13 @@ main section.pedido .box2 .box2-parte2 {
   display: flex;
   justify-content: space-between;
 }
+
 main section.pedido .box2 .titulo {
   display: flex;
   flex-direction: column;
   gap: 80px;
 }
+
 main section.pedido .box2 .valores {
   display: flex;
   flex-direction: column;
@@ -335,14 +349,18 @@ footer {
   width: 100%;
   height: 450px;
   background-color: #aab5c3;
+
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
 }
 
 footer .footer-section-logo {
-  display: inline-block;
   width: 200px;
   height: 300px;
   margin-top: 50px;
-  float: left;
 }
 
 footer .footer-section-logo img {
@@ -360,26 +378,6 @@ footer .footer-section-logo p {
   letter-spacing: -0.32px;
 }
 
-footer .footer-section-logo .icons-social {
-  margin-top: 60px;
-}
-
-footer .footer-section-logo .icons-social a {
-  text-decoration: none;
-  color: #aab5c3;
-  background-color: #fff;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  display: inline-block;
-  margin: 0 10px;
-  text-align: center;
-}
-
-footer .footer-section-logo .icons-social i {
-  line-height: 40px;
-}
-
 footer h1 {
   color: #1a202c;
   font-size: 20px;
@@ -389,53 +387,46 @@ footer h1 {
   letter-spacing: -0.4px;
 }
 
-footer nav.menu ul {
+footer nav ul {
   list-style-type: none;
 }
 
-footer nav.menu li {
+footer nav li {
   margin-top: 20px;
 }
 
-footer nav.menu a {
+footer nav a {
   color: #486284;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
   letter-spacing: -0.48px;
-
   text-decoration: none;
 }
 
 footer .footer-section-servicos {
-  display: inline-block;
   margin-top: 80px;
   margin-left: 300px;
   width: 200px;
   height: 200px;
-  float: left;
 }
 
 footer .footer-section-horarios {
-  display: inline-block;
   margin-top: 80px;
   margin-left: 50px;
   width: 200px;
   height: 200px;
-  float: left;
 }
 
 footer .footer-section-redes-sociais {
-  display: inline-block;
   margin-top: 80px;
   margin-left: 50px;
   width: 200px;
   height: 200px;
-  float: left;
 }
 
-hr {
+footer hr {
   width: 60%;
   border-color: #6a6c6d;
   opacity: 0.4;
@@ -451,4 +442,26 @@ footer .direitos-reservados {
   line-height: 150%;
   letter-spacing: -0.32px;
   text-align: center;
+}
+
+/*------ ICON SOCIAL -----*/
+
+.icons-social {
+  margin-top: 60px;
+}
+
+.icons-social a {
+  text-decoration: none;
+  color: #aab5c3;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.icons-social i {
+  line-height: 40px;
 }
