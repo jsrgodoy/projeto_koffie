@@ -48,7 +48,7 @@ main {
 }
 
 .text1 h1 {
-  color: var(--Black, #1a202c);
+  color: #2a130a;
   font-family: Plus Jakarta Sans;
   font-size: 45px;
   font-style: normal;
@@ -58,7 +58,7 @@ main {
 
 .text1 p {
   text-align: justify;
-  color: var(--Black, #1a202c);
+  color: #2a130a;
   font-family: Plus Jakarta Sans;
   font-size: 16px;
   font-style: normal;
@@ -179,7 +179,7 @@ main {
 
 .text3 h2 {
   padding: 0px 0px 40px 50px;
-  color: #1f2401;
+  color: #2a130a;
   font-family: Plus Jakarta Sans;
   font-size: 30px;
   font-style: normal;
@@ -215,7 +215,7 @@ main {
   align-items: center;
 }
 .text4 {
-  color: #1f2401;
+  color: #2a130a;
   text-align: center;
   font-family: Plus Jakarta Sans;
   font-size: 30px;
@@ -238,7 +238,7 @@ main {
   background-color: #e4d7ce;
 }
 .text5 {
-  color: #1f2401;
+  color: #2a130a;
   text-align: center;
   font-family: Plus Jakarta Sans;
   font-size: 35px;
