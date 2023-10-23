@@ -22,17 +22,59 @@
   <header>
     <div class="container">
       <div class="logo"></div>
-      <nav class="menu">
-        <ul>
+      <div class="menu">
+        <nav class="menu-itens">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="account">
+          <img class="user-profile "
+            src="https://images.unsplash.com/photo-1586297098710-0382a496c814?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1650&amp;q=80"
+            alt="">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 492 492">
+            <path
+              d="M484.13 124.99l-16.11-16.23a26.72 26.72 0 00-19.04-7.86c-7.2 0-13.96 2.79-19.03 7.86L246.1 292.6 62.06 108.55c-5.07-5.06-11.82-7.85-19.03-7.85s-13.97 2.79-19.04 7.85L7.87 124.68a26.94 26.94 0 000 38.06l219.14 219.93c5.06 5.06 11.81 8.63 19.08 8.63h.09c7.2 0 13.96-3.57 19.02-8.63l218.93-219.33A27.18 27.18 0 00492 144.1c0-7.2-2.8-14.06-7.87-19.12z">
+            </path>
+          </svg>
+        </div>
+        <div>
+          <a href="pedido.html">
+            <div id="cart" class="cart" data-totalitems="0">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="menu-mobile">
+
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+        <ul class="menu-mobile-itens">
           <li><a href="index.html">Home</a></li>
-          <li>Sobre Nós</li>
-          <li><a href="produtos.html">Menu</a></li>
-          <li><a href="pedido.html">Cadastro</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
           <li><a href="contato.html">Contato</a></li>
+          <li><a href="">Login</a></li>
+          <li><a href="pedido.html">Carrinho</a></li>
         </ul>
-      </nav>
-    </div>
+
+      </div>
+
+    </div> <!--container-->
+
+    <div class="clear"></div>
+
   </header>
+
+  <div class="clear"></div>
+
   <main>
     <div class="container">
       <span>Complete seu pedido</span>
@@ -98,7 +140,6 @@
               </div>
             </div>
         </div>
-
         <div class="box2">
           <div class="box2-parte1">
             <img src="src/gallery.png" alt="" />
@@ -127,14 +168,15 @@
           </form>
       </section>
     </div>
-
   </main>
+
   <div class="clear"></div>
+  
   <footer>
     <div class="container">
       <div class="footer-section-logo">
         <img src="src/bitmap.png" alt="" />
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>O Sabor que Cura a Alma</p>
         <div class="icons-social">
           <a href=""><i class="fab fa-facebook-f"></i></a>
           <a href=""><i class="fab fa-twitter"></i></a>
@@ -142,39 +184,44 @@
         </div>
       </div>
 
-      <div class="footer-section-servicos">
-        <h1>Serviços</h1>
-        <nav class="menu">
+      <div class="footer-section-endereco">
+        <h1>Endereço</h1>
+        <nav>
           <ul>
-            <li><a href="#">Reuniões</a></li>
-            <li><a href="#">Eventos</a></li>
-            <li><a href="#">Parceiros</a></li>
+            <li>Avenida Central nº 2023</li>
+            <li>Setor Lugar Nenhum</li>
+            <li>Cafélandia - CF</li>
           </ul>
         </nav>
       </div>
 
       <div class="footer-section-horarios">
         <h1>Horários</h1>
-        <nav class="menu">
+        <nav>
           <ul>
-            <li><a href="#">Dias de Semana</a></li>
-            <li><a href="#">Finais de Semana</a></li>
+            <li>Segunda a Sexta-feira:</li>
+            <li>08h00 às 18h00.</li>
+            <li>Domingo:</li>
+            <li>08h00 às 14h00.</li>
           </ul>
         </nav>
       </div>
 
-      <div class="footer-section-redes-sociais">
-        <h1>Redes Sociais</h1>
-        <nav class="menu">
+      <div class="footer-section-contato">
+        <h1>Contato</h1>
+        <nav>
           <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
+            <li><i class="fa fa-phone"></i>(99) 8888-8888</li>
+            <li><i class="fab fa-whatsapp"></i>(99) 9999-9999</li>
+            <li><i class="fa fa-envelope"></i>contato@koffie.com.br</li>
           </ul>
         </nav>
       </div>
-    </div>
-    <div class="clear"></div>
+
+      <div class="clear"></div>
+
+    </div> <!--container-->
+
     <hr />
     <div class="direitos-reservados">
       <p>©Grupo Dois - PROZ | Todos os direitos reservados</p>
