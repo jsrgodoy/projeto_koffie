@@ -48,11 +48,13 @@ main section.nossa-historia .texto p {
 main section.nossa-historia .imagem {
   width: 30%;
   height: 50vh;
-  background-image: url("../src/history.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  border: 63px 0px 63px 63px;
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
+}
+
+main section.nossa-historia .imagem img {
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 780px) {
