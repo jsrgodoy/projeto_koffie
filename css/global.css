@@ -93,14 +93,11 @@ header .menu-itens a {
 
   .container .login-form {
     width: 300px;
-    top: 80%;
+    top: 20%;
     left: 10%;
+    visibility: hidden;
   }
 
-  .form-group {
-    position: relative;
-    margin-bottom: 15px;
-  }
 
   header .menu {
     display: none;
@@ -246,7 +243,6 @@ header .user-profile+svg {
   border-radius: 4px;
   margin: auto;
   position: absolute;
-  top: 20%;
   left: 60%;
   z-index: 10;
   visibility: hidden;
