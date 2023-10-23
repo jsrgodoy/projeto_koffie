@@ -200,6 +200,10 @@ header .menu-itens a {
 
 }
 
+@media only screen and (max-width: 333px) {
+  
+}
+
 /*------ ACCOUNT -----*/
 
 header .user-profile {
