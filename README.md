@@ -2,7 +2,7 @@
 ![Logo](https://github.com/jsrgodoy/projeto_koffie/blob/main/src/bitmap.png?raw=true)
 
 
-# Projeto Koffie - Branch Danillo
+# Projeto Koffie
 
 
 ## Autores
