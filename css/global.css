@@ -43,6 +43,15 @@ header .logo {
   background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 333px) {
+
+  header .logo {
+    width: 140px;
+    height: 30px;
+  }
+
+}
+
 /*------ MENU -----*/
 
 header .menu {
