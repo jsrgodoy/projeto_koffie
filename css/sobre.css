@@ -18,7 +18,7 @@ main section.nossa-historia .container {
 }
 
 main section.nossa-historia .texto {
-  padding: 0 10%;
+  padding: 5% 5%;
   width: 70%;
   height: 100%;
 }
@@ -46,7 +46,7 @@ main section.nossa-historia .texto p {
 }
 
 main section.nossa-historia .imagem {
-  width: 30%;
+  width: 300px;
   height: 50vh;
   border: 63px 0px 63px 63px;
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
