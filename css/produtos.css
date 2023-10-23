@@ -1,27 +1,99 @@
-body {
-  padding-left: 40px;
-  padding-right: 40px;
-  background-color: #aea393;
+main {
+  padding: 0px 20px 150px 40px;
+  background-color: #e4d7ce;
 }
 
 .text {
-  width: 1547px;
-  height: 300px;
+  padding: 2% 5%;
   flex-shrink: 0;
 }
 .text1 {
-  color: var(--Black, #1a202c);
+  color: #2a130a;
   font-family: Plus Jakarta Sans;
   font-size: 25px;
   font-style: normal;
   font-weight: 800;
   text-align: center;
+  padding: 50px 2%;
 }
 
 .text2 {
-  color: var(--Black, #1a202c);
+  color: #2a130a;
   font-family: Plus Jakarta Sans;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
+  padding: 5px 5px;
+}
+.text2 p {
+  color: #2a130a;
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 20px 0px 20px 0px;
+}
+.cafes {
+  padding: 50px 0;
+}
+
+.tabela {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+}
+
+.tabela div {
+  margin: 20px;
+  padding: 20px 0px 20px 0px;
+  background-color: rgb(172, 150, 117);
+  border-radius: 5px 30px;
+  width: 250px;
+  height: 100%;
+  justify-content: center;
+}
+
+.title,
+.description {
+  padding: 0 5%;
+}
+
+.btn-subtrair,
+.btn-adicionar {
+  margin-top: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #2a130a;
+  color: white;
+  border: none;
+}
+
+.quantidade {
+  width: 40px;
+  height: 30px;
+  text-align: center;
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+}
+
+.botao a {
+  color: white;
+  background-color: #2a130a;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 25px;
+  padding: 8px 40px;
+  border-radius: 8px;
+  text-decoration: none;
 }
