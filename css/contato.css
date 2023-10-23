@@ -110,8 +110,8 @@ body {
       align-items: center;
       justify-content: center;
       padding: 0 10px;
-      margin: 0 auto;
-      
+      margin: 0 auto;    
+      margin-bottom: 120px;
   }
   
   .mapa h2 {
@@ -125,13 +125,14 @@ body {
   }
   
   .section-form {
-      max-width: 1200px;
+      max-width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 30px 10px;
       margin: 0 auto;
-  }
+      background-color: #aea393;  
+}
   
  
   .section-form h1 {
