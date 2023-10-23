@@ -1,52 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="css/pedido.css" />
-    <link rel="stylesheet" href="css/global.css" />
-   
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
 
-    <title>Pedido</title>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="logo"></div>
-        <nav class="menu">
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/pedido.css" />
+  <link rel="stylesheet" href="css/font-awesome.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" />
+  <script type="text/javascript" src="js/javascript.js"></script>
+  <title>Pedido</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo"></div>
+      <div class="menu">
+        <nav class="menu-itens">
           <ul>
             <li><a href="index.html">Home</a></li>
-              <li><a href="sobre.html">Sobre Nós</a></li>
-              <li><a href="produtos.html">Produtos</a></li>
-              <li>Pedido</li>
-              <li><a href="contato.html">Contato</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
           </ul>
         </nav>
+        <div class="account">
+          <img class="user-profile "
+            src="https://images.unsplash.com/photo-1586297098710-0382a496c814?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1650&amp;q=80"
+            alt="">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 492 492">
+            <path
+              d="M484.13 124.99l-16.11-16.23a26.72 26.72 0 00-19.04-7.86c-7.2 0-13.96 2.79-19.03 7.86L246.1 292.6 62.06 108.55c-5.07-5.06-11.82-7.85-19.03-7.85s-13.97 2.79-19.04 7.85L7.87 124.68a26.94 26.94 0 000 38.06l219.14 219.93c5.06 5.06 11.81 8.63 19.08 8.63h.09c7.2 0 13.96-3.57 19.02-8.63l218.93-219.33A27.18 27.18 0 00492 144.1c0-7.2-2.8-14.06-7.87-19.12z">
+            </path>
+          </svg>
+        </div>
+        <div>
+          <a href="pedido.html">
+            <div id="cart" class="cart" data-totalitems="0">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+          </a>
+        </div>
       </div>
-    </header>
-    <main>
-      <div class="container">
-        <span>Complete seu pedido</span>
-        <section class="pedido">
-          <div class="box1">
-            <form action="submit">
+
+
+      <div class="menu-mobile">
+
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+        <ul class="menu-mobile-itens">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="">Login</a></li>
+          <li><a href="pedido.html">Carrinho</a></li>
+        </ul>
+
+      </div>
+
+    </div> <!--container-->
+
+    <div class="clear"></div>
+
+  </header>
+
+  <div class="clear"></div>
+
+  <main>
+    <div class="container">
+      <span>Complete seu pedido</span>
+      <section class="pedido">
+        <div class="box1">
+          <form action="confirmar-pedido.html">
             <div class="box1-parte1">
-              <img
-                src="src/icon-park-solid_local.svg"
-                alt="icone-localização"
-              />
+              <img src="src/icon-park-solid_local.svg" alt="icone-localização" />
               <div>
                 <h1>Endereço de entrega</h1>
                 <p>Informe o endereço onde deseja receber seu pedido</p>
@@ -55,11 +92,11 @@
             <div class="box1-parte2">
               <div class="endereco-entrega">
                 <label for="endereco">Endereço*</label>
-                <input type="text" name="endereco" id="endereco" autofocus required/>
+                <input type="text" name="endereco" id="endereco" autofocus required />
                 <label for="numero">Número*</label>
-                <input type="number" name="numero" id="numero" required/>
+                <input type="number" name="numero" id="numero" required />
                 <label for="cidade">Cidade*</label>
-                <input type="text" name="cidade" id="cidade" required/>
+                <input type="text" name="cidade" id="cidade" required />
                 <label for="estado">Estado*</label>
                 <select id="estado" name="estado" required>
                   <option value="" disabled selected>Selecione</option>
@@ -93,7 +130,7 @@
                   <option value="tocantins">Tocantins</option>
                 </select>
                 <label for="cep">Código Postal(CEP)*</label>
-                <input type="text" name="cep" id="cep" required/>
+                <input type="text" name="cep" id="cep" required />
                 <h1>FORMA DE PAGAMENTO*</h1>
                 <select id="estado" name="estado" required>
                   <option value="" disabled selected>Selecione</option>
@@ -103,88 +140,94 @@
                 </select>
               </div>
             </div>
-          </div>
-
-          <div class="box2">
-            <div class="box2-parte1">
-              <img src="src/gallery.png" alt="" />
-              <div>
-                <h1>Expresso Tradicional</h1>
-                <input type="number" value="1" name="quantidade" class="quantidade" id="quantidade" required/>
-              </div>
-              <div class="valores">
-                <h1>R$ 9,99</h1>
-              </div>
+        </div>
+        <div class="box2">
+          <div class="box2-parte1">
+            <img src="src/gallery.png" alt="" />
+            <div>
+              <h1>Expresso Tradicional</h1>
+              <input type="number" value="1" name="quantidade" class="quantidade" id="quantidade" required />
             </div>
-            <hr>
-            <div class="box2-parte2">
-              <div class="titulo">
-                <p>Total dos itens</p>
-                <p>Entrega</p>
-                <h1>Total</h1>
-              </div>
-              <div class="valores">
+            <div class="valores">
+              <h1>R$ 9,99</h1>
+            </div>
+          </div>
+          <hr>
+          <div class="box2-parte2">
+            <div class="titulo">
+              <p>Total dos itens</p>
+              <p>Entrega</p>
+              <h1>Total</h1>
+            </div>
+            <div class="valores">
               <p>R$ 9,99</p>
               <p>R$ 9,99</p>
               <h1>R$ 9,99</h1>
             </div>
           </div>
-          <div class="botao"><input type="submit" value="Confirmar  Pedido"></div>
-        </form>
-        </section>
-      </div>
-      
-    </main>
-    <div class="clear"></div>
-    <footer>
-      <div class="container">
-        <div class="footer-section-logo">
-          <img src="src/bitmap.png" alt="" />
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <div class="icons-social">
-            <a href=""><i class="fab fa-facebook-f"></i></a>
-            <a href=""><i class="fab fa-twitter"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
+          <div class="botao"><input type="submit" onclick="myFunction()" value="Confirmar  Pedido"></div>
+          </form>
+      </section>
+    </div>
+  </main>
 
-        <div class="footer-section-servicos">
-          <h1>Serviços</h1>
-          <nav class="menu">
-            <ul>
-              <li><a href="#">Reuniões</a></li>
-              <li><a href="#">Eventos</a></li>
-              <li><a href="#">Parceiros</a></li>
-            </ul>
-          </nav>
-        </div>
+  <div class="clear"></div>
 
-        <div class="footer-section-horarios">
-          <h1>Horários</h1>
-          <nav class="menu">
-            <ul>
-              <li><a href="#">Dias de Semana</a></li>
-              <li><a href="#">Finais de Semana</a></li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="footer-section-redes-sociais">
-          <h1>Redes Sociais</h1>
-          <nav class="menu">
-            <ul>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Facebook</a></li>
-            </ul>
-          </nav>
+  <footer>
+    <div class="container">
+      <div class="footer-section-logo">
+        <img src="src/bitmap.png" alt="" />
+        <p>O Sabor que Cura a Alma</p>
+        <div class="icons-social">
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
         </div>
       </div>
+
+      <div class="footer-section-endereco">
+        <h1>Endereço</h1>
+        <nav>
+          <ul>
+            <li>Avenida Central nº 2023</li>
+            <li>Setor Lugar Nenhum</li>
+            <li>Cafélandia - CF</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-section-horarios">
+        <h1>Horários</h1>
+        <nav>
+          <ul>
+            <li>Segunda a Sexta-feira:</li>
+            <li>08h00 às 18h00.</li>
+            <li>Domingo:</li>
+            <li>08h00 às 14h00.</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-section-contato">
+        <h1>Contato</h1>
+        <nav>
+          <ul>
+            <li><i class="fa fa-phone"></i>(99) 8888-8888</li>
+            <li><i class="fab fa-whatsapp"></i>(99) 9999-9999</li>
+            <li><i class="fa fa-envelope"></i>contato@koffie.com.br</li>
+          </ul>
+        </nav>
+      </div>
+
       <div class="clear"></div>
-      <hr />
-      <div class="direitos-reservados">
-        <p>©Grupo Dois - PROZ | Todos os direitos reservados</p>
-      </div>
-    </footer>
-  </body>
+
+    </div> <!--container-->
+
+    <hr />
+    <div class="direitos-reservados">
+      <p>©Grupo Dois - PROZ | Todos os direitos reservados</p>
+    </div>
+  </footer>
+</body>
+
 </html>

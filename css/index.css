@@ -1,6 +1,6 @@
 /* sinta-se melhor */
 main {
-  padding: 50px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   margin: auto;
 }
 .sintasemelhor .container {
@@ -8,20 +8,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 150px 0px 150px 50px;
+  padding: 5% 5%;
 }
-
 @media (max-width: 800px) {
-  .sintasemelhor {
+  .sintasemelhor .container {
     flex-direction: column-reverse;
-    padding: 50px 0px 50px 50px;
-  }
-}
-
-@media (max-width: 400px) {
-  .sintasemelhor {
-    flex-direction: column-reverse;
-    padding: 20px 0px 20px 20px;
+    width: 100%;
+    box-sizing: 100%;
   }
 }
 
@@ -42,9 +35,13 @@ main {
     background-position: right;
     background-repeat: no-repeat;
     justify-content: flex-end;
-    width: 400px;
+    width: 300px;
     height: 150px;
   }
+}
+
+.text1 {
+  padding: 5%;
 }
 
 .text1 h1 {
@@ -55,6 +52,7 @@ main {
   font-weight: 800;
   line-height: 121.2%; /* 55.752px */
 }
+
 .text1 p {
   text-align: justify;
   color: var(--Black, #1a202c);
@@ -66,6 +64,12 @@ main {
   letter-spacing: -0.32px;
   width: 400px;
   padding: 40px 0px 40px 10px;
+}
+
+@media (max-width: 800px) {
+  .botao1 {
+    flex-direction: row;
+  }
 }
 .text1 a {
   flex-direction: column;
@@ -87,18 +91,14 @@ main {
 /* que tal um koffie */
 .quetal .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 100px 30px 100px 0px;
+  padding: 6% 5%;
   background-color: rgb(174, 163, 147);
 }
 
-@media (max-width: 800px) {
-  .quetal {
-    justify-content: center;
-    padding-right: 100px;
-    padding-left: 180px;
-  }
+.text2 {
+  padding: 6%;
 }
 
 .text2 h1 {
@@ -146,7 +146,7 @@ main {
   width: 350px;
   height: 200px;
 }
-@media (max-width: 800px) {
+@media (max-width: 750px) {
   .quetal .imagem2 {
     width: 450px;
     height: 100px;
@@ -171,12 +171,6 @@ main {
   letter-spacing: 0.5px;
 }
 
-@media (max-width: 800px) {
-  .text3 {
-    padding: 10px 0px 10px 180px;
-  }
-}
-
 .tabela {
   width: 700px;
   display: flex;
@@ -199,11 +193,6 @@ main {
   font-weight: 500;
   line-height: 150%; /* 72px */
   letter-spacing: -0.96px;
-}
-@media (max-width: 800px) {
-  .text4 {
-    font-size: 25px;
-  }
 }
 
 .imagem4 {
@@ -237,11 +226,6 @@ main {
   line-height: 150%; /* 72px */
   letter-spacing: -0.96px;
   padding: 50px 0px 50px 0px;
-}
-@media (max-width: 800px) {
-  .text5 h2 {
-    font-size: 25px;
-  }
 }
 
 .imagem5 {

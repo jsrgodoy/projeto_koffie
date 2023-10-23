@@ -1,16 +1,17 @@
+/*------ PEDIDO -----*/
+
 main {
   padding-top: 50px;
 }
 
 main span {
   color: #486284;
-  font-family: Plus Jakarta Sans;
-  font-size: 18px;
+  font-size: 30px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 36px */
-  letter-spacing: -0.72px;
-  opacity: 0.9;
+  font-weight: 800;
+  line-height: 121.2%;
+  text-transform: capitalize;
+  margin-top: 30px;
 }
 
 main section.pedido {
@@ -23,7 +24,7 @@ main section.pedido {
 main section.pedido .box1 {
   width: 50%;
   border-radius: 63px 0px 0px 0px;
-  background: rgb(172, 150, 117);
+  background: #aab5c3;
   padding: 40px 30px;
 }
 
@@ -46,7 +47,6 @@ main section.pedido .box1 img {
 
 main section.pedido h1 {
   color: #486284;
-  font-family: Plus Jakarta Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
@@ -57,11 +57,10 @@ main section.pedido h1 {
 main section.pedido p,
 label {
   color: #486284;
-  font-family: Plus Jakarta Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 24px */
+  line-height: 150%;
   letter-spacing: -0.48px;
   opacity: 0.9;
 }
@@ -106,17 +105,19 @@ main section.pedido input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
   -webkit-appearance: none;
-  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 main section.pedido input[type="number"] {
-  -moz-appearance: textfield; /* Firefox */
+  -moz-appearance: textfield;
+  /* Firefox */
 }
 
 main section.pedido .box2 {
   width: 50%;
   border-radius: 63px 0px 0px 0px;
-  background: rgb(172, 150, 117);
+  background: #aab5c3;
   padding: 40px 30px;
 }
 
@@ -181,11 +182,13 @@ main section.pedido .box2 .box2-parte2 {
   display: flex;
   justify-content: space-between;
 }
+
 main section.pedido .box2 .titulo {
   display: flex;
   flex-direction: column;
   gap: 80px;
 }
+
 main section.pedido .box2 .valores {
   display: flex;
   flex-direction: column;
@@ -221,4 +224,19 @@ main section.pedido .box2 input[type="submit"]:hover {
   color: #fff;
   width: 100%;
   height: 60px;
+}
+
+@media only screen and (max-width: 1024px) {
+  main section.pedido {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  main section.pedido .box1,
+  main section.pedido .box2 {
+    width: 100%;
+    margin-top: 5%;
+  }
 }
