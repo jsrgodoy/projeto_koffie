@@ -20,6 +20,12 @@ body {
       }
   }
   
+  @media (max-width: 333px) {
+    .menuproduto {
+        width: 100%;
+    }
+}
+
   .textomenu {
       display: flex;
       align-items: center;
@@ -127,6 +133,7 @@ body {
       margin: 0 auto;
   }
   
+ 
   .section-form h1 {
       color: #1a202c;
       font-style: normal;
@@ -135,6 +142,17 @@ body {
       text-transform: capitalize;
       text-align: center;
       padding-bottom: 25px;
+  }
+
+  .section-form label {
+    color: #1a202c;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: -0.32px;
+    opacity: 0.45;
+    text-align: justify;
   }
   
   .form-group input, textarea {
