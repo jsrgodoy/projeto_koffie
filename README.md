@@ -1,5 +1,5 @@
 
-![Logo](https://github.com/jsrgodoy/projeto_koffie/blob/main/src/bitmap.png?raw=true)
+![Logo](https://github.com/jsrgodoy/projeto_koffie/blob/main/src/logo_white.png?raw=true)
 
 
 # Projeto Koffie
