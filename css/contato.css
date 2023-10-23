@@ -177,23 +177,12 @@ body {
   }
   
   .btn-form {
-      margin-top: 6px;
-      margin-left: 210px;
+      display: flex;
+      margin: 6px auto;
       padding: 8px 40px;
       color: white;
       background-color: #2A130A;
       border: none;
       border-radius: 8px;
   } 
-  
-  @media (max-width: 414px) {
-      .btn-form {        
-          margin-left: 170px;
-      }
-  }
-  
-  @media (max-width: 375px) {
-      .btn-form {        
-          margin-left: 135px;
-      }
-  }
+ 
