@@ -2,12 +2,21 @@
 ![Logo](https://github.com/jsrgodoy/projeto_koffie/blob/main/src/logo_white.png?raw=true)
 
 
-# Projeto Koffie - Branch Danillo
+# Projeto Koffie
 
 
 ## Autores
 
 * Danillo - [@Danillosdd](https://www.github.com/Danillosdd)
+
+* Diego - [@diegodevweb](https://www.github.com/diegodevweb)
+
+* Elvis - [@elvissilva12](https://www.github.com/elvissilva12)
+
+* Jeferson- [@jsrgodoy](https://www.github.com/jsrgodoy)
+
+
+
 ## Documentação de cores
 
 | Cor               | Hexadecimal                                                |

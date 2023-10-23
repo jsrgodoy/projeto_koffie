@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -10,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/font-awesome.css" />
+    <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/contato.css">
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
@@ -20,93 +20,151 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo"></div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre Nós</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="pedido.html">Pedido</a></li>
-                    <li>Contato</li>
-                </ul>
+          <div class="logo"></div>
+          <div class="menu">
+            <nav class="menu-itens">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+              </ul>
             </nav>
+
+            <div class="account">
+          <img onclick="login()" class="user-profile "
+            src="src/user-profle.png"
+            alt="Cadastro">
+          <svg onclick="login()" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 492 492">
+            <path
+              d="M484.13 124.99l-16.11-16.23a26.72 26.72 0 00-19.04-7.86c-7.2 0-13.96 2.79-19.03 7.86L246.1 292.6 62.06 108.55c-5.07-5.06-11.82-7.85-19.03-7.85s-13.97 2.79-19.04 7.85L7.87 124.68a26.94 26.94 0 000 38.06l219.14 219.93c5.06 5.06 11.81 8.63 19.08 8.63h.09c7.2 0 13.96-3.57 19.02-8.63l218.93-219.33A27.18 27.18 0 00492 144.1c0-7.2-2.8-14.06-7.87-19.12z">
+            </path>
+          </svg>
         </div>
-    </header>
+              
+            <div>
+              <a href="pedido.html">
+                <div id="cart" class="cart" data-totalitems="1">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="menu-mobile">
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu-mobile-itens">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="sobre.html">Sobre Nós</a></li>
+              <li><a href="produtos.html">Produtos</a></li>
+              <li><a href="contato.html">Contato</a></li>
+              <li><a onclick="login()">Login</a></li>
+              <li><a href="pedido.html">Carrinho</a></li>
+            </ul>
+          </div>
+
+       <div class="login-form">
+        <h1>Acesso</h1>
+        <div class="form-group ">
+          <input type="text" class="form-control" placeholder="Username " id="UserName">
+          <i class="fa fa-user"></i>
+        </div>
+        <div class="form-group log-status">
+          <input type="password" class="form-control" placeholder="Password" id="Passwod">
+          <i class="fa fa-lock"></i>
+        </div>
+        <a class="link" href="#">Lost your password?</a>
+        <button type="button" class="log-btn">Log in</button>
+      </div>
+            
+        </div> <!--container-->
+        <div class="clear"></div>
+      </header>
     <main>
-        <section>
-            <h1>Que tal um Koffie?</h1>
-            <p>Estamos ansiosos para surpreendê-lo com nossas opções deliciosas. Abra nosso menu e comece a sonhar com sua próxima escolha!</p>
-            <img src="/src/menuImg1.png" alt="Xicará de café">
-            <br>
-            <button><a href="produtos.html">Menu</a></button>
-        </div>
-        <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.4758933656985!2d-50.87620392447125!3d-29.38563147526188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519324f9b2c95cf%3A0xfa76476494471ed1!2sAv.%20Borges%20de%20Medeiros%2C%20Gramado%20-%20RS%2C%2095670-000!5e0!3m2!1spt-BR!2sbr!4v1694396067467!5m2!1spt-BR!2sbr" width="620" height="300" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <br>
-        <img src="src/logo.png" alt="Logomarca Koffie"/>
-        <section>
-            <form action="#" method="POST">
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" size="30" placeholder="Digite seu nome">
-                <br>
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email" size="30" placeholder="Digite seu email">
-                <br>
-                <label for="mensagem">Mensagem:</label>
-                <textarea name="mensagem" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+        <section class="menuproduto">
+            <div class="textomenu">
+                <h1>O Melhor café da região</h1>
+                <p>Estamos ansiosos para surpreendê-lo com nossas opções deliciosas. Abra nosso menu e comece a sonhar com sua próxima escolha!</p>
+                <a href="/produtos.html" class="btn-menu">Menu</a>
+            </div>
+            <div class="imagemmenu">
+                <figure>
+                    <img src="./src/menuImg1.png" alt="">
+                </figure>
+            </div>
+        </section>
+        <section class="mapa">
+            <h2>Nossa Localização:</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.4758933656985!2d-50.87620392447125!3d-29.38563147526188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519324f9b2c95cf%3A0xfa76476494471ed1!2sAv.%20Borges%20de%20Medeiros%2C%20Gramado%20-%20RS%2C%2095670-000!5e0!3m2!1spt-BR!2sbr!4v1694396067467!5m2!1spt-BR!2sbr" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="section-form">
+            <h1>Contato</h1>
+            <div class="formulario">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nome"><span>Nome:</span></label>
+                        <input type="text" name="nome" id="nome" class="input-altura" placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><span>Email:</span></label>
+                        <input type="text" name="email" id="email" class="input-altura" placeholder="Digite seu email">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+                    </div>
+                        <button type="submit" class="btn-form">Enviar</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
         <div class="container">
-            <div class="footer-section-logo">
-                <img src="src/bitmap.png" alt="" />
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                <div class="icons-social">
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                </div>
+          <div class="footer-section-logo">
+            <img src="src/logo_white.png" alt="" />
+            <p>O Sabor que Cura a Alma</p>
+            <div class="icons-social">
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
             </div>
-        </div>
-            
-        <div class="footer-section-servicos">
-            <h1>Serviços</h1>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Reuniões</a></li>
-                   <li><a href="#">Eventos</a></li>
-                   <li><a href="#">Parceiros</a></li>
-                </ul>
+          </div>
+          <div class="footer-section-endereco">
+            <h1>Endereço</h1>
+            <nav>
+              <ul>
+                <li>Avenida Central nº 2023</li>
+                <li>Setor Lugar Nenhum</li>
+                <li>Cafélandia - CF</li>
+              </ul>
             </nav>
-        </div>
-
-        <div class="footer-section-horarios">
+          </div>
+          <div class="footer-section-horarios">
             <h1>Horários</h1>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Dias de Semana</a></li>
-                   <li><a href="#">Finais de Semana</a></li>
-                </ul>
+            <nav>
+              <ul>
+                <li>Segunda a Sexta-feira:</li>
+                <li>08h00 às 18h00.</li>
+                <li>Domingo:</li>
+                <li>08h00 às 14h00.</li>
+              </ul>
             </nav>
-        </div>
-    
-        <div class="footer-section-redes-sociais">
-            <h1>Redes Sociais</h1>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Facebook</a></li>
-                </ul>
+          </div>
+          <div class="footer-section-contato">
+            <h1>Contato</h1>
+            <nav>
+              <ul>
+                <li><i class="fa fa-phone"></i>(99) 8888-8888</li>
+                <li><i class="fab fa-whatsapp"></i>(99) 9999-9999</li>
+                <li><i class="fa fa-envelope"></i>contato@koffie.com.br</li>
+              </ul>
             </nav>
-        </div>
-
-        <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+        </div> <!--container-->
         <hr />
         <div class="direitos-reservados">
-            <p>©Grupo Dois - PROZ | Todos os direitos reservados</p>
+          <p>©Grupo Dois - PROZ | Todos os direitos reservados</p>
         </div>
     </footer>
 </body>

@@ -1,5 +1,34 @@
-body {
-  padding-left: 40px;
-  padding-right: 40px;
-  background-color: #aea393;
+main {
+  padding: 2%;
+  background-color: #e4d7ce;
+}
+
+.texto h1 {
+  color: #2a130a;
+  font-family: Plus Jakarta Sans;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 50px;
+}
+.texto p {
+  color: #2a130a;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 121.2%;
+  text-align: justify;
+  margin-top: 30px;
+
+  padding: 5%;
+}
+@media (max-width: 800px) {
+  .text5 h2 {
+    font-size: 16px;
+  }
+}
+
+.wiki a {
+  color: rgb(67, 30, 0);
 }
