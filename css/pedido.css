@@ -5,7 +5,7 @@ main {
 }
 
 main span {
-  color: #486284;
+  color: #2a130a;
   font-size: 30px;
   font-style: normal;
   font-weight: 800;
@@ -23,9 +23,10 @@ main section.pedido {
 
 main section.pedido .box1 {
   width: 50%;
-  border-radius: 63px 0px 0px 0px;
-  background: #aab5c3;
+  border-radius: 63px 0px 63px 0px;
+  background: #aea393;
   padding: 40px 30px;
+  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
 }
 
 main section.pedido .box1 .box1-parte1 {
@@ -43,10 +44,11 @@ main section.pedido .box1 .box1-parte2 .endereco-entrega {
 main section.pedido .box1 img {
   width: 40px;
   height: 40px;
+  color: #2a130a;
 }
 
 main section.pedido h1 {
-  color: #486284;
+  color: #2a130a;
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
@@ -56,7 +58,7 @@ main section.pedido h1 {
 
 main section.pedido p,
 label {
-  color: #486284;
+  color: #2a130a;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -71,7 +73,7 @@ main section.pedido input {
   display: block;
   width: 100%;
   height: 47px;
-  background: #ced7e4;
+  background-color: #f5eeee;
   outline: none;
 
   border: 1px solid rgb(var(--wix-ui-tpa-text-field-main-border-color-rgb, var(--wix-color-5)),
@@ -80,18 +82,18 @@ main section.pedido input {
 
 main section.pedido select {
   border: none;
-  color: #486284;
+  color: #2a130a;
   font-size: 16px;
-  padding: 12px;
+  padding: 10px;
   display: block;
   width: 100%;
   height: 47px;
-  background: #ced7e4;
+  background: #f5eeee;
   outline: none;
   -webkit-appearance: none;
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAeCAYAAABuUU38AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUxJREFUeNrM1sEJwkAQBdCsngXPHsQO9O5FS7AAMVYgdqAd2IGCDWgFnryLFQiCZ8EGnJUNimiyM/tnk4HNEAg/8y6ZmMRVqz9eUJvRaSbvutCZ347bXVJy/ZnvTmdJ862Me+hAbZCTs6GHpyUi1tTSvPnqTpoWZPUa7W7ncT3vK4h4zVejy8QzM3WhVUO8ykI6jOxoGA4ig3BLHcNFSCGqGAkig2yqgpEiMsjSfY9LxYQg7L6r0X6wS29YJiYQYecemY+wHrXD1+bklGhpAhBDeu/JfIVGxaAQ9sb8CI+CQSJ+QmJg0Ii/EE2MBiIXooHRQhRCkBhNhBcEhLkwf05ZCG8ICCOpk0MULmvDSY2M8UawIRExLIQIEgHDRoghihgRIgiigBEjgiFATBACAgFgghEwSAAGgoBCBBgYAg5hYKAIFYgHBo6w9RRgAFfy160QuV8NAAAAAElFTkSuQmCC");
+  background-image: url("../src/image.svg");
   background-size: 12px;
-  background-position: 96% center;
+  background-position: 98% center;
   background-repeat: no-repeat;
 }
 
@@ -110,9 +112,10 @@ main section.pedido input[type="number"] {
 
 main section.pedido .box2 {
   width: 50%;
-  border-radius: 63px 0px 0px 0px;
-  background: #aab5c3;
+  border-radius: 63px 0px 63px 0px;
+  background: #aea393;
   padding: 40px 30px;
+  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
 }
 
 main section.pedido .box2 .box2-parte1 {
@@ -142,8 +145,8 @@ main section.pedido .box2 .box2-parte1 input::-webkit-inner-spin-button {
   background-image: linear-gradient(to top,
       transparent 0px,
       transparent 16px,
-      #ced7e4 16px,
-      #ced7e4 26px,
+      #f5eeee 16px,
+      #f5eeee 26px,
       transparent 26px,
       transparent 35px,
       #000 35px,
@@ -165,7 +168,7 @@ main section.pedido .box2 hr {
   width: 479px;
   height: 2px;
   margin-top: 40px;
-  background: #486284;
+  background: #2a130a;
 }
 
 main section.pedido .box2 .box2-parte2 {
@@ -192,12 +195,12 @@ main section.pedido .box2 .botao {
 }
 
 main section.pedido .box2 input[type="submit"] {
-  background-color: #22487c;
+  background-color: #2a130a;
   border: 0;
   width: 90%;
   height: 55px;
   font-size: 22px;
-  color: #ced7e4;
+  color: #ac9675;
   margin-top: 100px;
   font-style: normal;
   font-weight: 500;
@@ -206,12 +209,12 @@ main section.pedido .box2 input[type="submit"] {
   cursor: pointer;
   transition: all 200ms linear;
   letter-spacing: 0.2em;
-  box-shadow: 3px 10px 20px 0px rgba(35, 100, 210, 0.3);
+  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
 }
 
 main section.pedido .box2 input[type="submit"]:hover {
-  background-color: #003985;
-  color: #fff;
+  background-color: #160801;
+  color: #ac9675;
   width: 100%;
   height: 60px;
 }
