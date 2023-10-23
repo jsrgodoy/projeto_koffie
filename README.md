@@ -21,10 +21,11 @@
 
 | Cor               | Hexadecimal                                                |
 | ----------------- | ---------------------------------------------------------------- |
-| Cor exemplo       | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Cor exemplo       | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #f8f8f8 |
-| Cor exemplo       | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #00b48a |
-| Cor exemplo       | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #00d1a0 |
+| Cor exemplo       | ![#ac9675](https://via.placeholder.com/10/ac9675?text=+) #ac9675 |
+| Cor exemplo       | ![#f5eeee](https://via.placeholder.com/10/f5eeee?text=+) #f5eeee |
+| Cor exemplo       | ![#2a130a](https://via.placeholder.com/10/2a130a?text=+) #2a130a |
+| Cor exemplo       | ![#e4d7ce](https://via.placeholder.com/10/e4d7ce?text=+) #e4d7ce |
+| Cor exemplo       | ![#aea393](https://via.placeholder.com/10/aea393?text=+) #aea393 |
 
 
 ## Stack utilizada
