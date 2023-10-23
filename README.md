@@ -8,6 +8,15 @@
 ## Autores
 
 * Danillo - [@Danillosdd](https://www.github.com/Danillosdd)
+
+* Diego - [@diegodevweb](https://www.github.com/diegodevweb)
+
+* Elvis - [@elvissilva12](https://www.github.com/elvissilva12)
+
+* Jeferson- [@jsrgodoy](https://www.github.com/jsrgodoy)
+
+
+
 ## Documentação de cores
 
 | Cor               | Hexadecimal                                                |
