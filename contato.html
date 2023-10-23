@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/font-awesome.css" />
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/contato.css">
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
+  
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/contato.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" />
+    <script type="text/javascript" src="js/javascript.js"></script>
     <title>Contato</title>
-</head>
+  </head>
 <body>
-    <header>
-        <div class="container">
-          <div class="logo"></div>
-          <div class="menu">
-            <nav class="menu-itens">
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-              </ul>
-            </nav>
-
-            <div class="account">
+  <header>
+    <div class="container">
+      <div class="logo"></div>
+      <div class="menu">
+        <nav class="menu-itens">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="account">
           <img onclick="login()" class="user-profile "
             src="src/user-profle.png"
             alt="Cadastro">
@@ -41,29 +40,33 @@
             </path>
           </svg>
         </div>
-              
-            <div>
-              <a href="pedido.html">
-                <div id="cart" class="cart" data-totalitems="1">
-                  <i class="fas fa-shopping-cart"></i>
-                </div>
-              </a>
+        <div>
+          <a href="pedido.html">
+            <div id="cart" class="cart" data-totalitems="1">
+              <i class="fas fa-shopping-cart"></i>
             </div>
-          </div>
-          <div class="menu-mobile">
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <ul class="menu-mobile-itens">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="sobre.html">Sobre Nós</a></li>
-              <li><a href="produtos.html">Produtos</a></li>
-              <li><a href="contato.html">Contato</a></li>
-              <li><a onclick="login()">Login</a></li>
-              <li><a href="pedido.html">Carrinho</a></li>
-            </ul>
-          </div>
+          </a>
+        </div>
+      </div>
 
-       <div class="login-form">
+
+      <div class="menu-mobile">
+
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+        <ul class="menu-mobile-itens">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a onclick="login()">Login</a></li>
+          <li><a href="pedido.html">Carrinho</a></li>
+        </ul>
+
+      </div>
+
+      <div class="login-form">
         <h1>Acesso</h1>
         <div class="form-group ">
           <input type="text" class="form-control" placeholder="Username " id="UserName">
@@ -76,10 +79,12 @@
         <a class="link" href="#">Lost your password?</a>
         <button type="button" class="log-btn">Log in</button>
       </div>
-            
-        </div> <!--container-->
-        <div class="clear"></div>
-      </header>
+
+    </div> <!--container-->
+
+    <div class="clear"></div>
+
+  </header>
     <main>
         <section class="menuproduto">
             <div class="textomenu">
