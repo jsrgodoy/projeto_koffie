@@ -1,0 +1,197 @@
+body {
+  margin: 2px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #aea393;
+}
+
+/* sinta-se melhor */
+.sintasemelhor {
+  background-color: rgb(174, 163, 147);
+  width: 1440px;
+  height: 833px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagem1 {
+  width: 500px;
+  height: 300px;
+  flex-shrink: 0;
+}
+.text1 {
+  color: var(--Black, #1a202c);
+  font-family: Plus Jakarta Sans;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 121.2%; /* 55.752px */
+}
+.text1 p {
+  color: var(--Black, #1a202c);
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: -0.32px;
+}
+.text1 a {
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: white;
+  background-color: #2a130a;
+  border-radius: 3px;
+  padding: 8px 40px;
+  text-align: center;
+  /* Semibold/Type@16 */
+  font-family: Plus Jakarta Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+}
+
+/* que tal um koffie */
+.quetal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+  height: 680px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 0px 0px;
+  background-color: rgb(174, 163, 147);
+}
+.text2 {
+  color: #1f2401;
+  font-family: Plus Jakarta Sans;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 121.2%; /* 55.752px */
+}
+.text2 p {
+  color: #1f2401;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: -0.32px;
+}
+.text2 a {
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: white;
+  background-color: #2a130a;
+  border-radius: 3px;
+  padding: 8px 40px;
+  text-align: center;
+  /* Semibold/Type@16 */
+  font-family: Plus Jakarta Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+}
+.imagem2 {
+  width: 507px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+/* Mais pedidos */
+.maispedidos {
+  width: 1547px;
+  height: 680px;
+  flex-shrink: 0;
+  background-color: rgb(174, 163, 147);
+}
+.text3 {
+  width: 1216px;
+  color: #1f2401;
+  font-family: DM Sans;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 76px; /* 158.333% */
+  letter-spacing: 0.5px;
+}
+
+.tabelas {
+  justify-content: space-around;
+  align-items: center;
+}
+.tabela1 {
+  display: flex;
+  width: 300px;
+  height: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px 10px;
+  padding-bottom: 20px;
+}
+.tabela2 {
+  display: flex;
+  width: 300px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 10px;
+}
+
+/* Nossas Marcas de cafes */
+.parceiros {
+  width: 1547px;
+  height: 680px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.text4 {
+  color: #1f2401;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 72px */
+  letter-spacing: -0.96px;
+}
+.imagem4 {
+  padding-top: 100px;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+/* O que nossos clientes dizem */
+.clientesdizem {
+  width: 1440px;
+  height: 651px;
+
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: rgb(174, 163, 147);
+}
+.text5 {
+  color: #1f2401;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 72px */
+  letter-spacing: -0.96px;
+}
+.imagem5 {
+  width: 405px;
+  height: 241px;
+  flex-shrink: 0;
+}
