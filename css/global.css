@@ -58,7 +58,6 @@ header .logo {
 header .menu {
   display: flex;
   justify-content: right;
-  align-items: center;
   flex-shrink: 0;
   gap: 60px;
 }
