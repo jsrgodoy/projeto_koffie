@@ -71,22 +71,33 @@ body {
 .btn-menu {
     background-color: #2a130a;
     border: 0;
-    width: 200px;
+    width: 20rem;
     height: 55px;
+    line-height: 50px;
+    text-align: center;
     font-size: 22px;
     color: #ac9675;
     margin-top: 100px;
     font-style: normal;
-    line-height: 50px;
     font-weight: 500;
     border-radius: 10px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all 200ms linear;
+    transition: all 100ms linear;
     letter-spacing: 0.2em;
-    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
-    text-align: center;
-    vertical-align: baseline;
+    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35); 
+}
+
+
+.btn-menu:hover {
+    background-color: #160801;
+    color: #ac9675;
+    width: 30rem;
+    height: 60px;
+}
+
+.btn-menu:active {
+    transform: translateY(10px);
 }
 
 
@@ -124,8 +135,8 @@ body {
 
 .formulario {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    flex-flow: row wrap;
 }
 
 .formulario label {
@@ -137,6 +148,7 @@ body {
     letter-spacing: -0.48px;
     opacity: 0.9;
     margin: 10px 10px;
+    text-align: left;
 }
 
 .formulario input,
@@ -152,26 +164,42 @@ textarea {
             calc(var(--wix-ui-tpa-text-field-main-border-color-opacity, 1) * var(--wix-ui-tpa-text-field-main-border-opacity, 0.6)));
 }
 
+.botao {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
 
 .btn-form {
     background-color: #2a130a;
     border: 0;
-    width: 100%;
+    width: 20rem;
     height: 55px;
+    line-height: 50px;
+    text-align: center;
     font-size: 22px;
     color: #ac9675;
     margin-top: 100px;
     font-style: normal;
-    line-height: 50px;
     font-weight: 500;
     border-radius: 10px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all 200ms linear;
+    transition: all 100ms linear;
     letter-spacing: 0.2em;
-    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
-    text-align: center;
-    vertical-align: baseline;
+    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);    
+}
+
+.btn-form:hover {
+    background-color: #160801;
+    color: #ac9675;
+    width: 30rem;
+    height: 60px;
+}
+
+.btn-form:active {
+    transform: translateY(10px);
 }
 
 .mapa {
