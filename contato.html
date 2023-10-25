@@ -86,43 +86,49 @@
 
   </header>
   <main>
-    <section class="menuproduto">
-      <div class="textomenu">
-        <h1>O Melhor café da região</h1>
-        <p>Estamos ansiosos para surpreendê-lo com nossas opções deliciosas. Abra nosso menu e comece a sonhar com sua
-          próxima escolha!</p>
-        <a href="/produtos.html" class="btn-menu">Menu</a>
-      </div>
-      <div class="imagemmenu">
-        <figure>
-          <img src="./src/menuImg1.png" alt="">
-        </figure>
-      </div>
-    </section>
-    <section class="mapa">
-      <h2>Nossa Localização:</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.4758933656985!2d-50.87620392447125!3d-29.38563147526188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519324f9b2c95cf%3A0xfa76476494471ed1!2sAv.%20Borges%20de%20Medeiros%2C%20Gramado%20-%20RS%2C%2095670-000!5e0!3m2!1spt-BR!2sbr!4v1694396067467!5m2!1spt-BR!2sbr"
-        style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-    <section class="section-form">
-      <h1>Contato</h1>
-      <div class="formulario">
-        <form action="#" method="POST">
-          <div class="form-group">
-            <label for="nome"><span>Nome:</span></label>
-            <input type="text" name="nome" id="nome" class="input-altura" placeholder="Digite seu nome">
-          </div>
-          <div class="form-group">
-            <label for="email"><span>Email:</span></label>
-            <input type="text" name="email" id="email" class="input-altura" placeholder="Digite seu email">
-          </div>
-          <div class="form-group">
-            <label for="mensagem">Mensagem:</label>
-            <textarea name="mensagem" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
-          </div>
-          <button type="submit" class="btn-form">Enviar</button>
-        </form>
+    <div class="container">
+      <section class="menuproduto">
+        <div class="textomenu">
+          <h1>O Melhor café da região</h1>
+          <p>Estamos ansiosos para surpreendê-lo com nossas opções deliciosas. <br>
+            Abra nosso menu e comece a sonhar com sua
+            próxima escolha!</p>
+          <a href="produtos.html">
+            <div class="btn-menu">Produtos</div>
+          </a>
+        </div>
+        <div class="imagemmenu">
+          <img src="src/menuImg1.png" alt="">
+        </div>
+      </section>
+    </div>
+    <section class="contato">
+      <div class="container">
+        <div class="section-form">
+          <h1>Contato</h1>
+          <form action="#" method="POST" class="formulario">
+
+            <label for="nome">Nome*</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" autofocus required />
+
+            <label for="email"><span>Email*</span></label>
+            <input type="text" name="email" id="email" class="input-altura" placeholder="Digite seu email" required>
+
+            <label for="mensagem">Mensagem*</label>
+            <textarea name="mensagem" id="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+
+            <button type="submit" class="btn-form">Enviar</button>
+
+          </form>
+        </div>
+
+        <div class="mapa">
+          <h1>Localização</h1>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29017.50451793594!2d-53.343687520311455!3d-24.617202247658344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f24a34b2929109%3A0x1d3a1a0839e38167!2sCafel%C3%A2ndia%2C%20PR%2C%2085415-000!5e0!3m2!1spt-BR!2sbr!4v1698200709906!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     </section>
   </main>
@@ -143,7 +149,7 @@
           <ul>
             <li>Avenida Central nº 2023</li>
             <li>Setor Lugar Nenhum</li>
-            <li>Cafélandia - CF</li>
+            <li>Cafelândia - PR</li>
           </ul>
         </nav>
       </div>
