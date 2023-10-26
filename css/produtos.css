@@ -1,11 +1,12 @@
 main {
-  padding: 0px 20px 150px 40px;
+  padding: 0px;
   background-color: #e4d7ce;
 }
 
 .text {
   padding: 2% 5%;
   flex-shrink: 0;
+  text-align: center;
 }
 .text1 {
   color: #2a130a;
@@ -35,6 +36,8 @@ main {
 }
 .cafes {
   padding: 50px 0;
+  background-color: #aea393;
+  max-width: 100%;
 }
 
 .tabela {
