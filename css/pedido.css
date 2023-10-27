@@ -23,7 +23,7 @@ main section.pedido {
 
 main section.pedido .box1 {
   width: 50%;
-  border-radius: 63px 0px 63px 0px;
+  border-radius: 15px 15px 15px 15px;
   background: #aea393;
   padding: 40px 30px;
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
@@ -99,20 +99,20 @@ main section.pedido select {
 
 main section.pedido input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  /* display: none; <- Crashes Chrome on hover */
+  
   -webkit-appearance: none;
   margin: 0;
-  /* <-- Apparently some margin are still there even though it's hidden */
+  
 }
 
 main section.pedido input[type="number"] {
   -moz-appearance: textfield;
-  /* Firefox */
+  
 }
 
 main section.pedido .box2 {
   width: 50%;
-  border-radius: 63px 0px 63px 0px;
+  border-radius: 15px 15px 15px 15px;
   background: #aea393;
   padding: 40px 30px;
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
@@ -167,7 +167,7 @@ main section.pedido .box2 .box2-parte1 input::-webkit-inner-spin-button {
 main section.pedido .box2 hr {
   width: 479px;
   height: 2px;
-  margin-top: 40px;
+  margin: 5% 0;
   background: #2a130a;
 }
 
