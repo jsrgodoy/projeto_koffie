@@ -322,6 +322,7 @@ header .cart {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+  transition: all 0.2s ease-in-out;
 
   &:before {
     position: absolute;
@@ -344,6 +345,15 @@ header .cart {
 header .cart i {
   font-size: 25px;
   color: #f5eeee;
+}
+
+header .cart:hover,
+header .cart:active,
+header .cart:focus {
+  border-color: #FF9800;
+  background: #FF9800;
+  color: #fff;
+  text-decoration: none;
 }
 
 /*------ FOOTER -----*/
