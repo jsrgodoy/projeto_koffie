@@ -1,9 +1,19 @@
 /* sinta-se melhor */
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 main {
   padding: 0px 0px 0px 0px;
   margin: auto;
   background-color: #e4d7ce;
 }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> main
 .sintasemelhor .container {
   /* background-color: rgb(174, 163, 147); */
   background-color: #e4d7ce;
@@ -13,6 +23,10 @@ main {
   align-items: center;
   padding: 5% 5%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 @media (max-width: 800px) {
   .sintasemelhor .container {
     flex-direction: column-reverse;
@@ -28,10 +42,17 @@ main {
   background-position: left;
   background-repeat: no-repeat;
   justify-content: flex-start;
+<<<<<<< HEAD
 
   width: 500px;
   height: 250px;
 }
+=======
+  width: 500px;
+  height: 250px;
+}
+
+>>>>>>> main
 @media (max-width: 800px) {
   .sintasemelhor .imagem1 {
     background-image: url("../src/home.png");
@@ -51,7 +72,11 @@ main {
 .text1 h1 {
   color: #2a130a;
   font-family: Plus Jakarta Sans;
+<<<<<<< HEAD
   font-size: 45px;
+=======
+  font-size: 35px;
+>>>>>>> main
   font-style: normal;
   font-weight: 800;
   line-height: 121.2%; /* 55.752px */
@@ -76,6 +101,10 @@ main {
     justify-content: center;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 .text1 a {
   flex-direction: column;
   justify-content: center;
@@ -99,8 +128,15 @@ main {
   justify-content: center;
   align-items: center;
   padding: 6% 5%;
+<<<<<<< HEAD
   /*  background-color: rgb(174, 163, 147); */
   background-color: #e4d7ce;
+=======
+  max-width: 100%;
+  /*  background-color: rgb(174, 163, 147); */
+  /* background-color: #e4d7ce; */
+  background-color: #aea393;
+>>>>>>> main
 }
 
 .text2 {
@@ -110,13 +146,21 @@ main {
 .text2 h1 {
   color: #1f2401;
   font-family: Plus Jakarta Sans;
+<<<<<<< HEAD
   font-size: 30px;
+=======
+  font-size: 35px;
+>>>>>>> main
   font-style: normal;
   padding: 20px 0px 20px 0px;
   font-weight: 800;
   line-height: 121.2%;
   padding: 5%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 .text2 p {
   color: #1f2401;
   font-family: Plus Jakarta Sans;
@@ -127,12 +171,24 @@ main {
   letter-spacing: -0.32px;
   padding: 5%;
 }
+<<<<<<< HEAD
+=======
+
+.botao2 {
+  padding-left: 16px;
+}
+
+>>>>>>> main
 @media (max-width: 800px) {
   .botao2 {
     display: flex;
     justify-content: center;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 .text2 a {
   flex-direction: column;
   justify-content: center;
@@ -150,6 +206,10 @@ main {
   line-height: 150%; /* 24px */
   letter-spacing: -0.32px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 .imagem2 {
   background-image: url("../src/menuImg1.png");
   background-size: contain;
@@ -173,6 +233,10 @@ main {
   width: 100%;
   background-color: #e4d7ce;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 .text3 {
   display: flex;
   justify-content: center;
@@ -212,9 +276,18 @@ main {
 /* Nossas Marcas de cafes */
 .parceiros .container {
   padding: 5%;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
 }
+=======
+  max-width: 100%;
+  background-color: #aea393;
+  justify-content: center;
+  align-items: center;
+}
+
+>>>>>>> main
 .text4 {
   color: #2a130a;
   text-align: center;
@@ -226,18 +299,36 @@ main {
   letter-spacing: -0.96px;
 }
 
+<<<<<<< HEAD
 .imagem4 {
   padding: 2%;
+=======
+.text4 h2, .text5 h2 {
+  font-size: 35px;
+}
+
+.imagem4 {
+  padding: 2%;
+  text-align: center;
+>>>>>>> main
 }
 
 /* O que nossos clientes dizem */
 .clientesdizem .container {
+<<<<<<< HEAD
+=======
+  margin-bottom: 0;
+>>>>>>> main
   padding: 50px 0px 150px 0px;
   justify-content: center;
   align-items: center;
   /* background-color: rgb(174, 163, 147); */
   background-color: #e4d7ce;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 .text5 {
   color: #2a130a;
   text-align: center;
@@ -249,11 +340,19 @@ main {
   letter-spacing: -0.96px;
   padding: 50px 0px 50px 0px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 .depoimentos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 .depoimentos p {
   color: #2a130a;
   font-size: 15px;
@@ -262,6 +361,7 @@ main {
   line-height: 121.2%;
   margin-top: 30px;
   text-align: left;
+<<<<<<< HEAD
 }
 
 .imagem5 {
@@ -271,4 +371,13 @@ main {
 .imagem6 {
   width: 405px;
   height: 241px;
+=======
+  max-width: 200px;
+}
+
+.imagem5, .imagem6 {
+  width: 300px;
+  height: 300pxpx;
+  margin: 20px;
+>>>>>>> main
 }

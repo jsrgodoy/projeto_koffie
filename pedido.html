@@ -15,7 +15,11 @@
   <link rel="stylesheet" href="css/pedido.css" />
   <link rel="stylesheet" href="css/font-awesome.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" />
+<<<<<<< HEAD
   <script type="text/javascript" src="js/javascript.js"></script>
+=======
+  <link rel="icon" type="image/x-icon" href="src/favicon.png">
+>>>>>>> main
   <title>Pedido</title>
 </head>
 
@@ -33,10 +37,17 @@
           </ul>
         </nav>
         <div class="account">
+<<<<<<< HEAD
           <img class="user-profile "
             src="https://images.unsplash.com/photo-1586297098710-0382a496c814?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1650&amp;q=80"
             alt="">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 492 492">
+=======
+          <img onclick="login()" class="user-profile "
+            src="src/user-profle.png"
+            alt="Cadastro">
+          <svg onclick="login()" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 492 492">
+>>>>>>> main
             <path
               d="M484.13 124.99l-16.11-16.23a26.72 26.72 0 00-19.04-7.86c-7.2 0-13.96 2.79-19.03 7.86L246.1 292.6 62.06 108.55c-5.07-5.06-11.82-7.85-19.03-7.85s-13.97 2.79-19.04 7.85L7.87 124.68a26.94 26.94 0 000 38.06l219.14 219.93c5.06 5.06 11.81 8.63 19.08 8.63h.09c7.2 0 13.96-3.57 19.02-8.63l218.93-219.33A27.18 27.18 0 00492 144.1c0-7.2-2.8-14.06-7.87-19.12z">
             </path>
@@ -44,7 +55,11 @@
         </div>
         <div>
           <a href="pedido.html">
+<<<<<<< HEAD
             <div id="cart" class="cart" data-totalitems="0">
+=======
+            <div id="cart" class="cart" data-totalitems="1">
+>>>>>>> main
               <i class="fas fa-shopping-cart"></i>
             </div>
           </a>
@@ -62,12 +77,17 @@
           <li><a href="sobre.html">Sobre Nós</a></li>
           <li><a href="produtos.html">Produtos</a></li>
           <li><a href="contato.html">Contato</a></li>
+<<<<<<< HEAD
           <li><a href="">Login</a></li>
+=======
+          <li><a onclick="login()">Login</a></li>
+>>>>>>> main
           <li><a href="pedido.html">Carrinho</a></li>
         </ul>
 
       </div>
 
+<<<<<<< HEAD
     </div> <!--container-->
 
     <div class="clear"></div>
@@ -144,6 +164,98 @@
         <div class="box2">
           <div class="box2-parte1">
             <img src="src/gallery.png" alt="" />
+=======
+      <div class="login-form">
+        <h1>Acesso</h1>
+        <div class="form-group ">
+          <input type="text" class="form-control" placeholder="Username " id="UserName">
+          <i class="fa fa-user"></i>
+        </div>
+        <div class="form-group log-status">
+          <input type="password" class="form-control" placeholder="Password" id="Passwod">
+          <i class="fa fa-lock"></i>
+        </div>
+        <a class="link" href="#">Lost your password?</a>
+        <button type="button" class="log-btn">Log in</button>
+      </div>
+
+    </div> <!--container-->
+
+    <div class="clear"></div>
+
+  </header>
+
+  <div class="clear"></div>
+
+  <main>
+    <div class="container">
+      <span>COMPLETE SEU PEDIDO</span>
+      <section class="pedido">
+        <div class="box1">
+          <form action="confirmar-pedido.html">
+            <div class="box1-parte1">
+              <img src="src/icon-park-solid_local.svg" alt="Localização" />
+              <div>
+                <h1>Endereço de entrega</h1>
+                <p>Informe o endereço onde deseja receber seu pedido</p>
+              </div>
+            </div>
+            <div class="box1-parte2">
+              <div class="endereco-entrega">
+                <label for="endereco">Endereço*</label>
+                <input type="text" name="endereco" id="endereco" autofocus required />
+                <label for="numero">Número*</label>
+                <input type="number" name="numero" id="numero" required />
+                <label for="cidade">Cidade*</label>
+                <input type="text" name="cidade" id="cidade" required />
+                <label for="estado">Estado*</label>
+                <select id="estado" name="estado" required>
+                  <option value="" disabled selected>Selecione</option>
+                  <option value="alagoas">Alagoas</option>
+                  <option value="amapa">Amapá</option>
+                  <option value="amazonas">Amazonas</option>
+                  <option value="bahia">Bahia</option>
+                  <option value="ceara">Ceará</option>
+                  <option value="distrito-federal">Distrito Federal</option>
+                  <option value="espirito-santo">Espírito Santo</option>
+                  <option value="goias">Goiás</option>
+                  <option value="maranhao">Maranhão</option>
+                  <option value="mato-grosso">Mato Grosso</option>
+                  <option value="mato-grosso-sul">Mato Grosso do Sul</option>
+                  <option value="minas-gerais">Minas Gerais</option>
+                  <option value="para">Pará</option>
+                  <option value="paraiba">Paraíba</option>
+                  <option value="parana">Paraná</option>
+                  <option value="pernambuco">Pernambuco</option>
+                  <option value="piaui">Piauí</option>
+                  <option value="rio-de-janeiro">Rio de Janeiro</option>
+                  <option value="rio-grande-do-norte">
+                    Rio Grande do Norte
+                  </option>
+                  <option value="rio-grande-do-sul">Rio Grande do Sul</option>
+                  <option value="rondonia">Rondônia</option>
+                  <option value="roraima">Roraima</option>
+                  <option value="santa-catarina">Santa Catarina</option>
+                  <option value="sao-paulo">São Paulo</option>
+                  <option value="sergipe">Sergipe</option>
+                  <option value="tocantins">Tocantins</option>
+                </select>
+                <label for="cep">Código Postal(CEP)*</label>
+                <input type="text" name="cep" id="cep" required />
+                <h1>FORMA DE PAGAMENTO*</h1>
+                <select id="estado" name="estado" required>
+                  <option value="" disabled selected>Selecione</option>
+                  <option value="boleto">Boleto</option>
+                  <option value="cartao">Cartão</option>
+                  <option value="pix">Pix</option>
+                </select>
+              </div>
+            </div>
+        </div>
+        <div class="box2">
+          <div class="box2-parte1">
+            <img src="src/ExpressoTradicional.svg" alt="Epresso Tradicional" />
+>>>>>>> main
             <div>
               <h1>Expresso Tradicional</h1>
               <input type="number" value="1" name="quantidade" class="quantidade" id="quantidade" required />
@@ -176,7 +288,11 @@
   <footer>
     <div class="container">
       <div class="footer-section-logo">
+<<<<<<< HEAD
         <img src="src/bitmap.png" alt="" />
+=======
+        <img src="src/logo_white.png" alt="Logotipo" />
+>>>>>>> main
         <p>O Sabor que Cura a Alma</p>
         <div class="icons-social">
           <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -191,7 +307,11 @@
           <ul>
             <li>Avenida Central nº 2023</li>
             <li>Setor Lugar Nenhum</li>
+<<<<<<< HEAD
             <li>Cafélandia - CF</li>
+=======
+            <li>Cafelândia - PR</li>
+>>>>>>> main
           </ul>
         </nav>
       </div>
@@ -228,6 +348,17 @@
       <p>©Grupo Dois - PROZ | Todos os direitos reservados</p>
     </div>
   </footer>
+<<<<<<< HEAD
 </body>
 
 </html>
+=======
+  <div class="clear"></div>
+
+  <button onclick="topFunction()" id="myBtn" title="Voltar ao topo"></button>
+
+  <script type="text/javascript" src="js/javascript.js"></script>
+</body>
+
+</html>
+>>>>>>> main
