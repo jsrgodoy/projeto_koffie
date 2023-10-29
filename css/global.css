@@ -7,16 +7,6 @@
 
 html,
 body {
-<<<<<<< HEAD
-  background: #e4d7ce;
-}
-
-.container {
-  margin: 0;
-  width: auto;
-  padding: 0px 0px 0px 0px;
-  justify-content: space-around;
-=======
   width: 100%;
   height: 100%;
 }
@@ -24,20 +14,12 @@ body {
 .container {
   max-width: 90%;
   margin: 0 auto;
->>>>>>> main
 }
 
 div.clear {
   clear: both;
 }
 
-<<<<<<< HEAD
-header {
-  width: auto;
-  height: 100px;
-  padding: 40px;
-  background-color: rgb(172, 150, 117);
-=======
 /*------ HEADER -----*/
 
 header {
@@ -46,52 +28,27 @@ header {
   padding: 40px;
   border: 1px solid #ac9675;
   background-color: #ac9675;
-  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
+  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
   z-index: 3;
->>>>>>> main
 }
 
 header .logo {
   position: relative;
   top: -10px;
   float: left;
-<<<<<<< HEAD
-  width: 200px;
-  height: 40px;
-  background-image: url("../src/bitmap.png");
-=======
   width: 160px;
   height: 40px;
   background-image: url("../src/logo_white.png");
->>>>>>> main
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-<<<<<<< HEAD
-header nav {
-  float: right;
-}
-
-header nav.menu ul {
-  list-style-type: none;
-}
-
-header nav.menu li {
-  float: left;
-  padding: 0 20px;
-}
-
-header nav.menu a {
-=======
 @media only screen and (max-width: 333px) {
-
   header .logo {
     width: 140px;
     height: 30px;
   }
-
 }
 
 /*------ MENU -----*/
@@ -115,7 +72,6 @@ header .menu-itens ul {
 
 header .menu-itens a {
   color: #f5eeee;
->>>>>>> main
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -124,37 +80,13 @@ header .menu-itens a {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-a:link {
-  text-decoration: none;
-}
-a:hover {
-  color: #543c03;
-}
-
-footer {
-  width: auto;
-  padding: 0px 0px 0px 40px;
-  background-color: rgb(172, 150, 117);
-}
-
-footer .footer-section-logo {
-  display: inline-block;
-  width: 200px;
-  height: 300px;
-  margin-top: 50px;
-  float: left;
-=======
-
 /*------ MENU MOBILE -----*/
 
 .menu-mobile {
   display: none;
 }
 
-
 @media only screen and (max-width: 1024px) {
-
   .container .login-form {
     width: 300px;
     top: 20%;
@@ -162,14 +94,13 @@ footer .footer-section-logo {
     visibility: hidden;
   }
 
-
   header .menu {
     display: none;
   }
 
   .menu-mobile {
     display: block;
-    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
+    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
     position: relative;
     width: 100%;
     z-index: 3;
@@ -208,7 +139,7 @@ footer .footer-section-logo {
     height: 100%;
     clear: both;
     max-height: 0;
-    transition: max-height .2s ease-out;
+    transition: max-height 0.2s ease-out;
   }
 
   .menu-mobile li a:hover,
@@ -230,18 +161,18 @@ footer .footer-section-logo {
     display: block;
     height: 2px;
     position: relative;
-    transition: background .2s ease-out;
+    transition: background 0.2s ease-out;
     width: 26px;
   }
 
   .menu-mobile .menu-icon .navicon:before,
   .menu-mobile .menu-icon .navicon:after {
     background: #f5eeee;
-    content: '';
+    content: "";
     display: block;
     height: 100%;
     position: absolute;
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
     width: 100%;
   }
 
@@ -257,27 +188,26 @@ footer .footer-section-logo {
     display: none;
   }
 
-  .menu-mobile .menu-btn:checked~.menu-mobile-itens {
+  .menu-mobile .menu-btn:checked ~ .menu-mobile-itens {
     max-height: 100%;
   }
 
-  .menu-mobile .menu-btn:checked~.menu-icon .navicon {
+  .menu-mobile .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
   }
 
-  .menu-mobile .menu-btn:checked~.menu-icon .navicon:before {
+  .menu-mobile .menu-btn:checked ~ .menu-icon .navicon:before {
     transform: rotate(-45deg);
   }
 
-  .menu-mobile .menu-btn:checked~.menu-icon .navicon:after {
+  .menu-mobile .menu-btn:checked ~ .menu-icon .navicon:after {
     transform: rotate(45deg);
   }
 
-  .menu-mobile .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
-  .menu-mobile .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+  .menu-mobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .menu-mobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
-
 }
 
 /*------ ACCOUNT -----*/
@@ -291,14 +221,13 @@ header .user-profile {
   cursor: pointer;
 }
 
-header .user-profile+svg {
+header .user-profile + svg {
   width: 14px;
   cursor: pointer;
   color: #f5eeee;
 }
 
 /*------ LOGIN FORM -----*/
-
 
 .login-form {
   width: 25%;
@@ -326,7 +255,6 @@ header .user-profile+svg {
   color: #ac9675;
   border: 2px solid #ddd;
   border-radius: 4px;
-
 }
 
 .login-form h1 {
@@ -346,7 +274,6 @@ header .user-profile+svg {
   top: 17px;
   color: #2a130a;
 }
-
 
 .log-btn {
   background: #2a130a;
@@ -372,7 +299,6 @@ header .user-profile+svg {
     color: #2a130a;
   }
 }
-
 
 /*------ CARRINHO -----*/
 
@@ -413,8 +339,8 @@ header .cart i {
 header .cart:hover,
 header .cart:active,
 header .cart:focus {
-  border-color: #FF9800;
-  background: #FF9800;
+  border-color: #ff9800;
+  background: #ff9800;
   color: #fff;
   text-decoration: none;
 }
@@ -437,7 +363,6 @@ footer .container {
 footer .container div {
   margin-top: 50px;
   width: 200px;
-
 }
 
 @media only screen and (max-width: 1270px) {
@@ -450,10 +375,8 @@ footer .container div {
     width: 100%;
     display: flex;
     justify-content: center;
-
   }
 }
-
 
 /*--- FOOTER-BOX-1 ---*/
 
@@ -461,25 +384,16 @@ footer .footer-section-logo {
   width: 200px;
   height: 100%;
   margin-top: 50px;
->>>>>>> main
 }
 
 footer .footer-section-logo img {
   width: 160px;
-<<<<<<< HEAD
-  height: 40px;
-=======
   height: 100%;
->>>>>>> main
 }
 
 footer .footer-section-logo p {
   margin-top: 50px;
-<<<<<<< HEAD
-  color: #1a202c;
-=======
   color: #2a130a;
->>>>>>> main
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -487,16 +401,6 @@ footer .footer-section-logo p {
   letter-spacing: -0.32px;
 }
 
-<<<<<<< HEAD
-footer .footer-section-logo .icons-social {
-  margin-top: 60px;
-}
-
-footer .footer-section-logo .icons-social a {
-  text-decoration: none;
-  color: #aab5c3;
-  background-color: #fff;
-=======
 /*--- FOOTER-BOX-2 ---*/
 
 footer h1 {
@@ -551,7 +455,6 @@ footer .direitos-reservados {
   padding-bottom: 1%;
 }
 
-
 /*------ ICON SOCIAL -----*/
 
 .icons-social {
@@ -563,7 +466,6 @@ footer .direitos-reservados {
   text-decoration: none;
   color: #2a130a;
   background-color: #f5eeee;
->>>>>>> main
   width: 40px;
   height: 40px;
   border-radius: 20px;
@@ -572,181 +474,9 @@ footer .direitos-reservados {
   text-align: center;
 }
 
-<<<<<<< HEAD
-footer .footer-section-logo .icons-social i {
-  line-height: 40px;
-}
-
-footer h1 {
-  color: #1a202c;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-  letter-spacing: -0.4px;
-}
-
-footer nav.menu ul {
-  list-style-type: none;
-}
-
-footer nav.menu li {
-  margin-top: 20px;
-}
-
-footer nav.menu a {
-  color: #486284;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: -0.48px;
-  text-decoration: none;
-}
-
-footer .footer-section-servicos,
-footer .footer-section-horarios,
-footer .footer-section-redes-sociais {
-  display: inline-block;
-  margin-top: 20px;
-  width: 100%;
-  float: left;
-}
-
-hr {
-  width: 60%;
-  border-color: #6a6c6d;
-  opacity: 0.4;
-  box-sizing: border-box;
-  margin: 20px auto;
-}
-
-footer .direitos-reservados {
-  color: #1a202c;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-  letter-spacing: -0.32px;
-  text-align: center;
-}
-
-/* Responsividade para telas menores que 800px */
-@media (max-width: 800px) {
-  header {
-    padding: 20px;
-  }
-
-  header .logo {
-    width: 160px;
-    height: 32px;
-  }
-
-  header nav {
-    float: none;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  header nav.menu li {
-    float: none;
-    display: inline-block;
-    margin-right: 10px;
-  }
-
-  footer .footer-section-logo {
-    width: 100%;
-    text-align: center;
-  }
-
-  footer .footer-section-logo img {
-    width: 120px;
-    height: 30px;
-  }
-
-  footer .footer-section-logo p {
-    margin-top: 20px;
-  }
-
-  footer .footer-section-logo .icons-social {
-    margin-top: 20px;
-  }
-
-  footer .footer-section-logo .icons-social a {
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    margin: 0 5px;
-  }
-
-  footer h1 {
-    font-size: 18px;
-  }
-
-  footer .footer-section-servicos,
-  footer .footer-section-horarios,
-  footer .footer-section-redes-sociais {
-    width: 50%;
-    margin-top: 20px;
-  }
-}
-
-/* Responsividade para telas menores que 400px */
-@media (max-width: 400px) {
-  header {
-    padding: 10px;
-  }
-
-  header .logo {
-    width: 120px;
-    height: 24px;
-  }
-
-  header nav.menu li {
-    margin-right: 5px;
-  }
-
-  footer .footer-section-logo {
-    width: 100%;
-    text-align: center;
-  }
-
-  footer .footer-section-logo img {
-    width: 100px;
-    height: 25px;
-  }
-
-  footer .footer-section-logo p {
-    font-size: 14px;
-    margin-top: 15px;
-  }
-
-  footer .footer-section-logo .icons-social {
-    margin-top: 15px;
-  }
-
-  footer .footer-section-logo .icons-social a {
-    width: 25px;
-    height: 25px;
-    border-radius: 12.5px;
-    margin: 0 3px;
-  }
-
-  footer h1 {
-    font-size: 16px;
-  }
-
-  footer .footer-section-servicos,
-  footer .footer-section-horarios,
-  footer .footer-section-redes-sociais {
-    width: 100%;
-    margin-top: 15px;
-  }
-=======
 .icons-social i {
   line-height: 40px;
 }
-
 
 /*------ VOLTAR AO TOPO -----*/
 
@@ -768,5 +498,4 @@ footer .direitos-reservados {
   height: 64px;
   background-size: 100% 100%;
   background-image: url("../src/topo.png");
->>>>>>> main
 }

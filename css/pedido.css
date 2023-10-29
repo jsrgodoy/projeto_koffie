@@ -1,23 +1,10 @@
-<<<<<<< HEAD
-=======
 /*------ PEDIDO -----*/
 
->>>>>>> main
 main {
   padding-top: 50px;
 }
 
 main span {
-<<<<<<< HEAD
-  color: #486284;
-  font-family: Plus Jakarta Sans;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 36px */
-  letter-spacing: -0.72px;
-  opacity: 0.9;
-=======
   color: #2a130a;
   font-size: 30px;
   font-style: normal;
@@ -25,7 +12,6 @@ main span {
   line-height: 121.2%;
   text-transform: capitalize;
   margin-top: 30px;
->>>>>>> main
 }
 
 main section.pedido {
@@ -37,16 +23,10 @@ main section.pedido {
 
 main section.pedido .box1 {
   width: 50%;
-<<<<<<< HEAD
-  border-radius: 63px 0px 0px 0px;
-  background: rgb(172, 150, 117);
-  padding: 40px 30px;
-=======
   border-radius: 15px 15px 15px 15px;
   background: #aea393;
   padding: 40px 30px;
-  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
->>>>>>> main
+  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
 }
 
 main section.pedido .box1 .box1-parte1 {
@@ -64,19 +44,11 @@ main section.pedido .box1 .box1-parte2 .endereco-entrega {
 main section.pedido .box1 img {
   width: 40px;
   height: 40px;
-<<<<<<< HEAD
-}
-
-main section.pedido h1 {
-  color: #486284;
-  font-family: Plus Jakarta Sans;
-=======
   color: #2a130a;
 }
 
 main section.pedido h1 {
   color: #2a130a;
->>>>>>> main
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
@@ -86,20 +58,11 @@ main section.pedido h1 {
 
 main section.pedido p,
 label {
-<<<<<<< HEAD
-  color: #486284;
-  font-family: Plus Jakarta Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 24px */
-=======
   color: #2a130a;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
->>>>>>> main
   letter-spacing: -0.48px;
   opacity: 0.9;
 }
@@ -110,8 +73,7 @@ main section.pedido input {
   display: block;
   width: 100%;
   height: 47px;
-<<<<<<< HEAD
-  background: #ced7e4;
+  background-color: #f5eeee;
   outline: none;
 
   border: 1px solid
@@ -122,31 +84,10 @@ main section.pedido input {
           var(--wix-ui-tpa-text-field-main-border-opacity, 0.6)
       )
     );
-=======
-  background-color: #f5eeee;
-  outline: none;
-
-  border: 1px solid rgb(var(--wix-ui-tpa-text-field-main-border-color-rgb, var(--wix-color-5)),
-      calc(var(--wix-ui-tpa-text-field-main-border-color-opacity, 1) * var(--wix-ui-tpa-text-field-main-border-opacity, 0.6)));
->>>>>>> main
 }
 
 main section.pedido select {
   border: none;
-<<<<<<< HEAD
-  color: #486284;
-  font-size: 16px;
-  padding: 12px;
-  display: block;
-  width: 100%;
-  height: 47px;
-  background: #ced7e4;
-  outline: none;
-  -webkit-appearance: none;
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAeCAYAAABuUU38AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUxJREFUeNrM1sEJwkAQBdCsngXPHsQO9O5FS7AAMVYgdqAd2IGCDWgFnryLFQiCZ8EGnJUNimiyM/tnk4HNEAg/8y6ZmMRVqz9eUJvRaSbvutCZ347bXVJy/ZnvTmdJ862Me+hAbZCTs6GHpyUi1tTSvPnqTpoWZPUa7W7ncT3vK4h4zVejy8QzM3WhVUO8ykI6jOxoGA4ig3BLHcNFSCGqGAkig2yqgpEiMsjSfY9LxYQg7L6r0X6wS29YJiYQYecemY+wHrXD1+bklGhpAhBDeu/JfIVGxaAQ9sb8CI+CQSJ+QmJg0Ii/EE2MBiIXooHRQhRCkBhNhBcEhLkwf05ZCG8ICCOpk0MULmvDSY2M8UawIRExLIQIEgHDRoghihgRIgiigBEjgiFATBACAgFgghEwSAAGgoBCBBgYAg5hYKAIFYgHBo6w9RRgAFfy160QuV8NAAAAAElFTkSuQmCC");
-  background-size: 12px;
-  background-position: 96% center;
-=======
   color: #2a130a;
   font-size: 16px;
   padding: 10px;
@@ -159,45 +100,25 @@ main section.pedido select {
   background-image: url("../src/image.svg");
   background-size: 12px;
   background-position: 98% center;
->>>>>>> main
   background-repeat: no-repeat;
 }
 
 main section.pedido input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-<<<<<<< HEAD
-  /* display: none; <- Crashes Chrome on hover */
-  -webkit-appearance: none;
-  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
-}
-
-main section.pedido input[type="number"] {
-  -moz-appearance: textfield; /* Firefox */
-=======
-  
   -webkit-appearance: none;
   margin: 0;
-  
 }
 
 main section.pedido input[type="number"] {
   -moz-appearance: textfield;
-  
->>>>>>> main
 }
 
 main section.pedido .box2 {
   width: 50%;
-<<<<<<< HEAD
-  border-radius: 63px 0px 0px 0px;
-  background: rgb(172, 150, 117);
-  padding: 40px 30px;
-=======
   border-radius: 15px 15px 15px 15px;
   background: #aea393;
   padding: 40px 30px;
-  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
->>>>>>> main
+  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
 }
 
 main section.pedido .box2 .box2-parte1 {
@@ -224,45 +145,28 @@ main section.pedido .box2 .box2-parte1 input::-webkit-inner-spin-button {
   min-height: 45px;
   margin: 17px;
   padding: 0px;
-<<<<<<< HEAD
   background-image: linear-gradient(
       to top,
       transparent 0px,
       transparent 16px,
-      #ced7e4 16px,
-      #ced7e4 26px,
-=======
-  background-image: linear-gradient(to top,
-      transparent 0px,
-      transparent 16px,
       #f5eeee 16px,
       #f5eeee 26px,
->>>>>>> main
       transparent 26px,
       transparent 35px,
       #000 35px,
       #000 36px,
       transparent 36px,
-<<<<<<< HEAD
       transparent 40px
     ),
     linear-gradient(
       to right,
-=======
-      transparent 40px),
-    linear-gradient(to right,
->>>>>>> main
       transparent 0px,
       transparent 10px,
       #000 10px,
       #000 11px,
       transparent 11px,
-<<<<<<< HEAD
       transparent 21px
     );
-=======
-      transparent 21px);
->>>>>>> main
   transform: rotate(90deg) scale(0.8, 0.9);
   cursor: pointer;
 }
@@ -270,32 +174,19 @@ main section.pedido .box2 .box2-parte1 input::-webkit-inner-spin-button {
 main section.pedido .box2 hr {
   width: 479px;
   height: 2px;
-<<<<<<< HEAD
-  margin-top: 40px;
-  background: #486284;
-=======
   margin: 5% 0;
   background: #2a130a;
->>>>>>> main
 }
 
 main section.pedido .box2 .box2-parte2 {
   display: flex;
   justify-content: space-between;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> main
 main section.pedido .box2 .titulo {
   display: flex;
   flex-direction: column;
   gap: 80px;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> main
 main section.pedido .box2 .valores {
   display: flex;
   flex-direction: column;
@@ -309,42 +200,21 @@ main section.pedido .box2 .botao {
 }
 
 main section.pedido .box2 input[type="submit"] {
-<<<<<<< HEAD
-  background-color: #22487c;
-=======
   background-color: #2a130a;
->>>>>>> main
   border: 0;
   width: 90%;
   height: 55px;
   font-size: 22px;
-<<<<<<< HEAD
-  color: #ced7e4;
-=======
   color: #ac9675;
->>>>>>> main
   margin-top: 100px;
   font-style: normal;
   font-weight: 500;
   border-radius: 10px;
   text-transform: uppercase;
   cursor: pointer;
-<<<<<<< HEAD
-  transition: all 200ms linear;
-  letter-spacing: 0.2em;
-  box-shadow: 3px 10px 20px 0px rgba(35, 100, 210, 0.3);
-}
-
-main section.pedido .box2 input[type="submit"]:hover {
-  background-color: #003985;
-  color: #fff;
-  width: 100%;
-  height: 60px;
-}
-=======
   transition: all 100ms linear;
   letter-spacing: 0.2em;
-  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
+  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
 }
 
 main section.pedido .box2 input[type="submit"]:hover {
@@ -357,7 +227,6 @@ main section.pedido .box2 input[type="submit"]:hover {
 main section.pedido .box2 input[type="submit"]:active {
   transform: translateY(10px);
 }
-
 
 @media only screen and (max-width: 1024px) {
   main section.pedido {
@@ -372,6 +241,4 @@ main section.pedido .box2 input[type="submit"]:active {
     width: 100%;
     margin-top: 5%;
   }
-
 }
->>>>>>> main
