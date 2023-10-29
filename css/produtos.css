@@ -1,13 +1,14 @@
 main {
   padding: 0px 20px 150px 40px;
+  background-color: #e4d7ce;
 }
 
 .text {
-  padding: 80px 0px 50px 50px;
+  padding: 2% 5%;
   flex-shrink: 0;
 }
 .text1 {
-  color: var(--Black, #1a202c);
+  color: #2a130a;
   font-family: Plus Jakarta Sans;
   font-size: 25px;
   font-style: normal;
@@ -17,15 +18,15 @@ main {
 }
 
 .text2 {
-  color: var(--Black, #1a202c);
+  color: #2a130a;
   font-family: Plus Jakarta Sans;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  padding: 30px 0px 20px 0px;
+  padding: 5px 5px;
 }
 .text2 p {
-  color: var(--Black, #1a202c);
+  color: #2a130a;
   font-family: Plus Jakarta Sans;
   font-size: 20px;
   font-style: normal;

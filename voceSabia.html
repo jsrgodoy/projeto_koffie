@@ -10,29 +10,75 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/voceSabia.css" />
-    <link rel="stylesheet" href="./css/global.css" />
 
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/voceSabia.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"
+    />
+    <script type="text/javascript" src="js/javascript.js"></script>
     <title>Você Sabia?</title>
   </head>
+
   <body>
     <header>
       <div class="container">
         <div class="logo"></div>
-        <nav class="menu">
-          <ul>
+        <div class="menu">
+          <nav class="menu-itens">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="sobre.html">Sobre Nós</a></li>
+              <li><a href="produtos.html">Produtos</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </nav>
+          <div class="account">
+            <img
+              class="user-profile"
+              src="https://images.unsplash.com/photo-1586297098710-0382a496c814?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1650&amp;q=80"
+              alt=""
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 492 492"
+            >
+              <path
+                d="M484.13 124.99l-16.11-16.23a26.72 26.72 0 00-19.04-7.86c-7.2 0-13.96 2.79-19.03 7.86L246.1 292.6 62.06 108.55c-5.07-5.06-11.82-7.85-19.03-7.85s-13.97 2.79-19.04 7.85L7.87 124.68a26.94 26.94 0 000 38.06l219.14 219.93c5.06 5.06 11.81 8.63 19.08 8.63h.09c7.2 0 13.96-3.57 19.02-8.63l218.93-219.33A27.18 27.18 0 00492 144.1c0-7.2-2.8-14.06-7.87-19.12z"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <a href="voceSabia.html">
+              <div id="cart" class="cart" data-totalitems="0">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-mobile">
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"
+            ><span class="navicon"></span
+          ></label>
+
+          <ul class="menu-mobile-itens">
             <li><a href="index.html">Home</a></li>
             <li><a href="sobre.html">Sobre Nós</a></li>
             <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="pedido.html">Pedido</a></li>
             <li><a href="contato.html">Contato</a></li>
+            <li><a href="">Login</a></li>
+            <li><a href="pedido.html">Carrinho</a></li>
           </ul>
-        </nav>
+        </div>
       </div>
+      <!--container-->
+
+      <div class="clear"></div>
     </header>
     <main>
       <div class="texto">

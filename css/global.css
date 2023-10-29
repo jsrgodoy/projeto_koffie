@@ -25,8 +25,8 @@ header {
   width: 100%;
   height: 100px;
   padding: 40px;
-  border: 1px solid #486284;
-  background-color: #ced7e4;
+  border: 1px solid #ac9675;
+  background-color: #ac9675;
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
   z-index: 3;
 }
@@ -37,7 +37,7 @@ header .logo {
   float: left;
   width: 160px;
   height: 40px;
-  background-image: url("../src/bitmap.png");
+  background-image: url("../src/logo_white.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,7 +63,7 @@ header .menu-itens ul {
 }
 
 header .menu-itens a {
-  color: #486284;
+  color: #f5eeee;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -96,7 +96,7 @@ header .menu-itens a {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #486284;
+    background-color: #ac9675;
   }
 
   .menu-mobile-itens li {
@@ -105,7 +105,7 @@ header .menu-itens a {
 
   .menu-mobile-itens li a {
     padding: 20px 30px;
-    color: #fff;
+    color: #f5eeee;
     display: block;
     padding: 20px 20px;
     border-right: 1px solid #ced7e4;
@@ -141,7 +141,7 @@ header .menu-itens a {
   }
 
   .menu-mobile .menu-icon .navicon {
-    background: #fff;
+    background: #f5eeee;
     display: block;
     height: 2px;
     position: relative;
@@ -151,7 +151,7 @@ header .menu-itens a {
 
   .menu-mobile .menu-icon .navicon:before,
   .menu-mobile .menu-icon .navicon:after {
-    background: #fff;
+    background: #f5eeee;
     content: "";
     display: block;
     height: 100%;
@@ -211,6 +211,7 @@ header .user-profile {
 header .user-profile + svg {
   width: 14px;
   cursor: pointer;
+  color: #f5eeee;
 }
 
 /*------ CARRINHO -----*/
@@ -219,7 +220,7 @@ header .cart {
   position: relative;
   width: 50px;
   height: 50px;
-  background: #292d48;
+  background-color: #2a130a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -237,7 +238,7 @@ header .cart {
     padding: 0 1px;
     height: 24px;
     min-width: 24px;
-    color: white;
+    color: #f5eeee;
     text-align: center;
     border-radius: 24px;
   }
@@ -245,14 +246,14 @@ header .cart {
 
 header .cart i {
   font-size: 25px;
-  color: white;
+  color: #f5eeee;
 }
 
 /*------ FOOTER -----*/
 
 footer {
   width: 100%;
-  background-color: #aab5c3;
+  background-color: #ac9675;
 }
 
 footer .container {
@@ -290,7 +291,7 @@ footer .footer-section-logo img {
 
 footer .footer-section-logo p {
   margin-top: 50px;
-  color: #486284;
+  color: #2a130a;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -301,7 +302,7 @@ footer .footer-section-logo p {
 /*--- FOOTER-BOX-2 ---*/
 
 footer h1 {
-  color: #1a202c;
+  color: #2a130a;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -310,7 +311,7 @@ footer h1 {
 }
 
 footer nav {
-  color: #486284;
+  color: #f5eeee;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -335,14 +336,14 @@ footer nav i {
 
 footer hr {
   width: 60%;
-  border-color: #6a6c6d;
+  border-color: #2a130a;
   opacity: 0.4;
   box-sizing: border-box;
   margin: 20px auto;
 }
 
 footer .direitos-reservados {
-  color: #1a202c;
+  color: #2a130a;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -361,8 +362,8 @@ footer .direitos-reservados {
 
 .icons-social a {
   text-decoration: none;
-  color: #aab5c3;
-  background-color: #fff;
+  color: #2a130a;
+  background-color: #f5eeee;
   width: 40px;
   height: 40px;
   border-radius: 20px;

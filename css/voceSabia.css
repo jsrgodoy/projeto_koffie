@@ -1,9 +1,10 @@
 main {
-  padding: 20px 0px 100px 20px;
+  padding: 2%;
+  background-color: #e4d7ce;
 }
 
 .texto h1 {
-  color: var(--Black, #1a202c);
+  color: #2a130a;
   font-family: Plus Jakarta Sans;
   font-size: 25px;
   font-style: normal;
@@ -12,13 +13,15 @@ main {
   padding-top: 50px;
 }
 .texto p {
-  text-align: justify;
-  color: var(--Black, #1a202c);
-  font-family: Plus Jakarta Sans;
+  color: #2a130a;
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
-  padding: 50px 20px 50px 0px;
+  font-weight: 600;
+  line-height: 121.2%;
+  text-align: justify;
+  margin-top: 30px;
+
+  padding: 5%;
 }
 @media (max-width: 800px) {
   .text5 h2 {
