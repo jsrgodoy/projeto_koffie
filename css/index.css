@@ -37,7 +37,7 @@ body {
 }
 
 p {
-  color: #2a130a;
+  color: white;
   justify-content: center;
   align-items: center;
   font-size: 30px;
@@ -46,7 +46,7 @@ p {
   line-height: 160%;
   letter-spacing: -0.32px;
   opacity: 0;
-  animation: aparecerP 8s forwards;
+  animation: aparecerP 7s forwards;
 }
 
 @keyframes aparecerP {
@@ -54,6 +54,6 @@ p {
     opacity: 0;
   }
   to {
-    opacity: 2;
+    opacity: 1;
   }
 }
