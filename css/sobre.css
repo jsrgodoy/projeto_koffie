@@ -1,22 +1,12 @@
 /*------ NOSSA HISTÓRIA -----*/
 body {
-<<<<<<< HEAD
-  background-color: #aab5c3;
-=======
-  background-color: #e4d7ce;
->>>>>>> main
 }
 
 main section.nossa-historia {
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
-  padding: 150px 0;
-  background: #aab5c3;
-=======
   padding: 50px 0;
   background-color: #e4d7ce;
->>>>>>> main
 }
 
 main section.nossa-historia .container {
@@ -27,21 +17,13 @@ main section.nossa-historia .container {
 }
 
 main section.nossa-historia .texto {
-<<<<<<< HEAD
-  padding: 0 10%;
-=======
   padding: 5% 5%;
->>>>>>> main
   width: 70%;
   height: 100%;
 }
 
 main section.nossa-historia .texto h1 {
-<<<<<<< HEAD
-  color: #1a202c;
-=======
   color: #2a130a;
->>>>>>> main
   font-size: 46px;
   font-style: normal;
   font-weight: 800;
@@ -51,13 +33,8 @@ main section.nossa-historia .texto h1 {
 }
 
 main section.nossa-historia .texto p {
-<<<<<<< HEAD
-  color: #1a202c;
-  font-size: 16px;
-=======
   color: #2a130a;
   font-size: 18px;
->>>>>>> main
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
@@ -68,21 +45,10 @@ main section.nossa-historia .texto p {
 }
 
 main section.nossa-historia .imagem {
-<<<<<<< HEAD
-  width: 30%;
-  height: 300px;
-  background-image: url("../src/history.png");
-  background-size: contain;
-  background-position: left;
-  background-repeat: no-repeat;
-}
-
-@media only screen and (max-width: 780px) {
-=======
   width: 300px;
   height: 50vh;
   border: 63px 0px 63px 63px;
-  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
+  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
 }
 
 main section.nossa-historia .imagem img {
@@ -91,8 +57,6 @@ main section.nossa-historia .imagem img {
 }
 
 @media only screen and (max-width: 780px) {
-
->>>>>>> main
   main section.nossa-historia .texto {
     width: 100%;
   }
@@ -106,11 +70,7 @@ main section.nossa-historia .imagem img {
 /*------ NOSSA EQUIPE -----*/
 
 main section.nossa-equipe {
-<<<<<<< HEAD
-  background: #ced7e4;
-=======
   background-color: #aea393;
->>>>>>> main
   width: 100%;
   height: 100%;
   padding: 50px 0;
@@ -120,11 +80,7 @@ main section.nossa-equipe {
 
 main section.nossa-equipe h1,
 h2 {
-<<<<<<< HEAD
-  color: #1a202c;
-=======
   color: #2a130a;
->>>>>>> main
   font-size: 46px;
   font-style: normal;
   font-weight: 800;
@@ -138,10 +94,6 @@ main section.nossa-equipe h2 {
   opacity: 0.8;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> main
 main section.nossa-equipe .thumb-imagens {
   margin: 50px auto;
   width: 100%;
@@ -160,8 +112,5 @@ main section.nossa-equipe .thumb-imagens img {
   height: 150px;
   width: 150px;
   border-radius: 15px;
-<<<<<<< HEAD
-=======
-  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
->>>>>>> main
+  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
 }

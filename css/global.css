@@ -8,10 +8,7 @@
 html,
 body {
   width: 100%;
-<<<<<<< HEAD
-=======
   height: 100%;
->>>>>>> main
 }
 
 .container {
@@ -31,11 +28,7 @@ header {
   padding: 40px;
   border: 1px solid #ac9675;
   background-color: #ac9675;
-<<<<<<< HEAD
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
-=======
-  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
->>>>>>> main
   z-index: 3;
 }
 
@@ -51,18 +44,13 @@ header .logo {
   background-repeat: no-repeat;
 }
 
-<<<<<<< HEAD
-=======
 @media only screen and (max-width: 333px) {
-
   header .logo {
     width: 140px;
     height: 30px;
   }
-
 }
 
->>>>>>> main
 /*------ MENU -----*/
 
 header .menu {
@@ -92,22 +80,13 @@ header .menu-itens a {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> main
 /*------ MENU MOBILE -----*/
 
 .menu-mobile {
   display: none;
 }
 
-<<<<<<< HEAD
 @media only screen and (max-width: 1024px) {
-=======
-
-@media only screen and (max-width: 1024px) {
-
   .container .login-form {
     width: 300px;
     top: 20%;
@@ -115,19 +94,13 @@ header .menu-itens a {
     visibility: hidden;
   }
 
-
->>>>>>> main
   header .menu {
     display: none;
   }
 
   .menu-mobile {
     display: block;
-<<<<<<< HEAD
     box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
-=======
-    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
->>>>>>> main
     position: relative;
     width: 100%;
     z-index: 3;
@@ -152,10 +125,7 @@ header .menu-itens a {
     padding: 20px 20px;
     border-right: 1px solid #ced7e4;
     text-decoration: none;
-<<<<<<< HEAD
-=======
     cursor: pointer;
->>>>>>> main
   }
 
   .menu-mobile .menu-mobile-itens {
@@ -169,11 +139,7 @@ header .menu-itens a {
     height: 100%;
     clear: both;
     max-height: 0;
-<<<<<<< HEAD
     transition: max-height 0.2s ease-out;
-=======
-    transition: max-height .2s ease-out;
->>>>>>> main
   }
 
   .menu-mobile li a:hover,
@@ -185,11 +151,7 @@ header .menu-itens a {
     cursor: pointer;
     display: inline-block;
     float: right;
-<<<<<<< HEAD
-    padding: 28px 20px;
-=======
     padding: 10px 20px;
->>>>>>> main
     position: relative;
     user-select: none;
   }
@@ -199,30 +161,18 @@ header .menu-itens a {
     display: block;
     height: 2px;
     position: relative;
-<<<<<<< HEAD
     transition: background 0.2s ease-out;
-=======
-    transition: background .2s ease-out;
->>>>>>> main
     width: 26px;
   }
 
   .menu-mobile .menu-icon .navicon:before,
   .menu-mobile .menu-icon .navicon:after {
     background: #f5eeee;
-<<<<<<< HEAD
     content: "";
     display: block;
     height: 100%;
     position: absolute;
     transition: all 0.2s ease-out;
-=======
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
->>>>>>> main
     width: 100%;
   }
 
@@ -238,7 +188,6 @@ header .menu-itens a {
     display: none;
   }
 
-<<<<<<< HEAD
   .menu-mobile .menu-btn:checked ~ .menu-mobile-itens {
     max-height: 100%;
   }
@@ -261,32 +210,6 @@ header .menu-itens a {
   }
 }
 
-@media only screen and (max-width: 333px) {
-=======
-  .menu-mobile .menu-btn:checked~.menu-mobile-itens {
-    max-height: 100%;
-  }
-
-  .menu-mobile .menu-btn:checked~.menu-icon .navicon {
-    background: transparent;
-  }
-
-  .menu-mobile .menu-btn:checked~.menu-icon .navicon:before {
-    transform: rotate(-45deg);
-  }
-
-  .menu-mobile .menu-btn:checked~.menu-icon .navicon:after {
-    transform: rotate(45deg);
-  }
-
-  .menu-mobile .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
-  .menu-mobile .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
-    top: 0;
-  }
-
->>>>>>> main
-}
-
 /*------ ACCOUNT -----*/
 
 header .user-profile {
@@ -298,20 +221,13 @@ header .user-profile {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 header .user-profile + svg {
-=======
-header .user-profile+svg {
->>>>>>> main
   width: 14px;
   cursor: pointer;
   color: #f5eeee;
 }
 
-<<<<<<< HEAD
-=======
 /*------ LOGIN FORM -----*/
-
 
 .login-form {
   width: 25%;
@@ -339,7 +255,6 @@ header .user-profile+svg {
   color: #ac9675;
   border: 2px solid #ddd;
   border-radius: 4px;
-
 }
 
 .login-form h1 {
@@ -359,7 +274,6 @@ header .user-profile+svg {
   top: 17px;
   color: #2a130a;
 }
-
 
 .log-btn {
   background: #2a130a;
@@ -386,8 +300,6 @@ header .user-profile+svg {
   }
 }
 
-
->>>>>>> main
 /*------ CARRINHO -----*/
 
 header .cart {
@@ -399,10 +311,7 @@ header .cart {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-<<<<<<< HEAD
-=======
   transition: all 0.2s ease-in-out;
->>>>>>> main
 
   &:before {
     position: absolute;
@@ -427,18 +336,15 @@ header .cart i {
   color: #f5eeee;
 }
 
-<<<<<<< HEAD
-=======
 header .cart:hover,
 header .cart:active,
 header .cart:focus {
-  border-color: #FF9800;
-  background: #FF9800;
+  border-color: #ff9800;
+  background: #ff9800;
   color: #fff;
   text-decoration: none;
 }
 
->>>>>>> main
 /*------ FOOTER -----*/
 
 footer {
@@ -450,21 +356,13 @@ footer .container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-<<<<<<< HEAD
-  gap: 10%;
-=======
   gap: 5%;
->>>>>>> main
   max-width: 80%;
 }
 
 footer .container div {
   margin-top: 50px;
   width: 200px;
-<<<<<<< HEAD
-=======
-
->>>>>>> main
 }
 
 @media only screen and (max-width: 1270px) {
@@ -472,21 +370,14 @@ footer .container div {
     flex-basis: 100%;
     text-align: center;
   }
-<<<<<<< HEAD
-}
-
-=======
 
   footer .footer-section-logo .icons-social {
     width: 100%;
     display: flex;
     justify-content: center;
-
   }
 }
 
-
->>>>>>> main
 /*--- FOOTER-BOX-1 ---*/
 
 footer .footer-section-logo {
@@ -564,10 +455,6 @@ footer .direitos-reservados {
   padding-bottom: 1%;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> main
 /*------ ICON SOCIAL -----*/
 
 .icons-social {
@@ -591,15 +478,6 @@ footer .direitos-reservados {
   line-height: 40px;
 }
 
-<<<<<<< HEAD
-@media only screen and (max-width: 1270px) {
-  footer .footer-section-logo .icons-social {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-=======
-
 /*------ VOLTAR AO TOPO -----*/
 
 #myBtn {
@@ -620,5 +498,4 @@ footer .direitos-reservados {
   height: 64px;
   background-size: 100% 100%;
   background-image: url("../src/topo.png");
->>>>>>> main
 }
