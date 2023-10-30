@@ -1,2 +1,2 @@
 setTimeout(function() {
-    window.location.href = 'index.html';}, 10000);
+    window.location.href = 'index.html';}, 11000);
