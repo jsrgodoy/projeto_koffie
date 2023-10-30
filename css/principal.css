@@ -1,0 +1,301 @@
+/* sinta-se melhor */
+
+main {
+  padding: 0px 0px 0px 0px;
+  margin: auto;
+  background-color: #e4d7ce;
+}
+
+
+
+.sintasemelhor .container {
+  /* background-color: rgb(174, 163, 147); */
+  background-color: #e4d7ce;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 5%;
+}
+
+@media (max-width: 800px) {
+  .sintasemelhor .container {
+    flex-direction: column-reverse;
+    width: 100%;
+    box-sizing: 100%;
+  }
+}
+
+.imagem1 {
+  padding: 0px 150px 0px 0px;
+  background-image: url("../src/home.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  width: 500px;
+  height: 250px;
+}
+
+@media (max-width: 800px) {
+  .sintasemelhor .imagem1 {
+    background-image: url("../src/home.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    justify-content: center;
+    width: 50%;
+    height: 150px;
+  }
+}
+
+.text1 {
+  padding: 5%;
+}
+
+.text1 h1 {
+  color: #2a130a;
+  font-family: Plus Jakarta Sans;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 121.2%; /* 55.752px */
+}
+
+.text1 p {
+  text-align: justify;
+  color: #2a130a;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: -0.32px;
+  width: 100%;
+  padding: 2% 2%;
+}
+
+@media (max-width: 800px) {
+  .botao1 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.text1 a {
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background-color: #2a130a;
+  border-radius: 3px;
+  padding: 8px 40px;
+  text-align: center;
+  /* Semibold/Type@16 */
+  font-family: Plus Jakarta Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+}
+
+/* que tal um koffie */
+.quetal .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6% 5%;
+  max-width: 100%;
+  /*  background-color: rgb(174, 163, 147); */
+  /* background-color: #e4d7ce; */
+  background-color: #aea393;
+}
+
+.text2 {
+  padding: 6%;
+}
+
+.text2 h1 {
+  color: #1f2401;
+  font-family: Plus Jakarta Sans;
+  font-size: 35px;
+  font-style: normal;
+  padding: 20px 0px 20px 0px;
+  font-weight: 800;
+  line-height: 121.2%;
+  padding: 5%;
+}
+
+.text2 p {
+  color: #1f2401;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: -0.32px;
+  padding: 5%;
+}
+
+.botao2 {
+  padding-left: 16px;
+}
+
+@media (max-width: 800px) {
+  .botao2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.text2 a {
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: white;
+  background-color: #2a130a;
+  border-radius: 3px;
+  padding: 8px 40px;
+  text-align: center;
+  /* Semibold/Type@16 */
+  font-family: Plus Jakarta Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+}
+
+.imagem2 {
+  background-image: url("../src/menuImg1.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  width: 350px;
+  height: 200px;
+}
+@media (max-width: 750px) {
+  .quetal .imagem2 {
+    width: 450px;
+    height: 100px;
+  }
+}
+
+/* Mais pedidos */
+.maispedidos .container {
+  padding: 1% 5%;
+  /*  background-color: rgb(174, 163, 147); */
+  width: 100%;
+  background-color: #e4d7ce;
+}
+
+.text3 {
+  display: flex;
+  justify-content: center;
+}
+
+.text3 h2 {
+  padding: 0px 0px 40px 50px;
+  color: #2a130a;
+  font-family: Plus Jakarta Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 76px; /* 158.333% */
+  letter-spacing: 0.5px;
+}
+
+.tabela {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+}
+
+.tabela div {
+  margin: 20px;
+  padding: 20px 0px 20px 0px;
+  background-color: rgb(172, 150, 117);
+  border-radius: 5px 30px;
+  width: 250px;
+  height: 100%;
+  justify-content: center;
+}
+
+/* Nossas Marcas de cafes */
+.parceiros .container {
+  padding: 5%;
+  max-width: 100%;
+  background-color: #aea393;
+  justify-content: center;
+  align-items: center;
+}
+
+.text4 {
+  color: #2a130a;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 72px */
+  letter-spacing: -0.96px;
+}
+
+.text4 h2, .text5 h2 {
+  font-size: 35px;
+}
+
+.imagem4 {
+  padding: 2%;
+  text-align: center;
+}
+
+/* O que nossos clientes dizem */
+.clientesdizem .container {
+  margin-bottom: 0;
+  padding: 50px 0px 150px 0px;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(174, 163, 147); */
+  background-color: #e4d7ce;
+}
+
+.text5 {
+  color: #2a130a;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 72px */
+  letter-spacing: -0.96px;
+  padding: 50px 0px 50px 0px;
+}
+
+.depoimentos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.depoimentos p {
+  color: #2a130a;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 121.2%;
+  margin-top: 30px;
+  text-align: left;
+  max-width: 200px;
+}
+
+.imagem5, .imagem6 {
+  width: 300px;
+  height: 300pxpx;
+  margin: 20px;
+}
