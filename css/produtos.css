@@ -1,10 +1,5 @@
 /*------ PRODUTOS -----*/
 
-main {
-  padding: 0px;
-  background-color: #e4d7ce;
-}
-
 .texto {
   display: flex;
   flex-flow: row wrap;
