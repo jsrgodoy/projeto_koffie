@@ -4,7 +4,7 @@ body {
     background: #e4d7ce;
 }
 
-.menuproduto {
+.menuproduto .container {
     width: 100%;
     height: 100%;
     display: flex;
