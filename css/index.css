@@ -1,5 +1,22 @@
 /*------ INDEX -----*/
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Plus Jakarta Sans;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #ac9675;
+}
+
 .section-bemvindo {
   height: 100vh;
   display: flex;
@@ -11,7 +28,6 @@
   height: 100%;
   position: fixed;
   z-index: -1000;
-  opacity: 0.4;
 }
 
 .textowelcome {
