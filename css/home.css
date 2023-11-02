@@ -3,12 +3,12 @@
 main {
   padding: 0px 0px 0px 0px;
   margin: auto;
-  background-color: #e4d7ce;
+  /*   background-color: #e4d7ce; */
 }
 
 .sintasemelhor .container {
   /* background-color: rgb(174, 163, 147); */
-  background-color: #e4d7ce;
+  /*   background-color: #e4d7ce; */
 
   display: flex;
   justify-content: center;
