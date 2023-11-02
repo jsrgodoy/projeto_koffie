@@ -1,9 +1,12 @@
 /*------ PRODUTOS -----*/
 
+<<<<<<< HEAD
 main {
   padding: 0px;
 }
 
+=======
+>>>>>>> main
 .texto {
   display: flex;
   flex-flow: row wrap;
