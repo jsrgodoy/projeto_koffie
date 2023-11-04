@@ -41,6 +41,10 @@ main section.pedido .box1 .box1-parte2 .endereco-entrega {
   gap: 10px;
 }
 
+.input-endereco, .quantidade {
+  border-radius: 5px;
+}
+
 main section.pedido .box1 img {
   width: 40px;
   height: 40px;
@@ -165,15 +169,22 @@ main section.pedido .box2 .box2-parte1 input::-webkit-inner-spin-button {
 }
 
 main section.pedido .box2 hr {
-  width: 479px;
+  width: 100%;
   height: 2px;
   margin-top: 40px;
+  margin-bottom: 10px;
   background: #2a130a;
 }
 
 main section.pedido .box2 .box2-parte2 {
   display: flex;
   justify-content: space-between;
+}
+
+main section.pedido .box2 .box2-parte2 h1 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
 }
 
 main section.pedido .box2 .titulo {
@@ -197,7 +208,7 @@ main section.pedido .box2 .botao {
 main section.pedido .box2 input[type="submit"] {
   background-color: #2a130a;
   border: 0;
-  width: 90%;
+  width: 60%;
   height: 55px;
   font-size: 22px;
   color: #ac9675;
@@ -210,12 +221,71 @@ main section.pedido .box2 input[type="submit"] {
   transition: all 200ms linear;
   letter-spacing: 0.2em;
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
+
+}
+
+@media only screen and (min-width: 385px) and (max-width:600px ) {
+  main section.pedido .box2 input[type="submit"] {
+    background-color: #2a130a;
+    border: 0;
+    width: 60%;
+    height: 55px;
+    font-size: 22px;
+    color: #ac9675;
+    margin-top: 100px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 200ms linear;
+    letter-spacing: 0.2em;
+    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
+    font-size: 11px;
+  }
+  .completar-pedido {
+    font-size: 22px;
+    margin-left: 15px;
+  }
+
+  .direitos-reservados p{
+    font-size: 14px;
+  }
+  
+  
+}
+
+@media only screen and (min-width: 1025px) and (max-width:1333px ) {
+  main section.pedido .box2 input[type="submit"] {
+    background-color: #2a130a;
+    border: 0;
+    width: 60%;
+    height: 55px;
+    font-size: 22px;
+    color: #ac9675;
+    margin-top: 100px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 200ms linear;
+    letter-spacing: 0.2em;
+    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
+    font-size: 14px;
+  }
+  .completar-pedido {
+    font-size: 28px;
+    margin-left: 15px;
+  }
+  
+  
 }
 
 main section.pedido .box2 input[type="submit"]:hover {
   background-color: #160801;
   color: #ac9675;
-  width: 100%;
+  width: 70%;
   height: 60px;
 }
 
