@@ -102,6 +102,7 @@ p {
 .btn-container {
   display: flex;
   height: 55px;
+  margin-top: 40px;
 }
 
 .btn-principal {
@@ -114,7 +115,6 @@ p {
   text-align: center;
   font-size: 22px;
   color: #ac9675;
-  margin-top: 10px;
   font-style: normal;
   font-weight: 500;
   border-radius: 10px;
