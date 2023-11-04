@@ -92,7 +92,7 @@
 
   <main>
     <div class="container">
-      <span>Complete seu pedido</span>
+      <span class="completar-pedido">Complete seu pedido</span>
       <section class="pedido">
         <div class="box1">
           <form action="confirmar-pedido.html">
@@ -106,13 +106,13 @@
             <div class="box1-parte2">
               <div class="endereco-entrega">
                 <label for="endereco">Endereço*</label>
-                <input type="text" name="endereco" id="endereco" autofocus required />
+                <input type="text" name="endereco" id="endereco" autofocus required class="input-endereco"/>
                 <label for="numero">Número*</label>
-                <input type="number" name="numero" id="numero" required />
+                <input type="number" name="numero" id="numero" class="input-endereco" required />
                 <label for="cidade">Cidade*</label>
-                <input type="text" name="cidade" id="cidade" required />
+                <input type="text" name="cidade" id="cidade" class="input-endereco" required />
                 <label for="estado">Estado*</label>
-                <select id="estado" name="estado" required>
+                <select id="estado" name="estado" class="input-endereco" required>
                   <option value="" disabled selected>Selecione</option>
                   <option value="alagoas">Alagoas</option>
                   <option value="amapa">Amapá</option>
@@ -144,9 +144,9 @@
                   <option value="tocantins">Tocantins</option>
                 </select>
                 <label for="cep">Código Postal(CEP)*</label>
-                <input type="text" name="cep" id="cep" required />
+                <input type="text" name="cep" id="cep" required class="input-endereco" />
                 <h1>FORMA DE PAGAMENTO*</h1>
-                <select id="estado" name="estado" required>
+                <select id="estado" name="estado" class="input-endereco" required>
                   <option value="" disabled selected>Selecione</option>
                   <option value="boleto">Boleto</option>
                   <option value="cartao">Cartão</option>
@@ -157,10 +157,10 @@
         </div>
         <div class="box2">
           <div class="box2-parte1">
-            <img src="src/expressoTradicional.png" alt="Epresso Tradicional" />
+            <img src="src/expressoTradicional.png" alt="Expresso Tradicional" />
             <div>
               <h1>Expresso Tradicional</h1>
-              <input type="number" value="1" name="quantidade" class="quantidade" id="quantidade" required />
+              <input type="number" value="1" name="quantidade" class="quantidade" id="quantidade"  required />
             </div>
             <div class="valores">
               <h1>R$ 9,99</h1>
