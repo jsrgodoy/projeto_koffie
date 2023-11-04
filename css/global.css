@@ -356,6 +356,7 @@ footer {
 footer .container {
   display: flex;
   justify-content: center;
+  /* margin-left: 18%; */
   flex-wrap: wrap;
   gap: 5%;
   max-width: 80%;
@@ -379,6 +380,8 @@ footer .container div {
     justify-content: center;
 
   }
+
+
 }
 
 
@@ -441,7 +444,7 @@ footer nav i {
 /*------ DIREITOS RESERVADOS -----*/
 
 footer hr {
-  width: 60%;
+  width: 80%;
   border-color: #2a130a;
   opacity: 0.4;
   box-sizing: border-box;
