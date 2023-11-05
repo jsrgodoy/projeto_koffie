@@ -52,9 +52,4 @@ function digitar() {
 digitar();
 
 setTimeout(function() {
-<<<<<<< HEAD
-    window.location.href = 'home.html';}, 11000);
-   
-=======
     window.location.href = 'principal.html';}, 18000);
->>>>>>> main

@@ -7,7 +7,9 @@
   font-family: Plus Jakarta Sans;
 }
 
-html, body, main {
+html,
+body,
+main {
   width: 100%;
   height: 100%;
 }
@@ -90,23 +92,6 @@ p {
   background-color: #ac9675;
   animation: progress 18s ease-in-out forwards;
 }
-.botaoskip {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-}
-
-.skip {
-  outline: none;
-  background: #2a130a;
-  color: white;
-  width: 50px;
-  height: 50px;
-  padding: 10px 20px;
-  margin: 0 10px;
-  cursor: pointer;
-  border-radius: 5px;
-}
 
 @keyframes progress {
   0% {
@@ -116,8 +101,6 @@ p {
     width: 100%;
   }
 }
-<<<<<<< HEAD
-=======
 .btn-container {
   display: flex;
   height: 55px;
@@ -141,7 +124,7 @@ p {
   cursor: pointer;
   transition: all 100ms linear;
   letter-spacing: 0.2em;
-  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
+  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
   opacity: 0;
   animation: aparecer 7s forwards;
 }
@@ -164,7 +147,10 @@ p {
 }
 
 @keyframes piscar {
-  0% { opacity: 1; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
->>>>>>> main
