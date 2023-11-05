@@ -90,6 +90,23 @@ p {
   background-color: #ac9675;
   animation: progress 11s ease-in-out forwards;
 }
+.botaoskip {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.skip {
+  outline: none;
+  background: #2a130a;
+  color: white;
+  width: 50px;
+  height: 50px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
 @keyframes progress {
   0% {
