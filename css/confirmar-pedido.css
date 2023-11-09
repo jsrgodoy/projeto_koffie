@@ -6,9 +6,14 @@ main {
 
 main section.pedido {
   display: flex;
-  margin-top: 65px;
-  margin-bottom: 100px;
+  align-items: center;  
+  justify-content: center;
   gap: 5%;
+  max-width: 1200px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 65px;
+  margin-right: 30px;
 }
 
 main section.pedido .box1 {
@@ -50,6 +55,78 @@ main section.pedido .box2 {
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
 }
 
+@media only screen and (max-width:1024px) {
+  main section.pedido {
+    display: flex;
+    margin-top: 65px;
+    margin-bottom: 100px;
+    margin-left: 30px;
+    flex-wrap: wrap;
+    justify-content: center;    
+    gap: 5%;
+  }
+
+  main section.pedido .box1 {
+    display: flex;
+    width: 90%;
+    padding: 40px 30px;
+    flex-direction: column;
+    gap: 15%;
+  }
+
+  main section.pedido .box2 {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    border-radius: 15px 15px 15px 15px;
+    background: #aea393;
+    padding: 50px 50px;
+    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  main section.pedido {
+    display: flex;
+    margin-top: 65px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    justify-content: center;    
+    gap: 5%;
+  }
+}
+
+
 main section.pedido .box2 img {
   width: 30%;
+}
+
+.text {
+  text-decoration: underline;
+  font-size: 18px;
+  padding: 5px;
+  animation: fadeIn 2s ease-in-out forwards, highlight 5s 2s;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes highlight {
+  0%, 100% {
+    background: none;
+    color: inherit;
+  }
+  50% {
+    background: rgb(236, 236, 221);
+    color: black;
+    border-radius: 8px;
+    padding: 5px;
+  }
+}
+footer {
+  margin-top: 200px;
 }

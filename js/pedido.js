@@ -40,4 +40,27 @@ if (totalPedidos && totalPedidos.length > 0) {
     mostrarItens.textContent = "Nenhum pedido selecionado.";
   }
 
- 
+  // Armazenar os dados do formulário de pedido 
+
+  document.getElementById('enviarPedido').addEventListener('click', function(event) {
+    event.preventDefault(); 
+
+    const endereco = document.getElementById('endereco').value;
+    const numero = document.getElementById('numero').value;
+    const cidade = document.getElementById('cidade').value;
+    const estado = document.getElementById('estado').value;
+    const pagamento = document.getElementById('pagamento').value;
+
+    if (!endereco || !numero || !cidade || !estado || !pagamento) {
+      mensagemErro.textContent = 'Por favor, preencha todos os campos obrigatórios.';
+      return;
+  }
+
+    localStorage.setItem('endereco', endereco);
+    localStorage.setItem('numero', numero);
+    localStorage.setItem('cidade', cidade);
+    localStorage.setItem('estado', estado);
+    localStorage.setItem('pagamento', pagamento);
+
+    window.location.href = '../confirmar-pedido.html';
+});

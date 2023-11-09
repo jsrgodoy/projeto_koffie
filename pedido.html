@@ -26,7 +26,7 @@
       <div class="menu">
         <nav class="menu-itens">
           <ul>
-            <li><a href="principal.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="sobre.html">Sobre Nós</a></li>
             <li><a href="produtos.html">Produtos</a></li>
             <li><a href="contato.html">Contato</a></li>
@@ -105,6 +105,7 @@
             </div>
             <div class="box1-parte2">
               <div class="endereco-entrega">
+                <div id="mensagemErro" style="color: red;"></div>
                 <label for="endereco">Endereço*</label>
                 <input type="text" name="endereco" id="endereco" autofocus required />
                 <label for="numero">Número*</label>
@@ -146,7 +147,7 @@
                 <label for="cep">Código Postal(CEP)*</label>
                 <input type="text" name="cep" id="cep" required />
                 <h1>FORMA DE PAGAMENTO*</h1>
-                <select id="pagamento" name="estado" required>
+                <select id="pagamento" name="pagamento" required>
                   <option value="" disabled selected>Selecione</option>
                   <option value="boleto">Boleto</option>
                   <option value="cartao">Cartão</option>
@@ -170,12 +171,12 @@
               <h1>Total</h1>
             </div>
             <div class="valores">
-              <p>R$ 9,99</p>
+              <p></p>
               <p>Promo - Entrega grátis</p>
-              <h1>R$ 9,99</h1>
+              <h1></h1>
             </div>
           </div>
-          <div class="botao"><input type="button" id="enviarPedido" value="Enviar  Pedido"></div>
+          <div class="botao"><input type="submit" id="enviarPedido" value="Enviar  Pedido"></div>
         </div>
         </form>
       </section>
