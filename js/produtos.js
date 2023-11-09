@@ -34,7 +34,7 @@ document.querySelectorAll(".buy-btn").forEach(function(btn) {
 
       // Redirecionar apenas quando o botão "Confirmar Pedido" for clicado
       console.log("Redirecionando para a página de pedido.");
-      window.location.href = "../pedido.html";
+      window.location.href = "projeto_koffie/produtos.html";
     }
 
   })
