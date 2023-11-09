@@ -206,7 +206,7 @@ main section.pedido .box2 .botao {
   justify-content: center;
 }
 
-main section.pedido .box2 input[type="submit"] {
+main section.pedido .box2 input[type="button"] {
   background-color: #2a130a;
   border: 0;
   width: 60%;
@@ -226,7 +226,7 @@ main section.pedido .box2 input[type="submit"] {
 }
 
 @media only screen and (min-width: 385px) and (max-width:600px ) {
-  main section.pedido .box2 input[type="submit"] {
+  main section.pedido .box2 input[type="button"] {
     background-color: #2a130a;
     border: 0;
     width: 60%;
@@ -257,7 +257,7 @@ main section.pedido .box2 input[type="submit"] {
 }
 
 @media only screen and (min-width: 1025px) and (max-width:1333px ) {
-  main section.pedido .box2 input[type="submit"] {
+  main section.pedido .box2 input[type="button"] {
     background-color: #2a130a;
     border: 0;
     width: 60%;
@@ -278,12 +278,11 @@ main section.pedido .box2 input[type="submit"] {
   .completar-pedido {
     font-size: 28px;
     margin-left: 15px;
-  }
-  
+  } 
   
 }
 
-main section.pedido .box2 input[type="submit"]:hover {
+main section.pedido .box2 input[type="button"]:hover {
   background-color: #160801;
   color: #ac9675;
   width: 70%;
@@ -304,4 +303,26 @@ main section.pedido .box2 input[type="submit"]:hover {
     margin-top: 5%;
   }
 
+}
+
+.pedido-item {
+  width: 200px;
+  height: 10%;
+  text-align: end;
+  font-weight: 200;
+}
+
+.pedido-item p:first-of-type {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.pedido-item p::nth-of-type(2) {
+  font-weight:light;
+  font-size: 12px;
+}
+
+.pedido-item p::nth-of-type(3) {
+  font-weight:light;
+  font-size: 12px;
 }
