@@ -53,4 +53,4 @@ function digitar() {
 digitar();
 
 setTimeout(function() {
-    window.location.href = '../home.html';}, 18000);
+    window.location.href = 'projeto_koffie/home.html';}, 18000);
