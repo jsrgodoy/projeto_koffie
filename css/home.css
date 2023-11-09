@@ -49,6 +49,12 @@
   font-weight: 800;
   line-height: 121.2%; /* 55.752px */
 }
+@media (max-width: 400px) {
+  .text1 h1 {
+    font-size: 28px;
+    width: 20rem;
+  }
+}
 
 .text1 p {
   text-align: justify;
@@ -63,27 +69,8 @@
   padding: 2% 2%;
 }
 
-@media (max-width: 800px) {
-  .botao1 {
-    display: flex;
-    justify-content: center;
-  }
-}
 .text1 a {
-  flex-direction: column;
-  justify-content: center;
-  color: white;
-  background-color: #2a130a;
-  border-radius: 3px;
-  padding: 8px 40px;
-  text-align: center;
-  /* Semibold/Type@16 */
-  font-family: Plus Jakarta Sans;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%; /* 24px */
-  letter-spacing: -0.32px;
+  text-decoration: none;
 }
 
 /* que tal um koffie */
@@ -112,6 +99,13 @@
   line-height: 121.2%;
   padding: 5%;
 }
+
+@media (max-width: 400px) {
+  .text2 h1 {
+    font-size: 28px;
+    width: 20rem;
+  }
+}
 .text2 p {
   color: #1f2401;
   font-family: Plus Jakarta Sans;
@@ -123,32 +117,52 @@
   padding: 5%;
 }
 
-.botao2 {
-  padding-left: 16px;
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.btn-menu {
+  background-color: #2a130a;
+  border: 0;
+  width: 20rem;
+  height: 55px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 22px;
+  color: #ac9675;
+  margin-top: 100px;
+  font-style: normal;
+  font-weight: 500;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 50ms linear;
+  letter-spacing: 0.2em;
+  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
+}
+.btn-menu:hover {
+  background-color: #160801;
+  color: #ac9675;
+  width: 22rem;
 }
 
-@media (max-width: 800px) {
-  .botao2 {
-    display: flex;
-    justify-content: center;
+.btn-menu:active {
+  transform: translateY(12px);
+}
+@media (max-width: 400px) {
+  .btn-menu {
+    font-size: 16px;
+    width: 12rem;
+    height: 50px;
+  }
+  .btn-menu:hover {
+    background-color: #160801;
+    color: #ac9675;
+    width: 15rem;
   }
 }
 .text2 a {
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-  color: white;
-  background-color: #2a130a;
-  border-radius: 3px;
-  padding: 8px 40px;
-  text-align: center;
-  /* Semibold/Type@16 */
-  font-family: Plus Jakarta Sans;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%; /* 24px */
-  letter-spacing: -0.32px;
+  text-decoration: none;
 }
 .imagem2 {
   background-image: url("../src/menuImg1.png");
