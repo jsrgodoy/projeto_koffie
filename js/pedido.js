@@ -62,5 +62,5 @@ if (totalPedidos && totalPedidos.length > 0) {
     localStorage.setItem('estado', estado);
     localStorage.setItem('pagamento', pagamento);
 
-    window.location.href = '../confirmar-pedido.html';
+    window.location.href = 'projeto_koffie/confirmar-pedido.html';
 });
