@@ -86,8 +86,7 @@
 .btn-menu:hover {
   background-color: #160801;
   color: #ac9675;
-  width: 30rem;
-  height: 60px;
+  width: 25rem;
 }
 
 .btn-menu:active {
@@ -193,8 +192,7 @@ textarea {
 .btn-form:hover {
   background-color: #160801;
   color: #ac9675;
-  width: 30rem;
-  height: 60px;
+  width: 25rem;
 }
 
 .btn-form:active {

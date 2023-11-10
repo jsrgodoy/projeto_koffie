@@ -294,8 +294,7 @@ main section.pedido .box2 input[type="submit"] {
 main section.pedido .box2 input[type="submit"]:hover {
   background-color: #160801;
   color: #ac9675;
-  width: 70%;
-  height: 60px;
+  width: 30rem;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -310,5 +309,45 @@ main section.pedido .box2 input[type="submit"]:hover {
   main section.pedido .box2 {
     width: 100%;
     margin-top: 5%;
+  }
+}
+
+.pedido-item {
+  width: 200px;
+  height: 10%;
+  text-align: end;
+  font-weight: 200;
+}
+
+.pedido-item p:first-of-type {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.pedido-item p::nth-of-type(2) {
+  font-weight: light;
+  font-size: 12px;
+}
+
+.pedido-item p::nth-of-type(3) {
+  font-weight: light;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 500px) {
+  .pedido-item {
+    width: 100px;
+    font-size: 10px;
+  }
+
+  main section.pedido .box2 .box2-parte2 h1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+
+  main section.pedido .box2 .botao {
+    justify-content: center;
+    font-size: 12px;
   }
 }

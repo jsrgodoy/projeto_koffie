@@ -28,7 +28,7 @@
           <ul>
             <li><a href="home.html">Home</a></li>
             <li><a href="sobre.html">Sobre Nós</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="menu.html">Menu</a></li>
             <li><a href="contato.html">Contato</a></li>
           </ul>
         </nav>
@@ -60,7 +60,7 @@
         <ul class="menu-mobile-itens">
           <li><a href="home.html">Home</a></li>
           <li><a href="sobre.html">Sobre Nós</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="menu.html">Menu</a></li>
           <li><a href="contato.html">Contato</a></li>
           <li><a onclick="login()">Login</a></li>
           <li><a href="pedido.html">Carrinho</a></li>
@@ -105,6 +105,7 @@
             </div>
             <div class="box1-parte2">
               <div class="endereco-entrega">
+                <div id="mensagemErro" style="color: red;"></div>
                 <label for="endereco">Endereço*</label>
                 <input type="text" name="endereco" id="endereco" autofocus required />
                 <label for="numero">Número*</label>
@@ -146,7 +147,7 @@
                 <label for="cep">Código Postal(CEP)*</label>
                 <input type="text" name="cep" id="cep" required />
                 <h1>FORMA DE PAGAMENTO*</h1>
-                <select id="estado" name="estado" required>
+                <select id="pagamento" name="pagamento" required>
                   <option value="" disabled selected>Selecione</option>
                   <option value="boleto">Boleto</option>
                   <option value="cartao">Cartão</option>
@@ -157,13 +158,9 @@
         </div>
         <div class="box2">
           <div class="box2-parte1">
-            <img src="src/ExpressoTradicional.svg" alt="Epresso Tradicional" />
+            <img src="src/ExpressoTradicional.svg" alt="Expresso Tradicional" />
             <div>
-              <h1>Expresso Tradicional</h1>
-              <input type="number" value="1" name="quantidade" class="quantidade" id="quantidade" required />
-            </div>
-            <div class="valores">
-              <h1>R$ 9,99</h1>
+              <h1 id="itens-pedido"></h1>
             </div>
           </div>
           <hr>
@@ -174,12 +171,12 @@
               <h1>Total</h1>
             </div>
             <div class="valores">
-              <p>R$ 9,99</p>
-              <p>R$ 9,99</p>
-              <h1>R$ 9,99</h1>
+              <p></p>
+              <p>Promo - Entrega grátis</p>
+              <h1></h1>
             </div>
           </div>
-          <div class="botao"><input type="submit" onclick="myFunction()" value="Confirmar  Pedido"></div>
+          <div class="botao"><input type="submit" id="enviarPedido" value="Enviar  Pedido"></div>
         </div>
         </form>
       </section>
@@ -248,6 +245,7 @@
   <button onclick="topFunction()" id="myBtn" title="Voltar ao topo"></button>
 
   <script type="text/javascript" src="js/javascript.js"></script>
+  <script src="js/pedido.js"></script>
 </body>
 
 </html>

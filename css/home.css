@@ -1,4 +1,4 @@
-/*------ PRINCIPAL -----*/
+/*------ HOME -----*/
 
 .sintasemelhor .container {
   display: flex;
@@ -44,7 +44,7 @@
 .text1 h1 {
   color: #2a130a;
   font-family: Plus Jakarta Sans;
-  font-size: 35px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 800;
   line-height: 121.2%; /* 55.752px */

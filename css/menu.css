@@ -1,4 +1,4 @@
-/*------ PRODUTOS -----*/
+/*------ MENU -----*/
 
 .texto {
   display: flex;
@@ -270,4 +270,33 @@ a.buy-btn:focus {
   background: #ff9800;
   color: #fff;
   text-decoration: none;
+}
+
+.produtos .container input[type="button"]:hover {
+  background-color: #160801;
+  color: #ac9675;
+  width: 32rem;
+}
+
+.produtos .container .botao {
+  display: flex;
+  justify-content: center;
+}
+
+.produtos .container input[type="button"] {
+  background-color: #2a130a;
+  border: 0;
+  width: 30%;
+  height: 55px;
+  font-size: 22px;
+  color: #ac9675;
+  margin-top: 100px;
+  font-style: normal;
+  font-weight: 500;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 200ms linear;
+  letter-spacing: 0.2em;
+  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
 }
