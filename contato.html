@@ -10,7 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/contato.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
@@ -19,6 +18,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"
     />
     <link rel="icon" type="image/x-icon" href="src/favicon.png" />
+    <script src="./js/javascript.js" defer></script>
+    <script src="./js/contato.js" defer></script>
     <title>Contato</title>
   </head>
 
@@ -110,20 +111,11 @@
       <section class="menuproduto">
         <div class="container">
           <div class="textomenu">
-            <h1 class="h1">
-              O Melhor <br />
-              café da região
-            </h1>
-            <p class="p">
-              Estamos ansiosos para surpreendê-lo com nossas opções deliciosas.
-              <br />
+            <h1 class="h1">O Melhor <br />café da região</h1>
+            <p class="p">Estamos ansiosos para surpreendê-lo com nossas opções.<br />
               Abra nosso menu e comece a sonhar com sua próxima escolha!
             </p>
-            <a href="menu.html">
-              <div class="btn">
-                <div class="btn-menu">Produtos</div>
-              </div>
-            </a>
+            <a href="produtos.html" class="btn-menu">Menu</a>
           </div>
           <div class="imagemmenu">
             <img src="src/menuImg1.png" alt="" />
@@ -135,37 +127,24 @@
         <div class="container">
           <div class="section-form">
             <h1 class="h1">Contato</h1>
-            <form action="#" method="POST" class="formulario">
-              <label for="nome">Nome*</label>
-              <input
-                type="text"
-                name="nome"
-                id="nome"
-                placeholder="Digite seu nome"
-                required
-              />
+            <form action="" class="formulario">
+              
+              <label for="nome" class="label-form">Nome*</label>
+              <input type="text" name="nome" id="nome" class="input-form" placeholder="Digite seu nome"/>
+              <p id="nome-helper" class="helper-text">Mensagem</p>
 
-              <label for="email">Email*</label>
-              <input
-                type="text"
-                name="email"
-                id="email"
-                class="input-altura"
-                placeholder="Digite seu email"
-                required
-              />
+              <label for="email" class="label-form">Email*</label>
+              <input type="text" name="email" id="email" class="input-form" placeholder="Digite seu email"/>
+              <p id="email-helper" class="helper-text">Mensagem</p>
 
-              <label for="mensagem">Mensagem*</label>
-              <textarea
-                name="mensagem"
-                id="mensagem"
-                rows="5"
-                placeholder="Digite sua mensagem"
-                required
-              ></textarea>
-              <div class="botao">
-                <button type="submit" class="btn-form">Enviar</button>
+              <label for="mensagem" class="label-form">Mensagem*</label>
+              <textarea name="mensagem" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+              <p id="mensagem-helper" class="helper-text">Mensagem</p>
+
+              <div class="btn-container">
+                <button type="submit" class="btn-form" disabled>Enviar</button>
               </div>
+              
             </form>
           </div>
 
@@ -237,7 +216,5 @@
     <div class="clear"></div>
 
     <button onclick="topFunction()" id="myBtn" title="Voltar ao topo"></button>
-
-    <script type="text/javascript" src="js/javascript.js"></script>
   </body>
 </html>
