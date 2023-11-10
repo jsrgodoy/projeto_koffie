@@ -8,9 +8,10 @@ document.querySelectorAll(".buy-btn").forEach(function(btn) {
     event.preventDefault(); // impede a ação padrão do "a href"
 
     let produto = event.target.closest('.wsk-cp-product');
-    let nome = produto.querySelector(".title-product h3").innerText;
+    let nome = produto.querySelector(".category").innerText; // Alterei para selecionar o nome do produto
     let quantidade = parseInt(produto.querySelector(".quantidade").value);    
-    
+  
+
     // converte a string de preço em um número
     let preco = parseFloat(produto.querySelector(".price").innerText.replace("R$ ", "").replace(",", "."));
     let total = quantidade * preco;

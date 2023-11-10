@@ -50,8 +50,9 @@ if (totalPedidos && totalPedidos.length > 0) {
     const cidade = document.getElementById('cidade').value;
     const estado = document.getElementById('estado').value;
     const pagamento = document.getElementById('pagamento').value;
+    const pedido = totalValores; // add para não confirmar sem ter este campo válido
 
-    if (!endereco || !numero || !cidade || !estado || !pagamento) {
+    if (!endereco || !numero || !cidade || !estado || !pagamento || !pedido) {
       mensagemErro.textContent = 'Por favor, preencha todos os campos obrigatórios.';
       return;
   }
