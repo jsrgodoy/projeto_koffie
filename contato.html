@@ -127,7 +127,7 @@
         <div class="container">
           <div class="section-form">
             <h1 class="h1">Contato</h1>
-            <form action="" class="formulario">
+            <form id="formContato" class="formulario" autocomplete="off">
               
               <label for="nome" class="label-form">Nome*</label>
               <input type="text" name="nome" id="nome" class="input-form" placeholder="Digite seu nome"/>
@@ -142,7 +142,7 @@
               <p id="mensagem-helper" class="helper-text">Mensagem</p>
 
               <div class="btn-container">
-                <button type="submit" class="btn-form" disabled>Enviar</button>
+                <button type="button" id="btn-submit" class="btn-form" disabled>Enviar</button>
               </div>
               
             </form>
@@ -162,6 +162,12 @@
           </div>
         </div>
       </section>
+      <div id="overlay"></div>
+      <div id="modal">
+        <img src="./src/logo_white.png" alt="Logo Koffie">
+        <p>Mensagem enviada com sucesso!</p>
+        <button type="button" id="btn-modal" class="btn-modal">Ok</button>
+      </div>
     </main>
     <footer>
       <div class="container">
