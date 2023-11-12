@@ -9,17 +9,27 @@ document.querySelectorAll(".buy-btn").forEach(function(btn) {
 
     let produto = event.target.closest('.wsk-cp-product');
     let nome = produto.querySelector(".category").innerText; // Alterei para selecionar o nome do produto
-    let quantidade = parseInt(produto.querySelector(".quantidade").value);    
+    let quantidade = parseInt(produto.querySelector(".quantidade").value); 
+    let quantidadeInput = produto.querySelector(".quantidade"); // remove o valor do Input  
+    let index = pedidos.findIndex(item => item.nome === nome); // Variavel para verificar o carrinho.....
   
+      // Para remover o produto do carrinho, com isso fica zerado...
+    if (index !== -1) {
+      totalGeral -= pedidos[index].total;
+      quantidade -= pedidos[index].quantidade;      
+      pedidos.splice(index, 1);
 
-    // converte a string de preço em um número
-    let preco = parseFloat(produto.querySelector(".price").innerText.replace("R$ ", "").replace(",", "."));
-    let total = quantidade * preco;
+      quantidadeInput.value = 0;
+      quantidade = 0;
+      
+    } else { // código anterior que adiciona o produto no carrinho....      
+      let preco = parseFloat(produto.querySelector(".price").innerText.replace("R$ ", "").replace(",", "."));
+      let total = quantidade * preco;
+      pedidos.push({ nome: nome, quantidade: quantidade, total: total });
+      totalGeral += total;
+    }    
 
-    pedidos.push({nome: nome, quantidade: quantidade, total: total});
-    totalGeral += total;
-
-    console.log(`${nome} - Quantidade (${quantidade}) - Total (R$ ${total.toFixed(2).replace(".", ",")})`);
+    console.log(`${nome} - Quantidade (${quantidade})`);
     console.log(`Total Geral: R$ ${totalGeral.toFixed(2).replace(".", ",")}`);
    
   });
@@ -41,3 +51,9 @@ document.querySelectorAll(".buy-btn").forEach(function(btn) {
   })
  
 });
+
+// Função que altera a cor do botão quando for clicado
+function alterarCorBotao(clickedButton) {
+  // Alterna entre as classes CSS do botão clicado
+  clickedButton.classList.toggle('selected');
+}

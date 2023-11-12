@@ -263,9 +263,13 @@ a.buy-btn {
   transition: all 0.2s ease-in-out;
 }
 
-a.buy-btn:hover,
-a.buy-btn:active,
-a.buy-btn:focus {
+a.buy-btn.selected {
+  border-color: #fff;
+  background: #ff9800;
+  color: #fff;
+}
+
+a.buy-btn:hover {
   border-color: #ff9800;
   background: #ff9800;
   color: #fff;
