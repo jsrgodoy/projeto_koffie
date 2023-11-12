@@ -10,7 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/contato.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
@@ -19,9 +18,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"
     />
     <link rel="icon" type="image/x-icon" href="src/favicon.png" />
-    
-    <script type="text/javascript" src="js/javascript.js" defer></script>
-
+    <script src="./js/javascript.js" defer></script>
+    <script src="./js/contato.js" defer></script>
     <title>Contato</title>
   </head>
 
@@ -32,9 +30,9 @@
         <div class="menu">
           <nav class="menu-itens">
             <ul>
-              <li><a href="principal.html">Home</a></li>
+              <li><a href="home.html">Home</a></li>
               <li><a href="sobre.html">Sobre Nós</a></li>
-              <li><a href="produtos.html">Produtos</a></li>
+              <li><a href="menu.html">Menu</a></li>
               <li>Contato</li>
             </ul>
           </nav>
@@ -58,7 +56,7 @@
           </div>
           <div>
             <a href="pedido.html">
-              <div id="cart" class="cart" data-totalitems="1">
+              <div id="cart" class="cart" data-totalitems="">
                 <i class="fas fa-shopping-cart"></i>
               </div>
             </a>
@@ -72,9 +70,9 @@
           ></label>
 
           <ul class="menu-mobile-itens">
-            <li><a href="principal.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="sobre.html">Sobre Nós</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="menu.html">Menu</a></li>
             <li><a href="contato.html">Contato</a></li>
             <li><a onclick="login()">Login</a></li>
             <li><a href="pedido.html">Carrinho</a></li>
@@ -113,20 +111,11 @@
       <section class="menuproduto">
         <div class="container">
           <div class="textomenu">
-            <h1 class="h1">
-              O Melhor <br />
-              café da região
-            </h1>
-            <p class="p">
-              Estamos ansiosos para surpreendê-lo com nossas opções deliciosas.
-              <br />
+            <h1 class="h1">O Melhor <br />café da região</h1>
+            <p class="p">Estamos ansiosos para surpreendê-lo com nossas opções.<br />
               Abra nosso menu e comece a sonhar com sua próxima escolha!
             </p>
-            <a href="produtos.html">
-              <div class="btn">
-                <div class="btn-menu">Produtos</div>
-              </div>
-            </a>
+            <a href="produtos.html" class="btn-menu">Menu</a>
           </div>
           <div class="imagemmenu">
             <img src="src/menuImg1.png" alt="" />
@@ -138,37 +127,24 @@
         <div class="container">
           <div class="section-form">
             <h1 class="h1">Contato</h1>
-            <form action="#" method="POST" class="formulario">
-              <label for="nome">Nome*</label>
-              <input
-                type="text"
-                name="nome"
-                id="nome"
-                placeholder="Digite seu nome"
-                required
-              />
+            <form id="formContato" class="formulario" autocomplete="off">
+              
+              <label for="nome" class="label-form">Nome*</label>
+              <input type="text" name="nome" id="nome" class="input-form" placeholder="Digite seu nome"/>
+              <p id="nome-helper" class="helper-text">Mensagem</p>
 
-              <label for="email">Email*</label>
-              <input
-                type="text"
-                name="email"
-                id="email"
-                class="input-altura"
-                placeholder="Digite seu email"
-                required
-              />
+              <label for="email" class="label-form">Email*</label>
+              <input type="text" name="email" id="email" class="input-form" placeholder="Digite seu email"/>
+              <p id="email-helper" class="helper-text">Mensagem</p>
 
-              <label for="mensagem">Mensagem*</label>
-              <textarea
-                name="mensagem"
-                id="mensagem"
-                rows="5"
-                placeholder="Digite sua mensagem"
-                required
-              ></textarea>
-              <div class="botao">
-                <button type="submit" class="btn-form">Enviar</button>
+              <label for="mensagem" class="label-form">Mensagem*</label>
+              <textarea name="mensagem" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+              <p id="mensagem-helper" class="helper-text">Mensagem</p>
+
+              <div class="btn-container">
+                <button type="button" id="btn-submit" class="btn-form" disabled>Enviar</button>
               </div>
+              
             </form>
           </div>
 
@@ -186,6 +162,12 @@
           </div>
         </div>
       </section>
+      <div id="overlay"></div>
+      <div id="modal">
+        <img src="./src/logo_white.png" alt="Logo Koffie">
+        <p>Mensagem enviada com sucesso!</p>
+        <button type="button" id="btn-modal" class="btn-modal">Ok</button>
+      </div>
     </main>
     <footer>
       <div class="container">
@@ -240,6 +222,5 @@
     <div class="clear"></div>
 
     <button onclick="topFunction()" id="myBtn" title="Voltar ao topo"></button>
-
   </body>
 </html>

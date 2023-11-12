@@ -1,7 +1,7 @@
 /*------ VOCÊ SABIA -----*/
 
 main {
-  padding: 2%; 
+  padding: 2%;
 }
 
 .texto h1 {
@@ -15,12 +15,13 @@ main {
 }
 .texto p {
   color: #2a130a;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 121.2%;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: -0.32px;
+  margin-top: 40px;
   text-align: justify;
-  margin-top: 30px;
 
   padding: 5%;
 }

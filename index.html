@@ -9,7 +9,6 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/index.css" />
     <script src="./js/index.js" defer></script>
     <link
@@ -21,21 +20,27 @@
   </head>
   <body>
     <main>
+      <img src="./src/backgroundindex.gif" alt="" class="backgroundmenu" />
       <section class="section-bemvindo">
-        <img src="./src/backgroundwelcome.gif" alt="" class="backgroundmenu" />
         <div class="textowelcome">
           <div class="logo">
             <img src="./src/logo_white.png" alt="" />
           </div>
-          <p>
+          <p id="paragrafo1" class="efeitoCursor">
             Bem-vindo à Cafeteria Koffie, onde cada xícara conta uma história.
           </p>
-          <p>
+          <p id="paragrafo2">
             Sinta-se em casa e permita-se a uma experiência que desperta os
             sentidos e acalma a alma.
           </p>
           <br />
-          <p>Você está sendo direcionado para a página principal.</p>
+          <p id="paragrafo3">
+            Você está sendo direcionado para a página principal.
+          </p>
+        </div>
+        <div class="loader"></div>
+        <div class="btn-container">
+          <a href="home.html" class="btn-principal">Página Principal</a>
         </div>
       </section>
     </main>
