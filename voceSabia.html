@@ -25,26 +25,27 @@
   <body>
     <header>
       <div class="container">
-        <div class="logo"></div>
+        <a href="home.html">
+          <div class="logo"></div>
+        </a>
         <div class="menu">
           <nav class="menu-itens">
             <ul>
-              <li><a href="index.html">Home</a></li>
+              <li><a href="home.html">Home</a></li>
               <li><a href="sobre.html">Sobre Nós</a></li>
-              <li><a href="produtos.html">Produtos</a></li>
+              <li><a href="menu.html">Menu</a></li>
               <li><a href="contato.html">Contato</a></li>
             </ul>
           </nav>
-
           <div class="account">
             <img
-              onclick="login()"
+              onclick="abre()"
               class="user-profile"
               src="src/user-profle.png"
-              galt="Cadastro"
+              alt="Cadastro"
             />
             <svg
-              onclick="login()"
+              onclick="abre()"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
               viewBox="0 0 492 492"
@@ -54,10 +55,9 @@
               ></path>
             </svg>
           </div>
-
           <div>
             <a href="pedido.html">
-              <div id="cart" class="cart" data-totalitems="1">
+              <div id="cart" class="cart" data-totalitems="">
                 <i class="fas fa-shopping-cart"></i>
               </div>
             </a>
@@ -71,37 +71,42 @@
           ></label>
 
           <ul class="menu-mobile-itens">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="sobre.html">Sobre Nós</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="menu.html">Menu</a></li>
             <li><a href="contato.html">Contato</a></li>
-            <li><a onclick="login()">Login</a></li>
+            <li><a onclick="abre()">Login</a></li>
             <li><a href="pedido.html">Carrinho</a></li>
           </ul>
         </div>
 
         <div class="login-form">
-          <h1>Acesso</h1>
-          <div class="form-group">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Username "
-              id="UserName"
-            />
-            <i class="fa fa-user"></i>
-          </div>
-          <div class="form-group log-status">
-            <input
-              type="password"
-              class="form-control"
-              placeholder="Password"
-              id="Passwod"
-            />
-            <i class="fa fa-lock"></i>
-          </div>
-          <a class="link" href="#">Lost your password?</a>
-          <button type="button" class="log-btn">Log in</button>
+          <form action="">
+            <h1>Acesso</h1>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Usuário "
+                id="UserName"
+                required
+              />
+              <i class="fa fa-user"></i>
+              <p id="username-helper" class="helper-text"></p>
+            </div>
+            <div class="form-group log-status">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Senha"
+                id="Passwod"
+              />
+              <i class="fa fa-lock"></i>
+              <p id="senha-helper" class="helper-text"></p>
+            </div>
+            <a class="link" href="#">Perdeu sua senha?</a>
+            <button type="button" class="log-btn">Acessar</button>
+          </form>
         </div>
       </div>
       <!--container-->
