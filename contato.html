@@ -67,17 +67,21 @@
       </div>
 
       <div class="login-form">
-        <h1>Acesso</h1>
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Username " id="UserName" />
-          <i class="fa fa-user"></i>
-        </div>
-        <div class="form-group log-status">
-          <input type="password" class="form-control" placeholder="Password" id="Passwod" />
-          <i class="fa fa-lock"></i>
-        </div>
-        <a class="link" href="#">Perdeu sua senha?</a>
-        <button type="button" class="log-btn">Acessar</button>
+        <form action="">
+          <h1>Acesso</h1>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Usuário " id="UserName" required />
+            <i class="fa fa-user"></i>
+            <p id="username-helper" class="helper-text"></p>
+          </div>
+          <div class="form-group log-status">
+            <input type="password" class="form-control" placeholder="Senha" id="Passwod" />
+            <i class="fa fa-lock"></i>
+            <p id="senha-helper" class="helper-text"></p>
+          </div>
+          <a class="link" href="#">Perdeu sua senha?</a>
+          <button type="button" class="log-btn">Acessar</button>
+        </form>
       </div>
     </div>
     <!--container-->

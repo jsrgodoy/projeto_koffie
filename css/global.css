@@ -23,6 +23,12 @@ div.clear {
   clear: both;
 }
 
+.helper-text {
+  display: none;
+  font-size: .8rem;
+  color: darkred;
+}
+
 /*------ HEADER -----*/
 
 header {
