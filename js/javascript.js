@@ -1,10 +1,19 @@
 
 /*------ LOGIN -----*/
 
-function login() {
 
-  const login = document.querySelector(".login-form");
+const login = document.querySelector(".login-form");
 
+const account = document.querySelector(".account");
+
+document.addEventListener('mousedown', (event) => {
+  if (!(login.contains(event.target)) && !(account.contains(event.target))) {
+    login.style.visibility = "hidden";
+
+  }
+})
+
+function abre() {
   if (login.style.visibility == "hidden") {
     login.style.visibility = "visible";
   } else {
@@ -12,6 +21,18 @@ function login() {
   }
 
 }
+
+function fecha() {
+  login.style.visibility = "hidden";
+}
+
+/*
+if (login.style.visibility == "hidden") {
+  login.style.visibility = "visible";
+} else {
+  login.style.visibility = "hidden";
+}
+*/
 
 /*------ VOLTAR AO TOPO -----*/
 
