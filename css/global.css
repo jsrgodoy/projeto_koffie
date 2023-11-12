@@ -23,15 +23,12 @@ div.clear {
   clear: both;
 }
 
-<<<<<<< HEAD
-=======
 .helper-text {
   display: none;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: darkred;
 }
 
->>>>>>> novajeferson
 /*------ HEADER -----*/
 
 header {
