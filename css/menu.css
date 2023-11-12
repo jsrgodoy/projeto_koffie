@@ -6,6 +6,7 @@
   flex-direction: column;
   padding: 5% 0;
   text-align: center;
+  width: 100%;
 }
 
 .texto h1 {
@@ -16,6 +17,21 @@
   line-height: 121.2%;
   text-transform: capitalize;
 }
+@media (max-width: 790px) {
+  .texto h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 600px) {
+  .texto h1 {
+    font-size: 27px;
+  }
+}
+@media (max-width: 355px) {
+  .texto h1 {
+    font-size: 20px;
+  }
+}
 
 .texto h2 {
   color: #2a130a;
@@ -25,6 +41,12 @@
   line-height: 121.2%;
   text-transform: capitalize;
   margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .texto h2 {
+    font-size: 20px;
+  }
 }
 
 /*------ CARDS -----*/
@@ -279,7 +301,7 @@ a.buy-btn:hover {
 .produtos .container input[type="button"]:hover {
   background-color: #160801;
   color: #ac9675;
-  width: 32rem;
+  width: 28rem;
 }
 
 .produtos .container .botao {
@@ -290,7 +312,7 @@ a.buy-btn:hover {
 .produtos .container input[type="button"] {
   background-color: #2a130a;
   border: 0;
-  width: 30%;
+  width: 20rem;
   height: 55px;
   font-size: 22px;
   color: #ac9675;
@@ -300,7 +322,21 @@ a.buy-btn:hover {
   border-radius: 10px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: all 200ms linear;
+  transition: all 100ms linear;
   letter-spacing: 0.2em;
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 700px) {
+  .produtos .container input[type="button"] {
+    margin-top: none;
+    font-size: 16px;
+    width: 15rem;
+    height: 45px;
+  }
+  .produtos .container input[type="button"]:hover {
+    background-color: #160801;
+    color: #ac9675;
+    width: 20rem;
+  }
 }
