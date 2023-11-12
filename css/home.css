@@ -390,44 +390,91 @@
 }
 
 /* O que nossos clientes dizem */
-.clientesdizem .container {
-  margin-bottom: 0;
-  padding: 50px 0px 150px 0px;
-  justify-content: center;
-  align-items: center;
-  /* background-color: rgb(174, 163, 147); */
-  background-color: #e4d7ce;
-}
-.text5 {
-  color: #2a130a;
-  text-align: center;
-  font-family: Plus Jakarta Sans;
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 72px */
-  letter-spacing: -0.96px;
-  padding: 50px 0px 50px 0px;
-}
-.depoimentos {
+
+.clientesdizem {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: 450px;
+  align-items: center;
   justify-content: center;
-}
-.depoimentos p {
-  color: #2a130a;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 121.2%;
-  margin-top: 30px;
-  text-align: left;
-  max-width: 200px;
 }
 
-.imagem5,
-.imagem6 {
-  width: 300px;
-  height: 300pxpx;
-  margin: 20px;
+.clientesdizem .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1280px;
+  height: 100%;
+  margin-top: 10px;
+  gap: 1rem;
+}
+
+.container-cards {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+  width: 100%;
+  height: 290px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.slider img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.on {
+  opacity: 1;
+}
+
+.stars {
+  font-weight: 500;
+  color: #2a130a;
+  font-size: 20px;
+}
+
+.slider h2 {
+  color: #2a130a;
+  font-size: 20px;
+}
+
+.texto-depoimento {
+  color: #2a130a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.32px;
+  opacity: 0.6;
+  margin-top: 6px;
+  text-align: left;
+}
+
+#prev-button, #next-button {
+  font-size: 30px;
+  border-radius: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+#prev-button img, #next-button img {
+  width: 100%;
+  height: 100%;
 }
