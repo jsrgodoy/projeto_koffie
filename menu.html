@@ -45,7 +45,7 @@
         </div>
         <div>
           <a href="pedido.html">
-            <div id="cart" class="cart" data-totalitems="">
+            <div id="cart" class="cart" data-totalitems="0">
               <i class="fas fa-shopping-cart"></i>
             </div>
           </a>
@@ -117,7 +117,7 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade"
+                  <input type="number" value="1" min="1" oninput="validity.valid||(value='');" name="quantidade" class="quantidade"
                     id="expresso-tradicional-qty" required />
                   <div class="wcf-left">
                     <span class="price">8</span>
@@ -148,7 +148,7 @@
                   <p>Expresso diluído, menos intenso que o tradicional</p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade"
+                  <input type="number" value="1" min="1" oninput="validity.valid||(value='');" name="quantidade" class="quantidade"
                     id="expresso-americano-qty" required />
                   <div class="wcf-left">
                     <span class="price">9</span>
@@ -178,7 +178,7 @@
                   <p>Café expresso tradicional com espuma cremosa</p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="expresso-cremoso-qty"
+                  <input type="number" value="1" min="1"  oninput="validity.valid||(value='');" name="quantidade" class="quantidade" id="expresso-cremoso-qty"
                     required />
                   <div class="wcf-left">
                     <span class="price">12</span>
@@ -208,7 +208,7 @@
                   <p>Bebida preparada com café expresso e cubos de gelo</p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="expresso-gelado-qty"
+                  <input type="number" value="1" min="1" oninput="validity.valid||(value='');" name="quantidade" class="quantidade" id="expresso-gelado-qty"
                     required />
                   <div class="wcf-left">
                     <span class="price">10</span>
@@ -240,7 +240,7 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="cafe-com-leite-qty"
+                  <input type="number" value="1" min="1" oninput="validity.valid||(value='');" name="quantidade" class="quantidade" id="cafe-com-leite-qty"
                     required />
                   <div class="wcf-left">
                     <span class="price">10</span>
@@ -273,7 +273,7 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="latte-qty" required />
+                  <input type="number" value="1" min="1" oninput="validity.valid||(value='');" name="quantidade" class="quantidade" id="latte-qty" required />
                   <div class="wcf-left">
                     <span class="price">14</span>
                   </div>
@@ -305,7 +305,7 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="capuccino-qty"
+                  <input type="number" value="1" min="1"  oninput="validity.valid||(value='');" name="quantidade" class="quantidade" id="capuccino-qty"
                     required />
                   <div class="wcf-left">
                     <span class="price">15</span>
@@ -337,7 +337,7 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="mocaccino-qty"
+                  <input type="number" value="1" min="1" oninput="validity.valid||(value='');" name="quantidade" class="quantidade" id="mocaccino-qty"
                     required />
                   <div class="wcf-left">
                     <span class="price">15</span>
@@ -370,7 +370,7 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="macchiato-qty"
+                  <input type="number" value="1" min="1"  oninput="validity.valid||(value='');" name="quantidade" class="quantidade" id="macchiato-qty"
                     required />
                   <div class="wcf-left">
                     <span class="price">15</span>
@@ -403,7 +403,7 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="chocolate-quente-qty"
+                  <input type="number" value="1" min="1" oninput="validity.valid||(value='');"  name="quantidade" class="quantidade" id="chocolate-quente-qty"
                     required />
                   <div class="wcf-left">
                     <span class="price">12</span>
@@ -436,7 +436,7 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="cubano-qty"
+                  <input type="number" value="1" min="1"  oninput="validity.valid||(value='');" name="quantidade" class="quantidade" id="cubano-qty"
                     required />
                   <div class="wcf-left">
                     <span class="price">18</span>
@@ -466,7 +466,7 @@
                   <p>Bebida adocicada preparada com café e leite de coco</p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="havaiano-qty"
+                  <input type="number" value="1" min="1" oninput="validity.valid||(value='');" name="quantidade" class="quantidade" id="havaiano-qty"
                     required />
                   <div class="wcf-left">
                     <span class="price">16</span>
@@ -498,7 +498,7 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="arabe-qty" required />
+                  <input type="number" value="1" min="1" oninput="validity.valid||(value='');" name="quantidade" class="quantidade" id="arabe-qty" required />
                   <div class="wcf-left">
                     <span class="price">16</span>
                   </div>
@@ -529,7 +529,7 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="irlandes-qty"
+                  <input type="number" value="1" min="1" oninput="validity.valid||(value='');" name="quantidade" class="quantidade" id="irlandes-qty"
                     required />
                   <div class="wcf-left">
                     <span class="price">18</span>
