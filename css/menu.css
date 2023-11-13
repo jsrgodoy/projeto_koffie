@@ -232,7 +232,17 @@
   color: #2a130a;
 }
 
-.card-footer input {
+
+.price::before {
+  content: "R$ ";
+}
+
+
+.price::after {
+  content: ",00 ";
+}
+
+input {
   font-size: 16px;
   padding: 12px;
   display: block;
