@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/font-awesome.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" />
   <link rel="icon" type="image/x-icon" href="src/favicon.png" />
+  <script src="./js/home.js" defer></script>
   <title>Koffie</title>
 </head>
 
@@ -171,26 +172,55 @@
     </section>
 
     <section class="clientesdizem">
+      <h1 class="h1">O que nossos clientes dizem</h1>
       <div class="container">
-        <div class="text5">
-          <h2>O que os nossos clientes dizem</h2>
-        </div>
-        <div class="depoimentos">
-          <div class="imagem5">
-            <img src="src/profileImg1.jpg" width="200" height="150" />
-            <p>
-              Lorem ipsum dolor sit ament inventore accusamus unde. Nihil,
-              minima hic?
+        <button id="prev-button"><i class="fa-solid fa-arrow-right fa-rotate-180"></i></button>
+      <div class="container-cards">
+          <div class="slider on">
+              <img src="./src/koffie-avaliação1.png" alt="">
+              <h2>Julia Silva</h2>
+              <p class="stars">&#9733&#9733&#9733&#9733&#9733</p>
+              <p class="texto-depoimento">O café da Koffie é simplesmente incrível! Cada gole é uma
+                 explosão de sabores intensos e envolventes que fazem meu paladar dançar de alegria. 
+                 A combinação perfeita de grãos selecionados e a cuidadosa torrefação elevam a 
+                 experiência do café a um patamar superior. Sem dúvida, a Koffie se destaca como uma 
+                 verdadeira joia para os amantes do café exigentes como eu!
+              </p>
+          </div>
+          <div class="slider">
+              <img src="./src/koffie-avaliação2.png" alt="">
+              <h2>Fernanda Lima</h2>
+              <p class="stars">&#9733&#9733&#9733&#9733&#9733</p>
+              <p class="texto-depoimento">A Koffie é uma descoberta incrível! Aromas ricos 
+                e sabores intensos, entregues à minha porta com rapidez. Uma experiência de café 
+                excepcional que transformou meu ritual matinal. A conveniência do delivery trouxe 
+                praticidade à minha rotina.
             </p>
           </div>
-          <div class="imagem6">
-            <img src="src/profileImg2.jpg" width="200" height="150" />
-            <p>
-              um perspiciatis laboriosacipit numquam quod voluptate natus.
-              Eius, velit tenetur.
-            </p>
-          </div>
+          <div class="slider">
+            <img src="./src/koffie-avaliação3.png" alt="">
+            <h2>Brenda Barbosa</h2>
+            <p class="stars">&#9733&#9733&#9733&#9733&#9733</p>
+            <p class="texto-depoimento">Um deleite para os amantes da cafeína!
+               Sua mistura única de grãos oferece uma experiência cativante, com notas robustas e 
+               um aroma que envolve a alma. Cada xícara é um momento de puro prazer, destacando a 
+               maestria e a paixão que a Koffie coloca em cada grão. É mais do que café, é uma 
+               celebração do sabor elevado.
+          </p>
         </div>
+        <div class="slider">
+          <img src="./src/koffie-avaliação4.png" alt="">
+          <h2>Rafael Moura</h2>
+          <p class="stars">&#9733&#9733&#9733&#9733&#9733</p>
+          <p class="texto-depoimento">
+            Explorar o café da Koffie revelou-se uma jornada surpreendente. A riqueza de sabores 
+            e aromas em cada xícara é verdadeiramente cativante. A Koffie se destaca não apenas 
+            como uma cafeteria, mas como um destino essencial para quem busca a verdadeira 
+            essência do café.
+        </p>
+      </div>
+      </div>
+      <button id="next-button"><i class="fa-solid fa-arrow-right"></i></button>          
       </div>
     </section>
   </main>

@@ -136,10 +136,33 @@ main section.pedido .box2 .box2-parte1 {
   display: flex;
   justify-content: space-between;
 }
+/* @media (max-width: 518px) {
+  main section.pedido .box2 .box2-parte1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+  }
+} */
 
 main section.pedido .box2 .box2-parte1 img {
   width: 140px;
   height: 140px;
+}
+
+@media (max-width: 600px) {
+  main section.pedido .box2 .box2-parte1 img {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (max-width: 518px) {
+  main section.pedido .box2 .box2-parte1 img {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 main section.pedido .box2 .box2-parte1 h1 {
@@ -232,12 +255,12 @@ main section.pedido .box2 input[type="submit"] {
   border-radius: 10px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: all 200ms linear;
+  transition: all 100ms linear;
   letter-spacing: 0.2em;
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
 }
 
-@media only screen and (min-width: 385px) and (max-width: 600px) {
+@media only screen and (min-width: 250px) and (max-width: 600px) {
   main section.pedido .box2 input[type="submit"] {
     background-color: #2a130a;
     border: 0;
@@ -251,11 +274,12 @@ main section.pedido .box2 input[type="submit"] {
     border-radius: 10px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all 200ms linear;
+    transition: all 100ms linear;
     letter-spacing: 0.2em;
     box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
     font-size: 11px;
   }
+
   .completar-pedido {
     font-size: 22px;
     margin-left: 15px;
@@ -265,7 +289,6 @@ main section.pedido .box2 input[type="submit"] {
     font-size: 14px;
   }
 }
-
 @media only screen and (min-width: 1025px) and (max-width: 1333px) {
   main section.pedido .box2 input[type="submit"] {
     background-color: #2a130a;
