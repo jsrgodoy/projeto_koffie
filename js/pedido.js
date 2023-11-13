@@ -33,8 +33,8 @@ if (totalPedidos && totalPedidos.length > 0) {
 
     let valores = document.querySelector(".valores p");
     let precoTotal = document.querySelector(".box2-parte2 .valores h1");
-    valores.textContent = `R$ Subtotal: ${totalValores.toFixed(2).replace(".", ",")}`;
-    precoTotal.textContent = `R$ Total: ${totalValores.toFixed(2).replace(".", ",")}`;
+    valores.textContent = `Subtotal  R$: ${totalValores.toFixed(2).replace(".", ",")}`;
+    precoTotal.textContent = `R$: ${totalValores.toFixed(2).replace(".", ",")}`;
 
   } else {
     mostrarItens.textContent = "Nenhum pedido selecionado.";
