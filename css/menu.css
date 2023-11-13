@@ -66,6 +66,22 @@
   width: 240px;
 }
 
+@media (max-width: 1153px) {
+  .col-md-3 {
+    width: 210px;
+  }
+}
+@media (max-width: 748px) {
+  .col-md-3 {
+    width: 180px;
+  }
+}
+@media (max-width: 643px) {
+  .col-md-3 {
+    width: 150px;
+  }
+}
+
 .wsk-cp-product {
   background: #aea393;
   padding: 15px;
@@ -162,6 +178,13 @@
   color: rgb(196, 127, 23);
   background-color: #f1e9c9;
   border-radius: 5px;
+}
+
+@media (max-width: 643px) {
+  .wsk-cp-text .title-product h3 {
+    font-size: 9px;
+    margin: 10px auto;
+  }
 }
 
 .wsk-cp-text .description-prod {
