@@ -1,263 +1,226 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/sobre.css" />
-    <link rel="stylesheet" href="css/font-awesome.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"
-    />
-    <link rel="icon" type="image/x-icon" href="src/favicon.png" />
-    <title>Sobre Nós</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <header>
-      <div class="container">
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/sobre.css" />
+  <link rel="stylesheet" href="css/font-awesome.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" />
+  <link rel="icon" type="image/x-icon" href="src/favicon.png" />
+  <title>Sobre Nós</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="home.html">
         <div class="logo"></div>
-        <div class="menu">
-          <nav class="menu-itens">
-            <ul>
-              <li><a href="principal.html">Home</a></li>
-              <li>Sobre Nós</li>
-              <li><a href="produtos.html">Produtos</a></li>
-              <li><a href="contato.html">Contato</a></li>
-            </ul>
-          </nav>
-          <div class="account">
-            <img
-              onclick="login()"
-              class="user-profile"
-              src="src/user-profle.png"
-              alt="Cadastro"
-            />
-            <svg
-              onclick="login()"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 492 492"
-            >
-              <path
-                d="M484.13 124.99l-16.11-16.23a26.72 26.72 0 00-19.04-7.86c-7.2 0-13.96 2.79-19.03 7.86L246.1 292.6 62.06 108.55c-5.07-5.06-11.82-7.85-19.03-7.85s-13.97 2.79-19.04 7.85L7.87 124.68a26.94 26.94 0 000 38.06l219.14 219.93c5.06 5.06 11.81 8.63 19.08 8.63h.09c7.2 0 13.96-3.57 19.02-8.63l218.93-219.33A27.18 27.18 0 00492 144.1c0-7.2-2.8-14.06-7.87-19.12z"
-              ></path>
-            </svg>
-          </div>
-          <div>
-            <a href="pedido.html">
-              <div id="cart" class="cart" data-totalitems="1">
-                <i class="fas fa-shopping-cart"></i>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="menu-mobile">
-          <input class="menu-btn" type="checkbox" id="menu-btn" />
-          <label class="menu-icon" for="menu-btn"
-            ><span class="navicon"></span
-          ></label>
-
-          <ul class="menu-mobile-itens">
-            <li><a href="principal.html">Home</a></li>
-            <li><a href="sobre.html">Sobre Nós</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
+      </a>
+      <div class="menu">
+        <nav class="menu-itens">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li>Sobre Nós</li>
+            <li><a href="menu.html">Menu</a></li>
             <li><a href="contato.html">Contato</a></li>
-            <li><a onclick="login()">Login</a></li>
-            <li><a href="pedido.html">Carrinho</a></li>
           </ul>
+        </nav>
+        <div class="account">
+          <img onclick="abre()" class="user-profile" src="src/user-profle.png" alt="Cadastro" />
+          <svg onclick="abre()" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 492 492">
+            <path
+              d="M484.13 124.99l-16.11-16.23a26.72 26.72 0 00-19.04-7.86c-7.2 0-13.96 2.79-19.03 7.86L246.1 292.6 62.06 108.55c-5.07-5.06-11.82-7.85-19.03-7.85s-13.97 2.79-19.04 7.85L7.87 124.68a26.94 26.94 0 000 38.06l219.14 219.93c5.06 5.06 11.81 8.63 19.08 8.63h.09c7.2 0 13.96-3.57 19.02-8.63l218.93-219.33A27.18 27.18 0 00492 144.1c0-7.2-2.8-14.06-7.87-19.12z">
+            </path>
+          </svg>
         </div>
+        <div>
+          <a href="pedido.html">
+            <div id="cart" class="cart" data-totalitems="">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+          </a>
+        </div>
+      </div>
 
-        <div class="login-form">
+      <div class="menu-mobile">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+        <ul class="menu-mobile-itens">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a onclick="abre()">Login</a></li>
+          <li><a href="pedido.html">Carrinho</a></li>
+        </ul>
+      </div>
+
+      <div class="login-form">
+        <form action="">
           <h1>Acesso</h1>
           <div class="form-group">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Username "
-              id="UserName"
-            />
+            <input type="text" class="form-control" placeholder="Usuário " id="UserName" required />
             <i class="fa fa-user"></i>
+            <p id="username-helper" class="helper-text"></p>
           </div>
           <div class="form-group log-status">
-            <input
-              type="password"
-              class="form-control"
-              placeholder="Password"
-              id="Passwod"
-            />
+            <input type="password" class="form-control" placeholder="Senha" id="Passwod" />
             <i class="fa fa-lock"></i>
+            <p id="senha-helper" class="helper-text"></p>
           </div>
-          <a class="link" href="#">Lost your password?</a>
-          <button type="button" class="log-btn">Log in</button>
+          <a class="link" href="#">Perdeu sua senha?</a>
+          <button type="button" class="log-btn">Acessar</button>
+        </form>
+      </div>
+    </div>
+    <!--container-->
+
+    <div class="clear"></div>
+  </header>
+
+
+  <main>
+    <section class="nossa-historia">
+      <div class="container">
+        <div class="texto">
+          <h1>NOSSA HISTÓRIA</h1>
+          <p>
+            A Cafeteria Koffie foi fundada por Danillo, Diego, Elvis e
+            Jeferson, quatro amigos apaixonados por café, há uma década.
+            Localizada no centro da cidade, a Koffie se destaca pela seleção
+            de grãos de café de origem e preparação artesanal. O nome "Koffie"
+            homenageia a influência holandesa no Brasil. A decoração evoca a
+            história do café, com fotografias de fazendas e máquinas antigas.
+            A cafeteria conquistou uma clientela fiel em busca de café de
+            qualidade, doces e lanches. A Koffie é um local onde a tradição e
+            a inovação se encontram, oferecendo uma experiência acolhedora
+            para os amantes do café.
+          </p>
+        </div>
+        <div class="imagem"><img src="src/history.png" alt="História" /></div>
+      </div>
+      <!--container-->
+    </section>
+    <section class="nossa-equipe">
+      <div class="container">
+        <h1>Nossa Equipe:</h1>
+        <div class="thumb-imagens">
+          <div class="danillo">
+            <img src="src/participantes/Danillo.jpeg" alt="Danillo" />
+            <h2>Danillo</h2>
+            <div class="icons-social">
+              <a href="https://www.linkedin.com/in/danillosdd" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/Danillosdd" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+
+          <div class="diego">
+            <img src="src/participantes/Diego.jpg" alt="Diego" />
+            <h2>Diego</h2>
+            <div class="icons-social">
+              <a href="https://www.linkedin.com/in/diego-rodrigues-500b0081" target="_blank"><i
+                  class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/diegodevweb" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+
+          <div class="elvis">
+            <img src="src/participantes/Elvis.jpg" alt="Elvis" />
+            <h2>Elvis</h2>
+            <div class="icons-social">
+              <a href="https://www.linkedin.com/in/elvis-silva-28b380115" target="_blank"><i
+                  class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/elvissilva12" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+
+          <div class="jefferson">
+            <img src="src/participantes/Jeferson.jpg" alt="Jeferson" />
+            <h2>Jefferson</h2>
+            <div class="icons-social">
+              <a href="https://www.linkedin.com/in/jsrgodoy" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/jsrgodoy" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
         </div>
       </div>
       <!--container-->
+    </section>
+  </main>
+
+  <div class="clear"></div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-section-logo">
+        <img src="src/logo_white.png" alt="Logotipo" />
+        <p>O Sabor que Cura a Alma</p>
+        <div class="icons-social">
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section-endereco">
+        <h1>Endereço</h1>
+        <nav>
+          <ul>
+            <li>Avenida Central nº 2023</li>
+            <li>Setor Lugar Nenhum</li>
+            <li>Cafelândia - PR</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-section-horarios">
+        <h1>Horários</h1>
+        <nav>
+          <ul>
+            <li>Segunda a Sexta-feira:</li>
+            <li>08h00 às 18h00.</li>
+            <li>Domingo:</li>
+            <li>08h00 às 14h00.</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-section-contato">
+        <h1>Contato</h1>
+        <nav>
+          <ul>
+            <li><i class="fa fa-phone"></i>(99) 8888-8888</li>
+            <li><i class="fab fa-whatsapp"></i>(99) 9999-9999</li>
+            <li><i class="fa fa-envelope"></i>contato@koffie.com.br</li>
+          </ul>
+        </nav>
+      </div>
 
       <div class="clear"></div>
-    </header>
+    </div>
+    <!--container-->
 
-    <div class="clear"></div>
+    <hr />
+    <div class="direitos-reservados">
+      <p>©Grupo Dois - PROZ | Todos os direitos reservados</p>
+    </div>
+  </footer>
 
-    <main>
-      <section class="nossa-historia">
-        <div class="container">
-          <div class="texto">
-            <h1>NOSSA HISTÓRIA</h1>
-            <p>
-              A Cafeteria Koffie foi fundada por Danillo, Diego, Elvis e
-              Jefferson, quatro amigos apaixonados por café, há uma década.
-              Localizada no centro da cidade, a Koffie se destaca pela seleção
-              de grãos de café de origem e preparação artesanal. O nome "Koffie"
-              homenageia a influência holandesa no Brasil. A decoração evoca a
-              história do café, com fotografias de fazendas e máquinas antigas.
-              A cafeteria conquistou uma clientela fiel em busca de café de
-              qualidade, doces e lanches. A Koffie é um local onde a tradição e
-              a inovação se encontram, oferecendo uma experiência acolhedora
-              para os amantes do café.
-            </p>
-          </div>
-          <div class="imagem"><img src="src/history.png" alt="História" /></div>
-        </div>
-        <!--container-->
-      </section>
-      <section class="nossa-equipe">
-        <div class="container">
-          <h1>Nossa Equipe:</h1>
-          <div class="thumb-imagens">
-            <div class="danillo">
-              <img src="src/participantes/Danillo.jpeg" alt="Danillo" />
-              <h2>Danillo</h2>
-              <div class="icons-social">
-                <a href="https://www.linkedin.com/in/danillosdd" target="_blank"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-                <a href="https://github.com/Danillosdd" target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
+  <div class="clear"></div>
 
-            <div class="diego">
-              <img src="src/participantes/Diego.jpg" alt="Diego" />
-              <h2>Diego</h2>
-              <div class="icons-social">
-                <a
-                  href="https://www.linkedin.com/in/diego-rodrigues-500b0081"
-                  target="_blank"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-                <a href="https://github.com/diegodevweb" target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
+  <button onclick="topFunction()" id="myBtn" title="Voltar ao topo"></button>
 
-            <div class="elvis">
-              <img src="src/participantes/Elvis.jpg" alt="Elvis" />
-              <h2>Elvis</h2>
-              <div class="icons-social">
-                <a
-                  href="https://www.linkedin.com/in/elvis-silva-28b380115"
-                  target="_blank"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-                <a href="https://github.com/elvissilva12" target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
+  <script type="text/javascript" src="js/javascript.js"></script>
+</body>
 
-            <div class="jefferson">
-              <img src="src/participantes/Jeferson.jpg" alt="Jeferson" />
-              <h2>Jefferson</h2>
-              <div class="icons-social">
-                <a href="https://www.linkedin.com/in/jsrgodoy" target="_blank"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-                <a href="https://github.com/jsrgodoy" target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--container-->
-      </section>
-    </main>
-
-    <div class="clear"></div>
-
-    <footer>
-      <div class="container">
-        <div class="footer-section-logo">
-          <img src="src/logo_white.png" alt="Logotipo" />
-          <p>O Sabor que Cura a Alma</p>
-          <div class="icons-social">
-            <a href=""><i class="fab fa-facebook-f"></i></a>
-            <a href=""><i class="fab fa-twitter"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-section-endereco">
-          <h1>Endereço</h1>
-          <nav>
-            <ul>
-              <li>Avenida Central nº 2023</li>
-              <li>Setor Lugar Nenhum</li>
-              <li>Cafelândia - PR</li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="footer-section-horarios">
-          <h1>Horários</h1>
-          <nav>
-            <ul>
-              <li>Segunda a Sexta-feira:</li>
-              <li>08h00 às 18h00.</li>
-              <li>Domingo:</li>
-              <li>08h00 às 14h00.</li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="footer-section-contato">
-          <h1>Contato</h1>
-          <nav>
-            <ul>
-              <li><i class="fa fa-phone"></i>(99) 8888-8888</li>
-              <li><i class="fab fa-whatsapp"></i>(99) 9999-9999</li>
-              <li><i class="fa fa-envelope"></i>contato@koffie.com.br</li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="clear"></div>
-      </div>
-      <!--container-->
-
-      <hr />
-      <div class="direitos-reservados">
-        <p>©Grupo Dois - PROZ | Todos os direitos reservados</p>
-      </div>
-    </footer>
-
-    <div class="clear"></div>
-
-    <button onclick="topFunction()" id="myBtn" title="Voltar ao topo"></button>
-
-    <script type="text/javascript" src="js/javascript.js"></script>
-  </body>
 </html>

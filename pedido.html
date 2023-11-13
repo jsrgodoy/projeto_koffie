@@ -22,21 +22,21 @@
 <body>
   <header>
     <div class="container">
-      <div class="logo"></div>
+      <a href="home.html">
+        <div class="logo"></div>
+      </a>
       <div class="menu">
         <nav class="menu-itens">
           <ul>
-            <li><a href="principal.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="sobre.html">Sobre Nós</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="menu.html">Menu</a></li>
             <li><a href="contato.html">Contato</a></li>
           </ul>
         </nav>
         <div class="account">
-          <img onclick="login()" class="user-profile "
-            src="src/user-profle.png"
-            alt="Cadastro">
-          <svg onclick="login()" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 492 492">
+          <img onclick="abre()" class="user-profile" src="src/user-profle.png" alt="Cadastro" />
+          <svg onclick="abre()" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 492 492">
             <path
               d="M484.13 124.99l-16.11-16.23a26.72 26.72 0 00-19.04-7.86c-7.2 0-13.96 2.79-19.03 7.86L246.1 292.6 62.06 108.55c-5.07-5.06-11.82-7.85-19.03-7.85s-13.97 2.79-19.04 7.85L7.87 124.68a26.94 26.94 0 000 38.06l219.14 219.93c5.06 5.06 11.81 8.63 19.08 8.63h.09c7.2 0 13.96-3.57 19.02-8.63l218.93-219.33A27.18 27.18 0 00492 144.1c0-7.2-2.8-14.06-7.87-19.12z">
             </path>
@@ -44,51 +44,49 @@
         </div>
         <div>
           <a href="pedido.html">
-            <div id="cart" class="cart" data-totalitems="1">
+            <div id="cart" class="cart" data-totalitems="">
               <i class="fas fa-shopping-cart"></i>
             </div>
           </a>
         </div>
       </div>
 
-
       <div class="menu-mobile">
-
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
         <ul class="menu-mobile-itens">
-          <li><a href="principal.html">Home</a></li>
+          <li><a href="home.html">Home</a></li>
           <li><a href="sobre.html">Sobre Nós</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="menu.html">Menu</a></li>
           <li><a href="contato.html">Contato</a></li>
-          <li><a onclick="login()">Login</a></li>
+          <li><a onclick="abre()">Login</a></li>
           <li><a href="pedido.html">Carrinho</a></li>
         </ul>
-
       </div>
 
       <div class="login-form">
-        <h1>Acesso</h1>
-        <div class="form-group ">
-          <input type="text" class="form-control" placeholder="Username " id="UserName">
-          <i class="fa fa-user"></i>
-        </div>
-        <div class="form-group log-status">
-          <input type="password" class="form-control" placeholder="Password" id="Passwod">
-          <i class="fa fa-lock"></i>
-        </div>
-        <a class="link" href="#">Lost your password?</a>
-        <button type="button" class="log-btn">Log in</button>
+        <form action="">
+          <h1>Acesso</h1>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Usuário " id="UserName" required/>
+            <i class="fa fa-user"></i>
+            <p id="username-helper" class="helper-text"></p>
+          </div>
+          <div class="form-group log-status">
+            <input type="password" class="form-control" placeholder="Senha" id="Passwod" />
+            <i class="fa fa-lock"></i>
+            <p id="senha-helper" class="helper-text"></p>
+          </div>
+          <a class="link" href="#">Perdeu sua senha?</a>
+          <button type="button" class="log-btn">Acessar</button>
+        </form>
       </div>
-
-    </div> <!--container-->
+    </div>
+    <!--container-->
 
     <div class="clear"></div>
-
   </header>
-
-  <div class="clear"></div>
 
   <main>
     <div class="container">
@@ -105,6 +103,7 @@
             </div>
             <div class="box1-parte2">
               <div class="endereco-entrega">
+                <div id="mensagemErro" style="color: red;"></div>
                 <label for="endereco">Endereço*</label>
                 <input type="text" name="endereco" id="endereco" autofocus required />
                 <label for="numero">Número*</label>
@@ -146,7 +145,7 @@
                 <label for="cep">Código Postal(CEP)*</label>
                 <input type="text" name="cep" id="cep" required />
                 <h1>FORMA DE PAGAMENTO*</h1>
-                <select id="estado" name="estado" required>
+                <select id="pagamento" name="pagamento" required>
                   <option value="" disabled selected>Selecione</option>
                   <option value="boleto">Boleto</option>
                   <option value="cartao">Cartão</option>
@@ -157,13 +156,9 @@
         </div>
         <div class="box2">
           <div class="box2-parte1">
-            <img src="src/ExpressoTradicional.svg" alt="Epresso Tradicional" />
+            <img src="src/ExpressoTradicional.svg" alt="Expresso Tradicional" />
             <div>
-              <h1>Expresso Tradicional</h1>
-              <input type="number" value="1" name="quantidade" class="quantidade" id="quantidade" required />
-            </div>
-            <div class="valores">
-              <h1>R$ 9,99</h1>
+              <h1 id="itens-pedido"></h1>
             </div>
           </div>
           <hr>
@@ -174,13 +169,14 @@
               <h1>Total</h1>
             </div>
             <div class="valores">
-              <p>R$ 9,99</p>
-              <p>R$ 9,99</p>
-              <h1>R$ 9,99</h1>
+              <p></p>
+              <p>Promo - Entrega grátis</p>
+              <h1></h1>
             </div>
           </div>
-          <div class="botao"><input type="submit" onclick="myFunction()" value="Confirmar  Pedido"></div>
-          </form>
+          <div class="botao"><input type="submit" id="enviarPedido" value="Enviar  Pedido"></div>
+        </div>
+        </form>
       </section>
     </div>
   </main>
@@ -247,6 +243,7 @@
   <button onclick="topFunction()" id="myBtn" title="Voltar ao topo"></button>
 
   <script type="text/javascript" src="js/javascript.js"></script>
+  <script src="js/pedido.js"></script>
 </body>
 
 </html>
