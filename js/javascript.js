@@ -9,7 +9,7 @@ const UserName = document.querySelector("#UserName");
 
 let usernameHelper = document.getElementById("username-helper");
 
-const Passwod = document.querySelector("#Passwod");
+const Password = document.querySelector("#Passwod");
 
 let senhaHelper = document.getElementById("senha-helper");
 
@@ -20,6 +20,8 @@ document.addEventListener('mousedown', (event) => {
     login.style.visibility = "hidden";
     usernameHelper.style.display = "none";
     senhaHelper.style.display = "none";
+    UserName.value = '';
+    Password.value = '';
 
   }
 })
@@ -31,6 +33,8 @@ function abre() {
     login.style.visibility = "hidden";
     usernameHelper.style.display = "none";
     senhaHelper.style.display = "none";
+    UserName.value = '';
+    Password.value = '';
   }
 
 }
@@ -39,22 +43,37 @@ function fecha() {
   login.style.visibility = "hidden";
   usernameHelper.style.display = "none";
   senhaHelper.style.display = "none";
+  UserName.value = '';
+  Password.value = '';
 }
 
-document.querySelector('.log-btn').addEventListener('click', function (event) {
+document.querySelector('.log-btn').addEventListener('click', function (evento) {
 
   let valor_username = UserName.value;
-  console.log(valor_username);
+  let valor_senha = Password.value;
 
-  if (valor_username.length < 10) {
-    usernameHelper.innerText = 'Usuário não encontrado'
+  console.log(valor_username.length);
+
+  if (valor_username.length == 0) {
+    usernameHelper.innerText = 'Usuário obrigatório';
     usernameHelper.style.display = "block";
+  }
+  else {
+    usernameHelper.innerText = 'Usuário não encontrado';
+    usernameHelper.style.display = "block";
+  }
 
+
+  if (valor_senha.length == 0) {
+    senhaHelper.innerText = 'Senha obrigatória';
+    senhaHelper.style.display = "block";
+  }
+  else {
     senhaHelper.innerText = 'Senha inválida'
     senhaHelper.style.display = "block";
   }
 
-  
+
 
 });
 
