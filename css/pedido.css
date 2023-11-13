@@ -164,7 +164,6 @@ main section.pedido .box2 .box2-parte1 img {
     height: 80px;
   }
 }
-
 main section.pedido .box2 .box2-parte1 h1 {
   padding-top: 20px;
 }
@@ -234,7 +233,6 @@ main section.pedido .box2 .valores {
   display: flex;
   flex-direction: column;
   gap: 80px;
-  text-align: right;
 }
 
 main section.pedido .box2 .botao {
@@ -264,7 +262,8 @@ main section.pedido .box2 input[type="submit"] {
   main section.pedido .box2 input[type="submit"] {
     background-color: #2a130a;
     border: 0;
-    width: 60%;
+    width: 75%;
+    padding: 1%;
     height: 55px;
     font-size: 22px;
     color: #ac9675;
@@ -273,6 +272,7 @@ main section.pedido .box2 input[type="submit"] {
     font-weight: 500;
     border-radius: 10px;
     text-transform: uppercase;
+    text-align: center;
     cursor: pointer;
     transition: all 100ms linear;
     letter-spacing: 0.2em;
