@@ -93,9 +93,5 @@ document.getElementById('enviarPedido').addEventListener('click', function (even
 
   }
 
-
-
-
 });
-
 
