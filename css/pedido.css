@@ -4,6 +4,10 @@ main {
   padding-top: 50px;
 }
 
+.container{
+  padding: 0 5% ;
+}
+
 main span {
   color: #2a130a;
   font-size: 30px;
