@@ -43,11 +43,19 @@ function fecha() {
 
 document.querySelector('.log-btn').addEventListener('click', function (event) {
 
-  usernameHelper.innerText = 'Usuário não encontrado'
-  usernameHelper.style.display = "block";
+  let valor_username = UserName.value;
+  console.log(valor_username);
 
-  senhaHelper.innerText = 'Senha inválida'
-  senhaHelper.style.display = "block";
+  if (valor_username.length < 10) {
+    usernameHelper.innerText = 'Usuário não encontrado'
+    usernameHelper.style.display = "block";
+
+    senhaHelper.innerText = 'Senha inválida'
+    senhaHelper.style.display = "block";
+  }
+
+  
+
 });
 
 
