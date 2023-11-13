@@ -9,7 +9,7 @@ const UserName = document.querySelector("#UserName");
 
 let usernameHelper = document.getElementById("username-helper");
 
-const Password = document.querySelector("#Passwod");
+const Password = document.querySelector("#Password");
 
 let senhaHelper = document.getElementById("senha-helper");
 
