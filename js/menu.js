@@ -24,7 +24,7 @@ document.querySelectorAll(".buy-btn").forEach(function(btn) {
       
     } else { // código anterior que adiciona o produto no carrinho....      
       let preco = parseFloat(produto.querySelector(".price").innerText.replace("R$ ", "").replace(",", "."));
-      let total = quantidade * preco;
+      let total = preco;
       pedidos.push({ nome: nome, quantidade: quantidade, total: total });
       totalGeral += total;
     }    
