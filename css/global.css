@@ -23,6 +23,12 @@ div.clear {
   clear: both;
 }
 
+.helper-text {
+  display: none;
+  font-size: .8rem;
+  color: darkred;
+}
+
 /*------ HEADER -----*/
 
 header {
@@ -31,7 +37,7 @@ header {
   padding: 40px;
   border: 1px solid #ac9675;
   background-color: #ac9675;
-  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
+  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
   z-index: 3;
 }
 
@@ -48,12 +54,10 @@ header .logo {
 }
 
 @media only screen and (max-width: 333px) {
-
   header .logo {
     width: 140px;
     height: 30px;
   }
-
 }
 
 /*------ MENU -----*/
@@ -85,16 +89,13 @@ header .menu-itens a {
   text-decoration: none;
 }
 
-
 /*------ MENU MOBILE -----*/
 
 .menu-mobile {
   display: none;
 }
 
-
 @media only screen and (max-width: 1024px) {
-
   .container .login-form {
     width: 300px;
     top: 20%;
@@ -102,14 +103,13 @@ header .menu-itens a {
     visibility: hidden;
   }
 
-
   header .menu {
     display: none;
   }
 
   .menu-mobile {
     display: block;
-    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
+    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
     position: relative;
     width: 100%;
     z-index: 3;
@@ -148,7 +148,7 @@ header .menu-itens a {
     height: 100%;
     clear: both;
     max-height: 0;
-    transition: max-height .2s ease-out;
+    transition: max-height 0.2s ease-out;
   }
 
   .menu-mobile li a:hover,
@@ -170,18 +170,18 @@ header .menu-itens a {
     display: block;
     height: 2px;
     position: relative;
-    transition: background .2s ease-out;
+    transition: background 0.2s ease-out;
     width: 26px;
   }
 
   .menu-mobile .menu-icon .navicon:before,
   .menu-mobile .menu-icon .navicon:after {
     background: #f5eeee;
-    content: '';
+    content: "";
     display: block;
     height: 100%;
     position: absolute;
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
     width: 100%;
   }
 
@@ -217,7 +217,6 @@ header .menu-itens a {
   .menu-mobile .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
-
 }
 
 /*------ ACCOUNT -----*/
@@ -238,7 +237,6 @@ header .user-profile+svg {
 }
 
 /*------ LOGIN FORM -----*/
-
 
 .login-form {
   width: 25%;
@@ -266,7 +264,6 @@ header .user-profile+svg {
   color: #ac9675;
   border: 2px solid #ddd;
   border-radius: 4px;
-
 }
 
 .login-form h1 {
@@ -287,7 +284,6 @@ header .user-profile+svg {
   color: #2a130a;
 }
 
-
 .log-btn {
   background: #2a130a;
   display: inline-block;
@@ -298,6 +294,7 @@ header .user-profile+svg {
   text-decoration: none;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .link {
@@ -353,8 +350,8 @@ header .cart i {
 header .cart:hover,
 header .cart:active,
 header .cart:focus {
-  border-color: #FF9800;
-  background: #FF9800;
+  border-color: #ff9800;
+  background: #ff9800;
   color: #fff;
   text-decoration: none;
 }
@@ -377,7 +374,6 @@ footer .container {
 footer .container div {
   margin-top: 50px;
   width: 200px;
-
 }
 
 @media only screen and (max-width: 1270px) {
@@ -390,10 +386,8 @@ footer .container div {
     width: 100%;
     display: flex;
     justify-content: center;
-
   }
 }
-
 
 /*--- FOOTER-BOX-1 ---*/
 
@@ -472,7 +466,6 @@ footer .direitos-reservados {
   padding-bottom: 1%;
 }
 
-
 /*------ ICON SOCIAL -----*/
 
 .icons-social {
@@ -495,7 +488,6 @@ footer .direitos-reservados {
 .icons-social i {
   line-height: 40px;
 }
-
 
 /*------ VOLTAR AO TOPO -----*/
 

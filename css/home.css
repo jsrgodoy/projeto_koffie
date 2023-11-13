@@ -1,0 +1,536 @@
+/*------ HOME -----*/
+
+.sintasemelhor .container {
+  display: flex;
+  width: 1200px;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 5%;
+}
+@media (max-width: 800px) {
+  .sintasemelhor .container {
+    flex-direction: column-reverse;
+    width: 100%;
+    box-sizing: 100%;
+  }
+}
+
+.imagem1 {
+  margin: 5%;
+  background-image: url("../src/home.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  width: 500px;
+  height: 250px;
+}
+
+@media (max-width: 800px) {
+  .sintasemelhor .imagem1 {
+    background-image: url("../src/home.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    width: 50%;
+    height: 150px;
+  }
+}
+@media (max-width: 750px) {
+  .sintasemelhor .imagem1 {
+    background-image: url("../src/home.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    width: 40%;
+    height: 100px;
+  }
+}
+@media (max-width: 400px) {
+  .sintasemelhor .imagem1 {
+    background-image: none;
+    width: 5px;
+    height: 1px;
+  }
+}
+
+.text1 {
+  padding: 3%;
+}
+
+.text1 h1 {
+  color: #2a130a;
+  font-family: Plus Jakarta Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 121.2%; /* 55.752px */
+}
+@media (max-width: 800px) {
+  .text1 h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 664px) {
+  .text1 h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 450px) {
+  .text1 h1 {
+    font-size: 25px;
+    width: 20rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .text1 h1 {
+    font-size: 20px;
+    width: 15rem;
+  }
+}
+
+.text1 p {
+  text-align: justify;
+  color: #2a130a;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: -0.32px;
+  width: 100%;
+  padding: 2% 2%;
+}
+
+.text1 a {
+  text-decoration: none;
+}
+
+/* .............que tal um koffie................ */
+.quetal .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6% 5%;
+  max-width: 100%;
+  background-color: #aea393;
+}
+
+.text2 {
+  padding: 2%;
+  width: 30rem;
+}
+
+.text2 h1 {
+  color: #1f2401;
+  font-family: Plus Jakarta Sans;
+  font-size: 40px;
+  font-style: normal;
+  padding: 20px 0px 20px 0px;
+  font-weight: 800;
+  line-height: 121.2%;
+  padding: 5%;
+  text-align: center;
+}
+
+@media (max-width: 840px) {
+  .text2 h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .text2 h1 {
+    font-size: 25px;
+    width: 20rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .text2 h1 {
+    font-size: 23px;
+    width: 20rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .text2 h1 {
+    font-size: 20px;
+    width: 15rem;
+  }
+}
+.text2 p {
+  color: #1f2401;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: -0.32px;
+  padding: 5%;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.btn-menu {
+  background-color: #2a130a;
+  border: 0;
+  width: 20rem;
+  height: 55px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 22px;
+  color: #ac9675;
+  margin-top: 100px;
+  font-style: normal;
+  font-weight: 500;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 100ms linear;
+  letter-spacing: 0.2em;
+  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
+}
+.btn-menu:hover {
+  background-color: #160801;
+  color: #ac9675;
+  width: 22rem;
+}
+
+.btn-menu:active {
+  transform: translateY(12px);
+}
+@media (max-width: 750px) {
+  .btn-menu {
+    font-size: 16px;
+    margin-top: 70px;
+    width: 12rem;
+    height: 50px;
+  }
+  .btn-menu:hover {
+    background-color: #160801;
+    color: #ac9675;
+    width: 15rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn-menu {
+    font-size: 12px;
+    margin-top: 50px;
+    width: 10rem;
+    height: 45px;
+  }
+  .btn-menu:hover {
+    background-color: #160801;
+    color: #ac9675;
+    width: 12rem;
+  }
+}
+.text2 a {
+  text-decoration: none;
+}
+.imagem2 {
+  background-image: url("../src/menuImg1.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  width: 350px;
+  height: 200px;
+}
+@media (max-width: 750px) {
+  .quetal .imagem2 {
+    width: 440px;
+    height: 100px;
+  }
+}
+@media (max-width: 550px) {
+  .quetal .imagem2 {
+    background-image: none;
+    width: 1px;
+    height: 1px;
+  }
+}
+
+/*..................... Mais pedidos..................... */
+.maispedidos .container {
+  padding: 1% 5%;
+  /*  background-color: rgb(174, 163, 147); */
+  width: 100%;
+  background-color: #e4d7ce;
+}
+.text3 {
+  display: flex;
+  justify-content: center;
+}
+
+.text3 h2 {
+  color: #2a130a;
+  font-family: Plus Jakarta Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 76px; /* 158.333% */
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .text3 h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 473px) {
+  .text3 h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 410px) {
+  .text3 h2 {
+    font-size: 20px;
+  }
+}
+
+.tabela {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+}
+
+.tabela div {
+  margin: 20px;
+  padding: 20px 0px 20px 0px;
+  background-color: rgb(172, 150, 117);
+  border-radius: 5px 30px;
+  width: 250px;
+  height: 100%;
+  justify-content: center;
+}
+
+/* .................Nossas Marcas de cafes ...................*/
+.parceiros .container {
+  padding: 5%;
+  max-width: 100%;
+  background-color: #aea393;
+  justify-content: center;
+  align-items: center;
+}
+
+.text4 {
+  color: #2a130a;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 72px */
+  letter-spacing: -0.96px;
+}
+
+.text4 h2,
+.text5 h2 {
+  font-size: 35px;
+}
+@media (max-width: 636px) {
+  .text4 h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 580px) {
+  .text4 h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 543px) {
+  .text4 h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 448px) {
+  .text4 h2 {
+    font-size: 20px;
+  }
+}
+
+.imagem4 {
+  padding: 2%;
+  text-align: center;
+}
+
+@media (max-width: 1073px) {
+  .imagem4 img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 899px) {
+  .imagem4 img {
+    width: 110px;
+    height: 110px;
+  }
+}
+@media (max-width: 668px) {
+  .imagem4 img {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 493px) {
+  .imagem4 img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/*.............. O que nossos clientes dizem ..............*/
+
+.clientesdizem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 450px;
+  align-items: center;
+  justify-content: center;
+}
+
+.clientesdizem h1 {
+  color: #1f2401;
+  font-family: Plus Jakarta Sans;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 121.2%;
+  margin-top: 1px;
+  padding: 1%;
+  text-align: center;
+}
+
+@media (max-width: 580px) {
+  .clientesdizem h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 485px) {
+  .clientesdizem h1 {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 448px) {
+  .clientesdizem h1 {
+    font-size: 20px;
+  }
+}
+
+.clientesdizem .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1280px;
+  height: 100%;
+  margin-top: 10px;
+  gap: 1rem;
+}
+
+.container-cards {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.slider img {
+  width: 120px;
+  border-radius: 50%;
+}
+@media (max-width: 557px) {
+  .slider img {
+    width: 80px;
+  }
+}
+
+.on {
+  opacity: 1;
+}
+
+.stars {
+  font-weight: 500;
+  color: #2a130a;
+  font-size: 20px;
+}
+
+@media (max-width: 557px) {
+  .stars {
+    font-size: 16px;
+  }
+}
+
+.slider h2 {
+  color: #2a130a;
+  font-size: 20px;
+}
+
+@media (max-width: 557px) {
+  .slider h2 {
+    font-size: 16px;
+  }
+}
+
+.texto-depoimento {
+  color: #2a130a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.32px;
+  opacity: 0.6;
+  margin: 3px;
+  text-align: justify;
+}
+
+@media (max-width: 557px) {
+  .texto-depoimento {
+    font-size: 12px;
+  }
+}
+
+#prev-button,
+#next-button {
+  font-size: 30px;
+  border-radius: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+#prev-button img,
+#next-button img {
+  width: 100%;
+  height: 100%;
+}
