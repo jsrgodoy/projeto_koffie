@@ -52,8 +52,6 @@ document.querySelector('.log-btn').addEventListener('click', function (evento) {
   let valor_username = UserName.value;
   let valor_senha = Password.value;
 
-  console.log(valor_username.length);
-
   if (valor_username.length == 0) {
     usernameHelper.innerText = 'Usuário obrigatório';
     usernameHelper.style.display = "block";
