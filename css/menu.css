@@ -1,4 +1,7 @@
 /*------ MENU -----*/
+.container{
+  padding: 0 5% ;
+}
 
 .texto {
   display: flex;
