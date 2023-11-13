@@ -105,6 +105,29 @@ function topFunction() {
 
 
 
+/*------ CARRINHO -----*/
 
+let addtocart = document.querySelectorAll("#addtocart");
+let newCartTotal = 0;
+
+for (let i = 0, len = addtocart.length; i < len; i++) {
+
+  addtocart[i].addEventListener("click", function () {
+
+
+    var button = $(this);
+    var cart = $('#cart');
+    var cartTotal = cart.attr('data-totalitems');
+    var newCartTotal = parseInt(cartTotal) + 1;
+    
+    button.addClass('sendtocart');
+
+    button.removeClass('sendtocart');
+    cart.addClass('shake').attr('data-totalitems', newCartTotal);
+    cart.removeClass('shake');
+  })
+
+}
+console.log(newCartTotal);
 
 
