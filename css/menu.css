@@ -232,7 +232,7 @@
   color: #2a130a;
 }
 
-input {
+.card-footer input {
   font-size: 16px;
   padding: 12px;
   display: block;
