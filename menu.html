@@ -45,7 +45,7 @@
         </div>
         <div>
           <a href="pedido.html">
-            <div id="cart" class="cart" data-totalitems="">
+            <div id="cart" class="cart" data-totalitems="0">
               <i class="fas fa-shopping-cart"></i>
             </div>
           </a>
@@ -123,7 +123,7 @@
                     <span class="price">8</span>
                   </div>
                   <div class="wcf-right">
-                    <a href="pedido.html" class="buy-btn" onclick="alterarCorBotao(this)">
+                    <a id="addtocart" href="pedido.html" class="buy-btn" onclick="alterarCorBotao(this)">
                       <i class="fas fa-shopping-cart"></i>
                     </a>
                   </div>
@@ -154,7 +154,8 @@
                     <span class="price">9</span>
                   </div>
                   <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
+                    <a id="addtocart" href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i
+                        class="fas fa-shopping-cart"></i></a>
                   </div>
                 </div>
               </div>
@@ -177,14 +178,14 @@
                   <p>Café expresso tradicional com espuma cremosa</p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="expresso-cremoso-qty" required />
+                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="expresso-cremoso-qty"
+                    required />
                   <div class="wcf-left">
                     <span class="price">12</span>
                   </div>
                   <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)">
-                      <i class="fas fa-shopping-cart"></i>
-                    </a>
+                    <a id="addtocart" href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i
+                        class="fas fa-shopping-cart"></i></a>
                   </div>
                 </div>
               </div>
@@ -207,12 +208,14 @@
                   <p>Bebida preparada com café expresso e cubos de gelo</p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="expresso-gelado-qty" required />
+                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="expresso-gelado-qty"
+                    required />
                   <div class="wcf-left">
                     <span class="price">10</span>
                   </div>
                   <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
+                    <a id="addtocart" href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i
+                        class="fas fa-shopping-cart"></i></a>
                   </div>
                 </div>
               </div>
@@ -237,12 +240,14 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="cafe-com-leite-qty" required />
+                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="cafe-com-leite-qty"
+                    required />
                   <div class="wcf-left">
                     <span class="price">10</span>
                   </div>
                   <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
+                    <a id="addtocart" href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i
+                        class="fas fa-shopping-cart"></i></a>
                   </div>
                 </div>
               </div>
@@ -273,7 +278,7 @@
                     <span class="price">14</span>
                   </div>
                   <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick=" alterarCorBotao(this)"><i
+                    <a id="addtocart" href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i
                         class="fas fa-shopping-cart"></i></a>
                   </div>
                 </div>
@@ -300,12 +305,14 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="capuccino-qty" required />
+                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="capuccino-qty"
+                    required />
                   <div class="wcf-left">
                     <span class="price">15</span>
                   </div>
                   <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
+                    <a id="addtocart" href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i
+                        class="fas fa-shopping-cart"></i></a>
                   </div>
                 </div>
               </div>
@@ -330,12 +337,14 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="mocaccino-qty" required />
+                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="mocaccino-qty"
+                    required />
                   <div class="wcf-left">
                     <span class="price">15</span>
                   </div>
                   <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
+                    <a id="addtocart" href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i
+                        class="fas fa-shopping-cart"></i></a>
                   </div>
                 </div>
               </div>
@@ -361,12 +370,14 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="macchiato-qty" required />
+                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="macchiato-qty"
+                    required />
                   <div class="wcf-left">
                     <span class="price">15</span>
                   </div>
                   <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
+                    <a id="addtocart" href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i
+                        class="fas fa-shopping-cart"></i></a>
                   </div>
                 </div>
               </div>
@@ -398,7 +409,8 @@
                     <span class="price">12</span>
                   </div>
                   <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
+                    <a id="addtocart" href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i
+                        class="fas fa-shopping-cart"></i></a>
                   </div>
                 </div>
               </div>
@@ -424,12 +436,14 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="cubano-qty" required />
+                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="cubano-qty"
+                    required />
                   <div class="wcf-left">
                     <span class="price">18</span>
                   </div>
                   <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
+                    <a id="addtocart" href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i
+                        class="fas fa-shopping-cart"></i></a>
                   </div>
                 </div>
               </div>
@@ -452,12 +466,13 @@
                   <p>Bebida adocicada preparada com café e leite de coco</p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="havaiano-qty" required />
+                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="havaiano-qty"
+                    required />
                   <div class="wcf-left">
                     <span class="price">16</span>
                   </div>
                   <div class="wcf-right">
-                    <a href="pedido.html" class="buy-btn" onclick="alterarCorBotao(this)"><i
+                    <a id="addtocart" href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i
                         class="fas fa-shopping-cart"></i></a>
                   </div>
                 </div>
@@ -488,7 +503,8 @@
                     <span class="price">16</span>
                   </div>
                   <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
+                    <a id="addtocart" href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i
+                        class="fas fa-shopping-cart"></i></a>
                   </div>
                 </div>
               </div>
@@ -513,12 +529,14 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="irlandes-qty" required />
+                  <input type="number" value="1" min="1" name="quantidade" class="quantidade" id="irlandes-qty"
+                    required />
                   <div class="wcf-left">
                     <span class="price">18</span>
                   </div>
                   <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
+                    <a id="addtocart" href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i
+                        class="fas fa-shopping-cart"></i></a>
                   </div>
                 </div>
               </div>
@@ -594,6 +612,7 @@
 
   <script type="text/javascript" src="js/javascript.js" defer></script>
   <script src="js/menu.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
 </body>
 
 </html>
