@@ -257,7 +257,7 @@
   content: ",00 ";
 }
 
-input {
+.card-footer input {
   font-size: 16px;
   padding: 12px;
   display: block;
