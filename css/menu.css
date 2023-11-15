@@ -1,8 +1,3 @@
-/*------ MENU -----*/
-.container {
-  padding: 0 5%;
-}
-
 .texto {
   display: flex;
   flex-flow: row wrap;
@@ -55,7 +50,7 @@
 /*------ CARDS -----*/
 
 .produtos {
-  padding: 5% 0;
+  margin: 2%;
 }
 
 .flex {
@@ -356,6 +351,7 @@ a.buy-btn:hover {
 .produtos .container .botao {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .produtos .container input[type="button"] {
