@@ -18,3 +18,6 @@ pedidoConfirmado.innerHTML =
 
 const sectionElement = document.querySelector('.pedido');
 sectionElement.insertBefore(pedidoConfirmado, sectionElement.firstChild);
+
+//Limpar Sessão
+sessionStorage.clear();

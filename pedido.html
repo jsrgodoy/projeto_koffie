@@ -69,12 +69,12 @@
         <form action="">
           <h1>Acesso</h1>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Usuário " id="UserName" required/>
+            <input type="text" class="form-control" placeholder="Usuário " id="UserName" required />
             <i class="fa fa-user"></i>
             <p id="username-helper" class="helper-text"></p>
           </div>
           <div class="form-group log-status">
-            <input type="password" class="form-control" placeholder="Senha" id="Passwod" />
+            <input type="password" class="form-control" placeholder="Senha" id="Password" />
             <i class="fa fa-lock"></i>
             <p id="senha-helper" class="helper-text"></p>
           </div>
@@ -179,6 +179,17 @@
         </form>
       </section>
     </div>
+
+    <div id="overlay"></div>
+    <div id="modal">
+      <img src="./src/logo_white.png" alt="Logo Koffie">
+      <p>Deseja Realmente Finalizar o Pedido?</p>
+      <div id="botoes-modal">
+        <button type="button" id="btn-modal-cancelar" class="btn-modal">Cancelar</button>
+        <button type="button" id="btn-modal-confirmar" class="btn-modal">Confirmar</button>
+      </div>
+    </div>
+
   </main>
 
   <div class="clear"></div>

@@ -1,609 +1,890 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-    rel="stylesheet" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"
+    />
+    <link rel="icon" type="image/x-icon" href="src/favicon.png" />
 
-  <link rel="stylesheet" href="css/global.css" />
-  <link rel="stylesheet" href="css/menu.css" />
-  <link rel="stylesheet" href="css/font-awesome.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" />
-  <link rel="icon" type="image/x-icon" href="src/favicon.png" />
+    <title>Menu</title>
+  </head>
 
-  <title>Menu</title>
-</head>
+  <body id="produtos">
+    <header>
+      <div class="container">
+        <a href="home.html">
+          <div class="logo"></div>
+        </a>
+        <div class="menu">
+          <nav class="menu-itens">
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="sobre.html">Sobre Nós</a></li>
+              <li>Menu</li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </nav>
+          <div class="account">
+            <img
+              onclick="abre()"
+              class="user-profile"
+              src="src/user-profle.png"
+              alt="Cadastro"
+            />
+            <svg
+              onclick="abre()"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 492 492"
+            >
+              <path
+                d="M484.13 124.99l-16.11-16.23a26.72 26.72 0 00-19.04-7.86c-7.2 0-13.96 2.79-19.03 7.86L246.1 292.6 62.06 108.55c-5.07-5.06-11.82-7.85-19.03-7.85s-13.97 2.79-19.04 7.85L7.87 124.68a26.94 26.94 0 000 38.06l219.14 219.93c5.06 5.06 11.81 8.63 19.08 8.63h.09c7.2 0 13.96-3.57 19.02-8.63l218.93-219.33A27.18 27.18 0 00492 144.1c0-7.2-2.8-14.06-7.87-19.12z"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <a href="pedido.html">
+              <div id="cart" class="cart" data-totalitems="">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+            </a>
+          </div>
+        </div>
 
-<body id="produtos">
-  <header>
-    <div class="container">
-      <a href="home.html">
-        <div class="logo"></div>
-      </a>
-      <div class="menu">
-        <nav class="menu-itens">
-          <ul>
+        <div class="menu-mobile">
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"
+            ><span class="navicon"></span
+          ></label>
+
+          <ul class="menu-mobile-itens">
             <li><a href="home.html">Home</a></li>
             <li><a href="sobre.html">Sobre Nós</a></li>
-            <li>Menu</li>
+            <li><a href="menu.html">Menu</a></li>
             <li><a href="contato.html">Contato</a></li>
+            <li><a onclick="abre()">Login</a></li>
+            <li><a href="pedido.html">Carrinho</a></li>
           </ul>
-        </nav>
-        <div class="account">
-          <img onclick="abre()" class="user-profile" src="src/user-profle.png" alt="Cadastro" />
-          <svg onclick="abre()" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 492 492">
-            <path
-              d="M484.13 124.99l-16.11-16.23a26.72 26.72 0 00-19.04-7.86c-7.2 0-13.96 2.79-19.03 7.86L246.1 292.6 62.06 108.55c-5.07-5.06-11.82-7.85-19.03-7.85s-13.97 2.79-19.04 7.85L7.87 124.68a26.94 26.94 0 000 38.06l219.14 219.93c5.06 5.06 11.81 8.63 19.08 8.63h.09c7.2 0 13.96-3.57 19.02-8.63l218.93-219.33A27.18 27.18 0 00492 144.1c0-7.2-2.8-14.06-7.87-19.12z">
-            </path>
-          </svg>
         </div>
-        <div>
-          <a href="pedido.html">
-            <div id="cart" class="cart" data-totalitems="">
-              <i class="fas fa-shopping-cart"></i>
+
+        <div class="login-form">
+          <form action="">
+            <h1>Acesso</h1>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Usuário "
+                id="UserName"
+                required
+              />
+              <i class="fa fa-user"></i>
+              <p id="username-helper" class="helper-text"></p>
             </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="menu-mobile">
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-
-        <ul class="menu-mobile-itens">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="sobre.html">Sobre Nós</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contato.html">Contato</a></li>
-          <li><a onclick="abre()">Login</a></li>
-          <li><a href="pedido.html">Carrinho</a></li>
-        </ul>
-      </div>
-
-      <div class="login-form">
-        <form action="">
-          <h1>Acesso</h1>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Usuário " id="UserName" required />
-            <i class="fa fa-user"></i>
-            <p id="username-helper" class="helper-text"></p>
-          </div>
-          <div class="form-group log-status">
-            <input type="password" class="form-control" placeholder="Senha" id="Passwod" />
-            <i class="fa fa-lock"></i>
-            <p id="senha-helper" class="helper-text"></p>
-          </div>
-          <a class="link" href="#">Perdeu sua senha?</a>
-          <button type="button" class="log-btn">Acessar</button>
-        </form>
-      </div>
-    </div>
-    <!--container-->
-
-    <div class="clear"></div>
-  </header>
-  <main>
-    <section class="texto">
-      <h1>CONHEÇA AS NOSSAS OPÇÕES</h1>
-      <h2>Escolha o seu café.</h2>
-    </section>
-
-    <!---->
-
-    <div class="produtos">
-      <div class="container">
-        <div class="flex">
-          <div class="col-md-3">
-            <div class="wsk-cp-product">
-              <div class="wsk-cp-img">
-                <img src="src/ExpressoTradicional.svg" alt="Product" class="img-responsive" />
-              </div>
-              <div class="wsk-cp-text">
-                <div class="category">
-                  <span>EXPRESSO TRADICIONAL</span>
-                </div>
-                <div class="title-product">
-                  <h3>Tradicional</h3>
-                </div>
-                <div class="description-prod">
-                  <p>
-                    O tradicional café feito com água quente e grãos moídos
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <input type="number" value="1" min="0" name="quantidade" class="quantidade"
-                    id="expresso-tradicional-qty" min="0" required />
-                  <div class="wcf-left">
-                    <span class="price">R$ 8,00</span>
-                  </div>
-                  <div class="wcf-right">
-                    <a href="pedido.html" class="buy-btn" onclick="alterarCorBotao(this)">
-                      <i class="fas fa-shopping-cart"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
+            <div class="form-group log-status">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Senha"
+                id="Password"
+              />
+              <i class="fa fa-lock"></i>
+              <p id="senha-helper" class="helper-text"></p>
             </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="wsk-cp-product">
-              <div class="wsk-cp-img">
-                <img src="src/ExpressoAmericano.svg" alt="Product" class="img-responsive" />
-              </div>
-              <div class="wsk-cp-text">
-                <div class="category">
-                  <span>EXPRESSO AMERICANO</span>
-                </div>
-                <div class="title-product">
-                  <h3>Tradicional</h3>
-                </div>
-                <div class="description-prod">
-                  <p>Expresso diluído, menos intenso que o tradicional</p>
-                </div>
-                <div class="card-footer">
-                  <input type="number" value="1" min="0" name="quantidade" class="quantidade"
-                    id="expresso-americano-qty" min="0" required />
-                  <div class="wcf-left">
-                    <span class="price">R$ 8,00</span>
-                  </div>
-                  <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="wsk-cp-product">
-              <div class="wsk-cp-img">
-                <img src="src/ExpressoCremoso.svg" alt="Product" class="img-responsive" />
-              </div>
-              <div class="wsk-cp-text">
-                <div class="category">
-                  <span>EXPRESSO CREMOSO</span>
-                </div>
-                <div class="title-product">
-                  <h3>Tradicional</h3>
-                </div>
-                <div class="description-prod">
-                  <p>Café expresso tradicional com espuma cremosa</p>
-                </div>
-                <div class="card-footer">
-                  <input type="number" value="1" min="0" name="quantidade" class="quantidade" id="expresso-cremoso-qty"
-                    min="0" required />
-                  <div class="wcf-left">
-                    <span class="price">R$ 12,00</span>
-                  </div>
-                  <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)">
-                      <i class="fas fa-shopping-cart"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="wsk-cp-product">
-              <div class="wsk-cp-img">
-                <img src="src/ExpressoGelado.svg" alt="Product" class="img-responsive" />
-              </div>
-              <div class="wsk-cp-text">
-                <div class="category">
-                  <span>EXPRESSO GELADO</span>
-                </div>
-                <div class="title-product">
-                  <h3>Gelado</h3>
-                </div>
-                <div class="description-prod">
-                  <p>Bebida preparada com café expresso e cubos de gelo</p>
-                </div>
-                <div class="card-footer">
-                  <input type="number" value="1" min="0" name="quantidade" class="quantidade" id="expresso-gelado-qty"
-                    min="0" required />
-                  <div class="wcf-left">
-                    <span class="price">R$ 10,00</span>
-                  </div>
-                  <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="wsk-cp-product">
-              <div class="wsk-cp-img">
-                <img src="src/CafeComLeite.svg" alt="Product" class="img-responsive" />
-              </div>
-              <div class="wsk-cp-text">
-                <div class="category">
-                  <span>CAFÉ COM LEITE</span>
-                </div>
-                <div class="title-product">
-                  <h3>Com Leite</h3>
-                </div>
-                <div class="description-prod">
-                  <p>
-                    Meio a meio de expresso tradicional com leite vaporizado
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <input type="number" value="1" min="0" name="quantidade" class="quantidade" id="cafe-com-leite-qty"
-                    min="0" required />
-                  <div class="wcf-left">
-                    <span class="price">R$ 10,00</span>
-                  </div>
-                  <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="wsk-cp-product">
-              <div class="wsk-cp-img">
-                <img src="src/Latte.svg" alt="Product" class="img-responsive" />
-              </div>
-              <div class="wsk-cp-text">
-                <div class="category">
-                  <span>LATTE</span>
-                </div>
-                <div class="title-product">
-                  <h3>Com Leite</h3>
-                </div>
-                <div class="description-prod">
-                  <p>
-                    Uma dose de café expresso com o dobro de leite e espuma
-                    cremosa
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <input type="number" value="1" min="0" name="quantidade" class="quantidade" id="latte-qty" min="0"
-                    required />
-                  <div class="wcf-left">
-                    <span class="price">R$ 14,00</span>
-                  </div>
-                  <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick=" alterarCorBotao(this)"><i
-                        class="fas fa-shopping-cart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="wsk-cp-product">
-              <div class="wsk-cp-img">
-                <img src="src/Capuccino.svg" alt="Product" class="img-responsive" />
-              </div>
-              <div class="wsk-cp-text">
-                <div class="category">
-                  <span>CAPUCCINO</span>
-                </div>
-                <div class="title-product">
-                  <h3>Com Leite</h3>
-                </div>
-                <div class="description-prod">
-                  <p>
-                    Bebida com canela feita de doses iguais de café, leite e
-                    espuma
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <input type="number" value="1" min="0" name="quantidade" class="quantidade" id="capuccino-qty" min="0"
-                    required />
-                  <div class="wcf-left">
-                    <span class="price">R$ 15,00</span>
-                  </div>
-                  <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="wsk-cp-product">
-              <div class="wsk-cp-img">
-                <img src="src/Mocaccino.svg" alt="Product" class="img-responsive" />
-              </div>
-              <div class="wsk-cp-text">
-                <div class="category">
-                  <span>MOCACCINO</span>
-                </div>
-                <div class="title-product">
-                  <h3>Com Leite</h3>
-                </div>
-                <div class="description-prod">
-                  <p>
-                    Café expresso com calda de chocolate, pouco leite e espuma
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <input type="number" value="1" name="quantidade" class="quantidade" id="mocaccino-qty" min="0"
-                    required />
-                  <div class="wcf-left">
-                    <span class="price">R$ 15,00</span>
-                  </div>
-                  <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="wsk-cp-product">
-              <div class="wsk-cp-img">
-                <img src="src/Macchiato.svg" alt="Product" class="img-responsive" />
-              </div>
-              <div class="wsk-cp-text">
-                <div class="category">
-                  <span>MACCHIATO</span>
-                </div>
-                <div class="title-product">
-                  <h3>Com Leite</h3>
-                </div>
-                <div class="description-prod">
-                  <p>
-                    Café expresso misturado com um pouco de leite quente e
-                    espuma
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <input type="number" value="1" name="quantidade" class="quantidade" id="macchiato-qty" min="0"
-                    required />
-                  <div class="wcf-left">
-                    <span class="price">R$ 15,00</span>
-                  </div>
-                  <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="wsk-cp-product">
-              <div class="wsk-cp-img">
-                <img src="src/ChocolateQuente.svg" alt="Product" class="img-responsive" />
-              </div>
-              <div class="wsk-cp-text">
-                <div class="category">
-                  <span>CHOCOLATE QUENTE</span>
-                </div>
-                <div class="title-product">
-                  <h3>Com Leite</h3>
-                </div>
-                <div class="description-prod">
-                  <p>
-                    Bebida feita com chocolate dissolvido no leite quente e
-                    café
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <input type="number" value="1" name="quantidade" class="quantidade" id="chocolate-quente-qty" min="0"
-                    required />
-                  <div class="wcf-left">
-                    <span class="price">R$ 12,00</span>
-                  </div>
-                  <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="wsk-cp-product">
-              <div class="wsk-cp-img">
-                <img src="src/Cubano.svg" alt="Product" class="img-responsive" />
-              </div>
-              <div class="wsk-cp-text">
-                <div class="category">
-                  <span>CUBANO</span>
-                </div>
-                <div class="title-product">
-                  <h3>Alcoólico</h3>
-                </div>
-                <div class="description-prod">
-                  <p>
-                    Drink gelado de café expresso com rum, creme de leite e
-                    hortelã
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <input type="number" value="1" name="quantidade" class="quantidade" id="cubano-qty" min="0"
-                    required />
-                  <div class="wcf-left">
-                    <span class="price">R$ 18,00</span>
-                  </div>
-                  <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="wsk-cp-product">
-              <div class="wsk-cp-img">
-                <img src="src/Havaiano.svg" alt="Product" class="img-responsive" />
-              </div>
-              <div class="wsk-cp-text">
-                <div class="category">
-                  <span>HAVAIANO</span>
-                </div>
-                <div class="title-product">
-                  <h3>Especial</h3>
-                </div>
-                <div class="description-prod">
-                  <p>Bebida adocicada preparada com café e leite de coco</p>
-                </div>
-                <div class="card-footer">
-                  <input type="number" value="1" name="quantidade" class="quantidade" id="havaiano-qty" min="0"
-                    required />
-                  <div class="wcf-left">
-                    <span class="price">R$ 16,00</span>
-                  </div>
-                  <div class="wcf-right">
-                    <a href="pedido.html" class="buy-btn" onclick="alterarCorBotao(this)"><i
-                        class="fas fa-shopping-cart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="wsk-cp-product">
-              <div class="wsk-cp-img">
-                <img src="src/Arabe.svg" alt="Product" class="img-responsive" />
-              </div>
-              <div class="wsk-cp-text">
-                <div class="category">
-                  <span>ÁRABE</span>
-                </div>
-                <div class="title-product">
-                  <h3>Especial</h3>
-                </div>
-                <div class="description-prod">
-                  <p>
-                    Bebida preparada com grãos de café árabe e especiarias
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <input type="number" value="1" name="quantidade" class="quantidade" id="arabe-qty" min="0" required />
-                  <div class="wcf-left">
-                    <span class="price">R$ 16,00</span>
-                  </div>
-                  <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="wsk-cp-product">
-              <div class="wsk-cp-img">
-                <img src="src/Irlandes.svg" alt="Product" class="img-responsive" />
-              </div>
-              <div class="wsk-cp-text">
-                <div class="category">
-                  <span>IRLANDÊS</span>
-                </div>
-                <div class="title-product">
-                  <h3>Alcoólico</h3>
-                </div>
-                <div class="description-prod">
-                  <p>
-                    Bebida a base de café, uísque irlandês, açúcar e chantily
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <input type="number" value="1" name="quantidade" class="quantidade" id="irlandes-qty" min="0"
-                    required />
-                  <div class="wcf-left">
-                    <span class="price">R$ 18,00</span>
-                  </div>
-                  <div class="wcf-right">
-                    <a href="#" class="buy-btn" onclick="alterarCorBotao(this)"><i class="fas fa-shopping-cart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="botao">
-          <input type="button" id="confirmar-pedido" value="Confirmar  Pedido" />
+            <a class="link" href="#">Perdeu sua senha?</a>
+            <button type="button" class="log-btn">Acessar</button>
+          </form>
         </div>
       </div>
       <!--container-->
-    </div>
-  </main>
-
-  <footer>
-    <div class="container">
-      <div class="footer-section-logo">
-        <img src="src/logo_white.png" alt="" />
-        <p>O Sabor que Cura a Alma</p>
-        <div class="icons-social">
-          <a href=""><i class="fab fa-facebook-f"></i></a>
-          <a href=""><i class="fab fa-twitter"></i></a>
-          <a href=""><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-
-      <div class="footer-section-endereco">
-        <h1>Endereço</h1>
-        <nav>
-          <ul>
-            <li>Avenida Central nº 2023</li>
-            <li>Setor Lugar Nenhum</li>
-            <li>Cafelândia - PR</li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="footer-section-horarios">
-        <h1>Horários</h1>
-        <nav>
-          <ul>
-            <li>Segunda a Sexta-feira:</li>
-            <li>08h00 às 18h00.</li>
-            <li>Domingo:</li>
-            <li>08h00 às 14h00.</li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="footer-section-contato">
-        <h1>Contato</h1>
-        <nav>
-          <ul>
-            <li><i class="fa fa-phone"></i>(99) 8888-8888</li>
-            <li><i class="fab fa-whatsapp"></i>(99) 9999-9999</li>
-            <li><i class="fa fa-envelope"></i>contato@koffie.com.br</li>
-          </ul>
-        </nav>
-      </div>
 
       <div class="clear"></div>
-    </div>
-    <!--container-->
+    </header>
+    <main>
+      <section class="texto">
+        <h1>CONHEÇA AS NOSSAS OPÇÕES</h1>
+        <h2>Escolha o seu café.</h2>
+      </section>
 
-    <hr />
-    <div class="direitos-reservados">
-      <p>©Grupo Dois - PROZ | Todos os direitos reservados</p>
-    </div>
-  </footer>
-  <div class="clear"></div>
+      <!---->
 
-  <button onclick="topFunction()" id="myBtn" title="Voltar ao topo"></button>
+      <div class="produtos">
+        <div class="container">
+          <div class="flex">
+            <div class="col-md-3">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img">
+                  <img
+                    src="src/ExpressoTradicional.svg"
+                    alt="Product"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span>EXPRESSO TRADICIONAL</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Tradicional</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>
+                      O tradicional café feito com água quente e grãos moídos
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
+                      name="quantidade"
+                      class="quantidade"
+                      id="expresso-tradicional-qty"
+                      required
+                    />
+                    <div class="wcf-left">
+                      <span class="price">8</span>
+                    </div>
+                    <div class="wcf-right">
+                      <a
+                        id="addtocart"
+                        href="pedido.html"
+                        class="buy-btn"
+                        onclick="alterarCorBotao(this)"
+                      >
+                        <i class="fas fa-shopping-cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-  <script type="text/javascript" src="js/javascript.js"></script>
-  <script src="js/menu.js"></script>
-</body>
+            <div class="col-md-3">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img">
+                  <img
+                    src="src/ExpressoAmericano.svg"
+                    alt="Product"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span>EXPRESSO AMERICANO</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Tradicional</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>Expresso diluído, menos intenso que o tradicional</p>
+                  </div>
+                  <div class="card-footer">
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
+                      name="quantidade"
+                      class="quantidade"
+                      id="expresso-americano-qty"
+                      required
+                    />
+                    <div class="wcf-left">
+                      <span class="price">9</span>
+                    </div>
+                    <div class="wcf-right">
+                      <a
+                        id="addtocart"
+                        href="#"
+                        class="buy-btn"
+                        onclick="alterarCorBotao(this)"
+                        ><i class="fas fa-shopping-cart"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-md-3">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img">
+                  <img
+                    src="src/ExpressoCremoso.svg"
+                    alt="Product"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span>EXPRESSO CREMOSO</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Tradicional</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>Café expresso tradicional com espuma cremosa</p>
+                  </div>
+                  <div class="card-footer">
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
+                      name="quantidade"
+                      class="quantidade"
+                      id="expresso-cremoso-qty"
+                      required
+                    />
+                    <div class="wcf-left">
+                      <span class="price">12</span>
+                    </div>
+                    <div class="wcf-right">
+                      <a
+                        id="addtocart"
+                        href="#"
+                        class="buy-btn"
+                        onclick="alterarCorBotao(this)"
+                        ><i class="fas fa-shopping-cart"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img">
+                  <img
+                    src="src/ExpressoGelado.svg"
+                    alt="Product"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span>EXPRESSO GELADO</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Gelado</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>Bebida preparada com café expresso e cubos de gelo</p>
+                  </div>
+                  <div class="card-footer">
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
+                      name="quantidade"
+                      class="quantidade"
+                      id="expresso-gelado-qty"
+                      required
+                    />
+                    <div class="wcf-left">
+                      <span class="price">10</span>
+                    </div>
+                    <div class="wcf-right">
+                      <a
+                        id="addtocart"
+                        href="#"
+                        class="buy-btn"
+                        onclick="alterarCorBotao(this)"
+                        ><i class="fas fa-shopping-cart"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img">
+                  <img
+                    src="src/CafeComLeite.svg"
+                    alt="Product"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span>CAFÉ COM LEITE</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Com Leite</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>
+                      Meio a meio de expresso tradicional com leite vaporizado
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
+                      name="quantidade"
+                      class="quantidade"
+                      id="cafe-com-leite-qty"
+                      required
+                    />
+                    <div class="wcf-left">
+                      <span class="price">10</span>
+                    </div>
+                    <div class="wcf-right">
+                      <a
+                        id="addtocart"
+                        href="#"
+                        class="buy-btn"
+                        onclick="alterarCorBotao(this)"
+                        ><i class="fas fa-shopping-cart"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img">
+                  <img
+                    src="src/Latte.svg"
+                    alt="Product"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span>LATTE</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Com Leite</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>
+                      Uma dose de café expresso com o dobro de leite e espuma
+                      cremosa
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
+                      name="quantidade"
+                      class="quantidade"
+                      id="latte-qty"
+                      required
+                    />
+                    <div class="wcf-left">
+                      <span class="price">14</span>
+                    </div>
+                    <div class="wcf-right">
+                      <a
+                        id="addtocart"
+                        href="#"
+                        class="buy-btn"
+                        onclick="alterarCorBotao(this)"
+                        ><i class="fas fa-shopping-cart"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img">
+                  <img
+                    src="src/Capuccino.svg"
+                    alt="Product"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span>CAPUCCINO</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Com Leite</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>
+                      Bebida com canela feita de doses iguais de café, leite e
+                      espuma
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
+                      name="quantidade"
+                      class="quantidade"
+                      id="capuccino-qty"
+                      required
+                    />
+                    <div class="wcf-left">
+                      <span class="price">15</span>
+                    </div>
+                    <div class="wcf-right">
+                      <a
+                        id="addtocart"
+                        href="#"
+                        class="buy-btn"
+                        onclick="alterarCorBotao(this)"
+                        ><i class="fas fa-shopping-cart"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img">
+                  <img
+                    src="src/Mocaccino.svg"
+                    alt="Product"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span>MOCACCINO</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Com Leite</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>
+                      Café expresso com calda de chocolate, pouco leite e espuma
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
+                      name="quantidade"
+                      class="quantidade"
+                      id="mocaccino-qty"
+                      required
+                    />
+                    <div class="wcf-left">
+                      <span class="price">15</span>
+                    </div>
+                    <div class="wcf-right">
+                      <a
+                        id="addtocart"
+                        href="#"
+                        class="buy-btn"
+                        onclick="alterarCorBotao(this)"
+                        ><i class="fas fa-shopping-cart"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img">
+                  <img
+                    src="src/Macchiato.svg"
+                    alt="Product"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span>MACCHIATO</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Com Leite</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>
+                      Café expresso misturado com um pouco de leite quente e
+                      espuma
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
+                      name="quantidade"
+                      class="quantidade"
+                      id="macchiato-qty"
+                      required
+                    />
+                    <div class="wcf-left">
+                      <span class="price">15</span>
+                    </div>
+                    <div class="wcf-right">
+                      <a
+                        id="addtocart"
+                        href="#"
+                        class="buy-btn"
+                        onclick="alterarCorBotao(this)"
+                        ><i class="fas fa-shopping-cart"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img">
+                  <img
+                    src="src/ChocolateQuente.svg"
+                    alt="Product"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span>CHOCOLATE QUENTE</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Com Leite</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>
+                      Bebida feita com chocolate dissolvido no leite quente e
+                      café
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
+                      name="quantidade"
+                      class="quantidade"
+                      id="chocolate-quente-qty"
+                      required
+                    />
+                    <div class="wcf-left">
+                      <span class="price">12</span>
+                    </div>
+                    <div class="wcf-right">
+                      <a
+                        id="addtocart"
+                        href="#"
+                        class="buy-btn"
+                        onclick="alterarCorBotao(this)"
+                        ><i class="fas fa-shopping-cart"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img">
+                  <img
+                    src="src/Cubano.svg"
+                    alt="Product"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span>CUBANO</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Alcoólico</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>
+                      Drink gelado de café expresso com rum, creme de leite e
+                      hortelã
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
+                      name="quantidade"
+                      class="quantidade"
+                      id="cubano-qty"
+                      required
+                    />
+                    <div class="wcf-left">
+                      <span class="price">18</span>
+                    </div>
+                    <div class="wcf-right">
+                      <a
+                        id="addtocart"
+                        href="#"
+                        class="buy-btn"
+                        onclick="alterarCorBotao(this)"
+                        ><i class="fas fa-shopping-cart"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img">
+                  <img
+                    src="src/Havaiano.svg"
+                    alt="Product"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span>HAVAIANO</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Especial</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>Bebida adocicada preparada com café e leite de coco</p>
+                  </div>
+                  <div class="card-footer">
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
+                      name="quantidade"
+                      class="quantidade"
+                      id="havaiano-qty"
+                      required
+                    />
+                    <div class="wcf-left">
+                      <span class="price">16</span>
+                    </div>
+                    <div class="wcf-right">
+                      <a
+                        id="addtocart"
+                        href="#"
+                        class="buy-btn"
+                        onclick="alterarCorBotao(this)"
+                        ><i class="fas fa-shopping-cart"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img">
+                  <img
+                    src="src/Arabe.svg"
+                    alt="Product"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span>ÁRABE</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Especial</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>
+                      Bebida preparada com grãos de café árabe e especiarias
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
+                      name="quantidade"
+                      class="quantidade"
+                      id="arabe-qty"
+                      required
+                    />
+                    <div class="wcf-left">
+                      <span class="price">16</span>
+                    </div>
+                    <div class="wcf-right">
+                      <a
+                        id="addtocart"
+                        href="#"
+                        class="buy-btn"
+                        onclick="alterarCorBotao(this)"
+                        ><i class="fas fa-shopping-cart"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img">
+                  <img
+                    src="src/Irlandes.svg"
+                    alt="Product"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span>IRLANDÊS</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Alcoólico</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>
+                      Bebida a base de café, uísque irlandês, açúcar e chantily
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
+                      name="quantidade"
+                      class="quantidade"
+                      id="irlandes-qty"
+                      required
+                    />
+                    <div class="wcf-left">
+                      <span class="price">18</span>
+                    </div>
+                    <div class="wcf-right">
+                      <a
+                        id="addtocart"
+                        href="#"
+                        class="buy-btn"
+                        onclick="alterarCorBotao(this)"
+                        ><i class="fas fa-shopping-cart"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="botao">
+            <input
+              type="button"
+              id="confirmar-pedido"
+              value="Confirmar  Pedido"
+            />
+          </div>
+        </div>
+        <!--container-->
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-section-logo">
+          <img src="src/logo_white.png" alt="" />
+          <p>O Sabor que Cura a Alma</p>
+          <div class="icons-social">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section-endereco">
+          <h1>Endereço</h1>
+          <nav>
+            <ul>
+              <li>Avenida Central nº 2023</li>
+              <li>Setor Lugar Nenhum</li>
+              <li>Cafelândia - PR</li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer-section-horarios">
+          <h1>Horários</h1>
+          <nav>
+            <ul>
+              <li>Segunda a Sexta-feira:</li>
+              <li>08h00 às 18h00.</li>
+              <li>Domingo:</li>
+              <li>08h00 às 14h00.</li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer-section-contato">
+          <h1>Contato</h1>
+          <nav>
+            <ul>
+              <li><i class="fa fa-phone"></i>(99) 8888-8888</li>
+              <li><i class="fab fa-whatsapp"></i>(99) 9999-9999</li>
+              <li><i class="fa fa-envelope"></i>contato@koffie.com.br</li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+      <!--container-->
+
+      <hr />
+      <div class="direitos-reservados">
+        <p>©Grupo Dois - PROZ | Todos os direitos reservados</p>
+      </div>
+    </footer>
+    <div class="clear"></div>
+
+    <button onclick="topFunction()" id="myBtn" title="Voltar ao topo"></button>
+
+    <script type="text/javascript" src="js/javascript.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      defer
+    ></script>
+  </body>
 </html>

@@ -1,4 +1,7 @@
 /*------ MENU -----*/
+.container {
+  padding: 0 5%;
+}
 
 .texto {
   display: flex;
@@ -247,7 +250,15 @@
   color: #2a130a;
 }
 
-input {
+.price::before {
+  content: "R$ ";
+}
+
+.price::after {
+  content: ",00 ";
+}
+
+.card-footer input {
   font-size: 16px;
   padding: 12px;
   display: block;
