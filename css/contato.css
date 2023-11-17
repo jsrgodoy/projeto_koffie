@@ -292,8 +292,16 @@
   background-color: #2a130a;
 }
 
+.foco {
+  background-color: #e4d7ce;
+}
+
+.correct {
+  background-color: rgb(214, 245, 214);
+}
+
 .error {
-  border: solid 2px #992020;
+  border: 2px solid #992020;
   background-color: #CCBBBB;
   color: #662020;
 }
