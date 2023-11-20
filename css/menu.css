@@ -276,7 +276,7 @@
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  margin: 0;
+  margin: 1;
 }
 
 input[type="number"] {
@@ -330,7 +330,7 @@ a.buy-btn {
 }
 
 a.buy-btn.selected {
-  border-color: #fff;
+  border: 2.5px solid #fff;
   background: #ff9800;
   color: #fff;
 }
