@@ -178,18 +178,26 @@ mostrarPopUp(mensagemLabel, mensagemTextArea);
 
 let contatoForm = document.getElementById("formulario");
 
+contatoForm.addEventListener("submit", function (event) {
+  event.preventDefault(); // Evitando comportamento padrão de submissão do formulário.
 
-// Adicionando evento ao botão de Enviar do formulário.
-
-btnEnviar.addEventListener("click", function () {
   // Exibe o modal de sucesso
   document.getElementById("overlay").style.display = "flex";
   document.getElementById("modal").style.display = "flex";
+
+  // Limpando a classe "correct".
+
+  nomeInput.classList.remove("correct");
+  emailInput.classList.remove("correct");
+  mensagemTextArea.classList.remove("correct");
+
   contatoForm.reset();
   validarBotao();
 });
 
-document.getElementById("overlay").addEventListener("click", function () {
+let overlay = document.getElementById("overlay");
+
+overlay.addEventListener("click", function () {
   // Esconde o modal quando clicar fora dele
   document.getElementById("overlay").style.display = "none";
   document.getElementById("modal").style.display = "none";
