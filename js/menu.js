@@ -24,7 +24,7 @@ document.querySelectorAll(".buy-btn").forEach(function(btn) {
       
     } else { // código anterior que adiciona o produto no carrinho....      
       let preco = parseFloat(produto.querySelector(".price").innerText.replace("R$ ", "").replace(",", "."));
-      let total = quantidade * preco;
+      let total = preco;
       pedidos.push({ nome: nome, quantidade: quantidade, total: total });
       totalGeral += total;
     }    
@@ -49,7 +49,6 @@ document.querySelectorAll(".buy-btn").forEach(function(btn) {
     }
 
   })
- 
 });
 
 // Função que altera a cor do botão quando for clicado
@@ -57,3 +56,21 @@ function alterarCorBotao(clickedButton) {
   // Alterna entre as classes CSS do botão clicado
   clickedButton.classList.toggle('selected');
 }
+
+// Atualizar preço ao mudar quantidade
+
+let expressoTradicionalQty = document.querySelectorAll(".quantidade");
+let price = document.querySelectorAll(".price");
+let original = [8,9,12,10,10,14,15,15,15,12,18,16,16,18];
+
+for (let i = 0, len = expressoTradicionalQty.length; i < len; i++) {
+
+  expressoTradicionalQty[i].addEventListener("change", function () {  
+  price[i].textContent = ((expressoTradicionalQty[i].value * original[i]));
+
+  //console.log(price[i].innerHTML);
+  //console.log(original[i].innerHTML);
+});
+
+}
+

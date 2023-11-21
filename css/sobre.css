@@ -12,7 +12,6 @@ main section.nossa-historia .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 main section.nossa-historia .texto {
@@ -23,7 +22,7 @@ main section.nossa-historia .texto {
 
 main section.nossa-historia .texto h1 {
   color: #2a130a;
-  font-size: 46px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 800;
   line-height: 121.2%;
@@ -38,14 +37,13 @@ main section.nossa-historia .texto p {
   font-weight: 500;
   line-height: 160%;
   letter-spacing: -0.32px;
-
   margin-top: 40px;
   text-align: justify;
 }
 
 main section.nossa-historia .imagem {
   width: 300px;
-  height: 50vh;
+  height: 100%;
   border: 63px 0px 63px 63px;
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
 }
@@ -59,10 +57,11 @@ main section.nossa-historia .imagem img {
   main section.nossa-historia .texto {
     width: 100%;
   }
+}
 
-  main section.nossa-historia .imagem {
-    width: 50%;
-    margin-top: 5%;
+@media (max-width: 667px) {
+  main section.nossa-historia .texto h1 {
+    font-size: 26px;
   }
 }
 
@@ -108,8 +107,8 @@ main section.nossa-equipe .thumb-imagens div {
 }
 
 main section.nossa-equipe .thumb-imagens img {
-  height: 150px;
-  width: 150px;
+  height: 155px;
+  width: 155px;
   border-radius: 15px;
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
 }

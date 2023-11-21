@@ -100,7 +100,7 @@
                 type="password"
                 class="form-control"
                 placeholder="Senha"
-                id="Passwod"
+                id="Password"
               />
               <i class="fa fa-lock"></i>
               <p id="senha-helper" class="helper-text"></p>
@@ -150,18 +150,19 @@
                     <input
                       type="number"
                       value="1"
-                      min="0"
+                      min="1"
+                      oninput="validity.valid||(value='');"
                       name="quantidade"
                       class="quantidade"
                       id="expresso-tradicional-qty"
-                      min="0"
                       required
                     />
                     <div class="wcf-left">
-                      <span class="price">R$ 8,00</span>
+                      <span class="price">8</span>
                     </div>
                     <div class="wcf-right">
                       <a
+                        id="addtocart"
                         href="pedido.html"
                         class="buy-btn"
                         onclick="alterarCorBotao(this)"
@@ -197,18 +198,19 @@
                     <input
                       type="number"
                       value="1"
-                      min="0"
+                      min="1"
+                      oninput="validity.valid||(value='');"
                       name="quantidade"
                       class="quantidade"
                       id="expresso-americano-qty"
-                      min="0"
                       required
                     />
                     <div class="wcf-left">
-                      <span class="price">R$ 8,00</span>
+                      <span class="price">9</span>
                     </div>
                     <div class="wcf-right">
                       <a
+                        id="addtocart"
                         href="#"
                         class="buy-btn"
                         onclick="alterarCorBotao(this)"
@@ -243,24 +245,24 @@
                     <input
                       type="number"
                       value="1"
-                      min="0"
+                      min="1"
+                      oninput="validity.valid||(value='');"
                       name="quantidade"
                       class="quantidade"
                       id="expresso-cremoso-qty"
-                      min="0"
                       required
                     />
                     <div class="wcf-left">
-                      <span class="price">R$ 12,00</span>
+                      <span class="price">12</span>
                     </div>
                     <div class="wcf-right">
                       <a
+                        id="addtocart"
                         href="#"
                         class="buy-btn"
                         onclick="alterarCorBotao(this)"
-                      >
-                        <i class="fas fa-shopping-cart"></i>
-                      </a>
+                        ><i class="fas fa-shopping-cart"></i
+                      ></a>
                     </div>
                   </div>
                 </div>
@@ -290,18 +292,19 @@
                     <input
                       type="number"
                       value="1"
-                      min="0"
+                      min="1"
+                      oninput="validity.valid||(value='');"
                       name="quantidade"
                       class="quantidade"
                       id="expresso-gelado-qty"
-                      min="0"
                       required
                     />
                     <div class="wcf-left">
-                      <span class="price">R$ 10,00</span>
+                      <span class="price">10</span>
                     </div>
                     <div class="wcf-right">
                       <a
+                        id="addtocart"
                         href="#"
                         class="buy-btn"
                         onclick="alterarCorBotao(this)"
@@ -338,18 +341,19 @@
                     <input
                       type="number"
                       value="1"
-                      min="0"
+                      min="1"
+                      oninput="validity.valid||(value='');"
                       name="quantidade"
                       class="quantidade"
                       id="cafe-com-leite-qty"
-                      min="0"
                       required
                     />
                     <div class="wcf-left">
-                      <span class="price">R$ 10,00</span>
+                      <span class="price">10</span>
                     </div>
                     <div class="wcf-right">
                       <a
+                        id="addtocart"
                         href="#"
                         class="buy-btn"
                         onclick="alterarCorBotao(this)"
@@ -387,21 +391,22 @@
                     <input
                       type="number"
                       value="1"
-                      min="0"
+                      min="1"
+                      oninput="validity.valid||(value='');"
                       name="quantidade"
                       class="quantidade"
                       id="latte-qty"
-                      min="0"
                       required
                     />
                     <div class="wcf-left">
-                      <span class="price">R$ 14,00</span>
+                      <span class="price">14</span>
                     </div>
                     <div class="wcf-right">
                       <a
+                        id="addtocart"
                         href="#"
                         class="buy-btn"
-                        onclick=" alterarCorBotao(this)"
+                        onclick="alterarCorBotao(this)"
                         ><i class="fas fa-shopping-cart"></i
                       ></a>
                     </div>
@@ -436,18 +441,19 @@
                     <input
                       type="number"
                       value="1"
-                      min="0"
+                      min="1"
+                      oninput="validity.valid||(value='');"
                       name="quantidade"
                       class="quantidade"
                       id="capuccino-qty"
-                      min="0"
                       required
                     />
                     <div class="wcf-left">
-                      <span class="price">R$ 15,00</span>
+                      <span class="price">15</span>
                     </div>
                     <div class="wcf-right">
                       <a
+                        id="addtocart"
                         href="#"
                         class="buy-btn"
                         onclick="alterarCorBotao(this)"
@@ -484,17 +490,19 @@
                     <input
                       type="number"
                       value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
                       name="quantidade"
                       class="quantidade"
                       id="mocaccino-qty"
-                      min="0"
                       required
                     />
                     <div class="wcf-left">
-                      <span class="price">R$ 15,00</span>
+                      <span class="price">15</span>
                     </div>
                     <div class="wcf-right">
                       <a
+                        id="addtocart"
                         href="#"
                         class="buy-btn"
                         onclick="alterarCorBotao(this)"
@@ -532,17 +540,19 @@
                     <input
                       type="number"
                       value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
                       name="quantidade"
                       class="quantidade"
                       id="macchiato-qty"
-                      min="0"
                       required
                     />
                     <div class="wcf-left">
-                      <span class="price">R$ 15,00</span>
+                      <span class="price">15</span>
                     </div>
                     <div class="wcf-right">
                       <a
+                        id="addtocart"
                         href="#"
                         class="buy-btn"
                         onclick="alterarCorBotao(this)"
@@ -580,17 +590,19 @@
                     <input
                       type="number"
                       value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
                       name="quantidade"
                       class="quantidade"
                       id="chocolate-quente-qty"
-                      min="0"
                       required
                     />
                     <div class="wcf-left">
-                      <span class="price">R$ 12,00</span>
+                      <span class="price">12</span>
                     </div>
                     <div class="wcf-right">
                       <a
+                        id="addtocart"
                         href="#"
                         class="buy-btn"
                         onclick="alterarCorBotao(this)"
@@ -628,17 +640,19 @@
                     <input
                       type="number"
                       value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
                       name="quantidade"
                       class="quantidade"
                       id="cubano-qty"
-                      min="0"
                       required
                     />
                     <div class="wcf-left">
-                      <span class="price">R$ 18,00</span>
+                      <span class="price">18</span>
                     </div>
                     <div class="wcf-right">
                       <a
+                        id="addtocart"
                         href="#"
                         class="buy-btn"
                         onclick="alterarCorBotao(this)"
@@ -673,18 +687,20 @@
                     <input
                       type="number"
                       value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
                       name="quantidade"
                       class="quantidade"
                       id="havaiano-qty"
-                      min="0"
                       required
                     />
                     <div class="wcf-left">
-                      <span class="price">R$ 16,00</span>
+                      <span class="price">16</span>
                     </div>
                     <div class="wcf-right">
                       <a
-                        href="pedido.html"
+                        id="addtocart"
+                        href="#"
                         class="buy-btn"
                         onclick="alterarCorBotao(this)"
                         ><i class="fas fa-shopping-cart"></i
@@ -720,17 +736,19 @@
                     <input
                       type="number"
                       value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
                       name="quantidade"
                       class="quantidade"
                       id="arabe-qty"
-                      min="0"
                       required
                     />
                     <div class="wcf-left">
-                      <span class="price">R$ 16,00</span>
+                      <span class="price">16</span>
                     </div>
                     <div class="wcf-right">
                       <a
+                        id="addtocart"
                         href="#"
                         class="buy-btn"
                         onclick="alterarCorBotao(this)"
@@ -767,17 +785,19 @@
                     <input
                       type="number"
                       value="1"
+                      min="1"
+                      oninput="validity.valid||(value='');"
                       name="quantidade"
                       class="quantidade"
                       id="irlandes-qty"
-                      min="0"
                       required
                     />
                     <div class="wcf-left">
-                      <span class="price">R$ 18,00</span>
+                      <span class="price">18</span>
                     </div>
                     <div class="wcf-right">
                       <a
+                        id="addtocart"
                         href="#"
                         class="buy-btn"
                         onclick="alterarCorBotao(this)"
@@ -860,7 +880,11 @@
 
     <button onclick="topFunction()" id="myBtn" title="Voltar ao topo"></button>
 
-    <script type="text/javascript" src="js/javascript.js"></script>
-    <script src="js/menu.js"></script>
+    <script type="text/javascript" src="js/javascript.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      defer
+    ></script>
   </body>
 </html>

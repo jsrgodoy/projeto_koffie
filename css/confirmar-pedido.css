@@ -6,7 +6,7 @@ main {
 
 main section.pedido {
   display: flex;
-  align-items: center;  
+  align-items: center;
   justify-content: center;
   gap: 5%;
   max-width: 1200px;
@@ -52,14 +52,14 @@ main section.pedido .box2 {
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
   main section.pedido {
     display: flex;
     margin-top: 65px;
     margin-bottom: 100px;
     margin-left: 30px;
     flex-wrap: wrap;
-    justify-content: center;    
+    justify-content: center;
     gap: 5%;
   }
 
@@ -78,24 +78,77 @@ main section.pedido .box2 {
     border-radius: 15px 15px 15px 15px;
     background: #aea393;
     padding: 50px 50px;
-    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
+    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
   }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
   main section.pedido {
     display: flex;
     margin-top: 65px;
     margin-bottom: 100px;
     flex-wrap: wrap;
-    justify-content: center;    
+    justify-content: center;
     gap: 5%;
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  main section.pedido {
+    display: flex;
+    margin-top: 65px;
+    margin-bottom: 100px;
+    margin-left: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+  }
+
+  main section.pedido .box1 {
+    display: flex;
+    width: 90%;
+    padding: 40px 30px;
+    flex-direction: column;
+    gap: 15%;
+  }
+
+  main section.pedido .box2 {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    border-radius: 15px 15px 15px 15px;
+    background: #aea393;
+    padding: 50px 50px;
+    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main section.pedido {
+    display: flex;
+    margin-top: 65px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+  }
+}
 
 main section.pedido .box2 img {
-  width: 30%;
+  width: 40%;
+  animation: slide 2s infinite;
+  opacity: 0;
+  transform: translateX(-80px);
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(10px);
+  }
 }
 
 .text {
@@ -113,7 +166,8 @@ main section.pedido .box2 img {
 }
 
 @keyframes highlight {
-  0%, 100% {
+  0%,
+  100% {
     background: none;
     color: inherit;
   }
