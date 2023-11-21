@@ -286,9 +286,9 @@ input[type="number"] {
 
 input::-webkit-inner-spin-button {
   all: unset;
-  min-width: 21px;
-  min-height: 45px;
-  margin: 17px;
+  min-width: 20px;
+  min-height: 44px;
+  margin: 18px;
   padding: 0px;
   background-image: linear-gradient(
       to top,
