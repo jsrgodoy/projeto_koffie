@@ -13,5 +13,6 @@
             "database": "ESCOLA",
             "username": "jeferson"
         }
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
