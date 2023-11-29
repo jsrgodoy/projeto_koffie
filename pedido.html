@@ -90,7 +90,9 @@
 
   <main>
     <div class="container">
-      <span>COMPLETE SEU PEDIDO</span>
+      <div class="titulo-pedido">
+        <span class="texto-pedido">COMPLETE SEU PEDIDO</span>
+      </div>
       <section class="pedido">
         <div class="box1">
           <form action="confirmar-pedido.html">
@@ -144,25 +146,96 @@
                 </select>
                 <label for="cep">Código Postal(CEP)*</label>
                 <input type="text" name="cep" id="cep" required />
-                <h1>FORMA DE PAGAMENTO*</h1>
-                <select id="pagamento" name="pagamento" required>
-                  <option value="" disabled selected>Selecione</option>
-                  <option value="boleto">Boleto</option>
-                  <option value="cartao">Cartão</option>
-                  <option value="pix">Pix</option>
-                </select>
               </div>
             </div>
         </div>
         <div class="box2">
-          <div class="box2-parte1">
+          <h1>FORMA DE PAGAMENTO*</h1>
+          <div class="box-pagamento">
+            <select id="pagamento" name="pagamento" required>
+              <option value="" disabled selected>Selecione</option>
+              <option value="cartao">Cartão</option>
+              <option value="pix">Pix</option>
+            </select>
+           
+            <div class="flip-card">
+              <div class="flip-card-inner" onclick="flipcard()">
+                <div class="flip-card-front" id="front">
+                  <div class="box-numero-card">
+                    <p class="titulo-card">numero</p>
+                    <p id="card" class="numero-card">0000 0000 0000 0000</p>
+                  </div>
+                  <div class="texto-bottom">
+                    <div class="box-titular">
+                      <p class="titulo-card">nome</p>
+                      <p id ="nome-card" class="descricao-card"></p>
+                    </div>
+                    <div class="box-vencimento">
+                      <p class="titulo-card">validade</p>
+                      <p id="valid-card" class="descricao-card"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card-back" id="back">
+                  <div class="box-content">
+                    <div class="box-secure-code"></div>
+                    <div class="secure-code">
+                      <p id="secure-card"></p>
+                    </div>
+                  </div>
+                  <p class="cod-name">Cód. Segurança</p>
+                </div>
+              </div>
+            </div>
+            <section class="section-form">
+              <div class="formulario">
+                <form action="">
+                  <div class="campo-container">
+                    <label for="nome-form">Nome</label>
+                    <input type="text" name="nome-form" id="nome-form" maxlength="27"/>
+                  </div>
+                  <div class="campo-container">
+                    <label for="numero-form">Número</label>
+                    <input type="text" name="numero-form" id="numero-form" pattern="[0-9]*" inputmode="numeric" maxlength="19">
+                  </div>
+                  <div class="campo-container">
+                    <label for="validade-form">Validade &#40MM/AA&#41</label>
+                    <input type="text" name="validade-form" id="validade-form" maxlength="5"/>
+                  </div>
+                  <div class="campo-container">
+                    <label for="codigo-form">Código</label>
+                    <input type="text" name="codigo-form" id="codigo-form" inputmode="numeric" maxlength="3"/>
+                  </div>
+                </form>
+              </div>
+            </section>
+            
+            <div id="pix">
+              <div>
+                <img src="./src/pix.png" alt="" class="pix-qrcode">
+              </div>
+              <div class="pix-texto">
+                <img src="./src/b1.png" alt="" class="pix-img">
+                <p>1. Abra o app do seu banco ou instituição financeira e entre no ambiente Pix.</p>
+                <img src="./src/b2.png" alt="" class="pix-img">
+                <p>2. Escolha a opção Pagar com QR Code e escaneie o código ao lado.</p>
+                <img src="./src/b3.png" alt="" class="pix-img">
+                <p>3. Confirme as informações e finalize o pagamento.</p>
+              </div>
+              <button type="submit" class="btn-pag" disabled>Copiar Código</button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="box3">
+          <div class="box3-parte1">
             <img src="src/ExpressoTradicional.svg" alt="Expresso Tradicional" />
             <div>
               <h1 id="itens-pedido"></h1>
             </div>
           </div>
           <hr>
-          <div class="box2-parte2">
+          <div class="box3-parte2">
             <div class="titulo">
               <p>Total dos itens</p>
               <p>Entrega</p>
@@ -253,8 +326,8 @@
 
   <button onclick="topFunction()" id="myBtn" title="Voltar ao topo"></button>
 
-  <script type="text/javascript" src="js/javascript.js"></script>
-  <script src="js/pedido.js"></script>
+  <script type="text/javascript" src="js/javascript.js" defer></script>
+  <script src="js/pedido.js" defer></script>
 </body>
 
 </html>
