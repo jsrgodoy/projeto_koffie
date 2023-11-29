@@ -27,10 +27,7 @@ document.querySelectorAll(".buy-btn").forEach(function(btn) {
       let total = preco;
       pedidos.push({ nome: nome, quantidade: quantidade, total: total });
       totalGeral += total;
-    }    
-
-    console.log(`${nome} - Quantidade (${quantidade})`);
-    console.log(`Total Geral: R$ ${totalGeral.toFixed(2).replace(".", ",")}`);
+    } 
    
   });
 
@@ -44,7 +41,6 @@ document.querySelectorAll(".buy-btn").forEach(function(btn) {
       sessionStorage.setItem("totalGeral", totalGeral);
 
       // Redirecionar apenas quando o botão "Confirmar Pedido" for clicado
-      console.log("Redirecionando para a página de pedido.");
       window.location.href = "pedido.html";
     }
 
@@ -68,8 +64,6 @@ for (let i = 0, len = expressoTradicionalQty.length; i < len; i++) {
   expressoTradicionalQty[i].addEventListener("change", function () {  
   price[i].textContent = ((expressoTradicionalQty[i].value * original[i]));
 
-  //console.log(price[i].innerHTML);
-  //console.log(original[i].innerHTML);
 });
 
 }
