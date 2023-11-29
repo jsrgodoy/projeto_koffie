@@ -1,12 +1,13 @@
 /*------ CONFIRMAR PEDIDO -----*/
 
 main {
-  padding-top: 50px;
+  padding-top: 30px;
+  margin: 2rem;
 }
 
 main section.pedido {
   display: flex;
-  align-items: center;  
+  align-items: center;
   justify-content: center;
   gap: 5%;
   max-width: 1200px;
@@ -30,6 +31,13 @@ main section.pedido h1 {
   font-weight: 800;
   line-height: 121.2%;
   text-transform: uppercase;
+  margin: 1rem;
+}
+
+@media (max-width: 415px) {
+  main section.pedido h1 {
+    font-size: 20px;
+  }
 }
 
 main section.pedido p {
@@ -52,14 +60,14 @@ main section.pedido .box2 {
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
   main section.pedido {
     display: flex;
     margin-top: 65px;
     margin-bottom: 100px;
     margin-left: 30px;
     flex-wrap: wrap;
-    justify-content: center;    
+    justify-content: center;
     gap: 5%;
   }
 
@@ -78,17 +86,58 @@ main section.pedido .box2 {
     border-radius: 15px 15px 15px 15px;
     background: #aea393;
     padding: 50px 50px;
-    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);
+    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
   }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
   main section.pedido {
     display: flex;
     margin-top: 65px;
     margin-bottom: 100px;
     flex-wrap: wrap;
-    justify-content: center;    
+    justify-content: center;
+    gap: 5%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main section.pedido {
+    display: flex;
+    margin-top: 65px;
+    margin-bottom: 100px;
+    margin-left: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+  }
+
+  main section.pedido .box1 {
+    display: flex;
+    width: 90%;
+    padding: 40px 30px;
+    flex-direction: column;
+    gap: 15%;
+  }
+
+  main section.pedido .box2 {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    border-radius: 15px 15px 15px 15px;
+    background: #aea393;
+    padding: 50px 50px;
+    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main section.pedido {
+    display: flex;
+    margin-top: 65px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 5%;
   }
 }
@@ -125,7 +174,8 @@ main section.pedido .box2 img {
 }
 
 @keyframes highlight {
-  0%, 100% {
+  0%,
+  100% {
     background: none;
     color: inherit;
   }

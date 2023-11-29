@@ -93,23 +93,23 @@
       <div class="container">
         <div class="textomenu">
           <h1 class="h1">O Melhor <br />café da região</h1>
-          <p class="p">Estamos ansiosos para surpreendê-lo com nossas opções.<br />
+          <p class="p">
+            Estamos ansiosos para surpreendê-lo com nossas opções.<br />
             Abra nosso menu e comece a sonhar com sua próxima escolha!
           </p>
           <a href="menu.html" class="btn-menu">Menu</a>
         </div>
         <div class="imagemmenu">
-          <img src="src/menuImg1.png" alt="" />
+          <img src="src/menuImg1.png" alt="xícara de café" />
         </div>
       </div>
     </section>
 
     <section class="contato-localizacao">
       <div class="container">
-        <div class="section-form">
+        <div class="form-contato">
           <h1 class="h1">Contato</h1>
-          <form id="formContato" class="formulario" autocomplete="off">
-
+          <form id="formulario" autocomplete="off">
             <label for="nome" class="label-form">Nome*</label>
             <input type="text" name="nome" id="nome" class="input-form" placeholder="Digite seu nome" />
             <p id="nome-helper" class="helper-text">Mensagem</p>
@@ -123,9 +123,10 @@
             <p id="mensagem-helper" class="helper-text">Mensagem</p>
 
             <div class="btn-container">
-              <button type="button" id="btn-submit" class="btn-form" disabled>Enviar</button>
+              <button type="submit" id="btn-submit" class="btn-form" disabled>
+                Enviar
+              </button>
             </div>
-
           </form>
         </div>
 
@@ -133,14 +134,13 @@
           <h1 class="h1">Localização</h1>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29017.50451793594!2d-53.343687520311455!3d-24.617202247658344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f24a34b2929109%3A0x1d3a1a0839e38167!2sCafel%C3%A2ndia%2C%20PR%2C%2085415-000!5e0!3m2!1spt-BR!2sbr!4v1698200709906!5m2!1spt-BR!2sbr"
-            width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            style="border: 0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
     <div id="overlay"></div>
     <div id="modal">
-      <img src="./src/logo_white.png" alt="Logo Koffie">
+      <img src="./src/logo_white.png" alt="logo-café" />
       <p>Mensagem enviada com sucesso!</p>
       <button type="button" id="btn-modal" class="btn-modal">Ok</button>
     </div>
@@ -148,7 +148,7 @@
   <footer>
     <div class="container">
       <div class="footer-section-logo">
-        <img src="src/logo_white.png" alt="" />
+        <img src="src/logo_white.png" alt="logo-café" />
         <p>O Sabor que Cura a Alma</p>
         <div class="icons-social">
           <a href=""><i class="fab fa-facebook-f"></i></a>

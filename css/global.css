@@ -25,7 +25,7 @@ div.clear {
 
 .helper-text {
   display: none;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: darkred;
 }
 
@@ -197,24 +197,24 @@ header .menu-itens a {
     display: none;
   }
 
-  .menu-mobile .menu-btn:checked~.menu-mobile-itens {
+  .menu-mobile .menu-btn:checked ~ .menu-mobile-itens {
     max-height: 100%;
   }
 
-  .menu-mobile .menu-btn:checked~.menu-icon .navicon {
+  .menu-mobile .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
   }
 
-  .menu-mobile .menu-btn:checked~.menu-icon .navicon:before {
+  .menu-mobile .menu-btn:checked ~ .menu-icon .navicon:before {
     transform: rotate(-45deg);
   }
 
-  .menu-mobile .menu-btn:checked~.menu-icon .navicon:after {
+  .menu-mobile .menu-btn:checked ~ .menu-icon .navicon:after {
     transform: rotate(45deg);
   }
 
-  .menu-mobile .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
-  .menu-mobile .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+  .menu-mobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .menu-mobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
 }
@@ -230,7 +230,7 @@ header .user-profile {
   cursor: pointer;
 }
 
-header .user-profile+svg {
+header .user-profile + svg {
   width: 14px;
   cursor: pointer;
   color: #f5eeee;
@@ -309,7 +309,6 @@ header .user-profile+svg {
     color: #2a130a;
   }
 }
-
 
 /*------ CARRINHO -----*/
 

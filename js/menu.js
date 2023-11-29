@@ -49,7 +49,6 @@ document.querySelectorAll(".buy-btn").forEach(function(btn) {
     }
 
   })
-
 });
 
 // Função que altera a cor do botão quando for clicado
@@ -62,7 +61,7 @@ function alterarCorBotao(clickedButton) {
 
 let expressoTradicionalQty = document.querySelectorAll(".quantidade");
 let price = document.querySelectorAll(".price");
-let original = [8,9,12,10,10,14,15,15,15,12,18,16,16,18];
+let original = [8,9,12,10,10,14,15,15,15,12,5,8,8,9];
 
 for (let i = 0, len = expressoTradicionalQty.length; i < len; i++) {
 

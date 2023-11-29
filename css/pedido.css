@@ -2,10 +2,18 @@
 
 main {
   padding-top: 50px;
+  margin: 1rem;
 }
 
-.container{
-  padding: 0 5% ;
+main .container {
+  max-width: 1700px;
+}
+
+.titulo-pedido {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 main span {
@@ -17,7 +25,11 @@ main span {
   text-transform: capitalize;
   margin-top: 30px;
 }
-
+@media (max-width: 480px) {
+  main span {
+    font-size: 22px;
+  }
+}
 main section.pedido {
   display: flex;
   margin-top: 40px;
@@ -27,9 +39,10 @@ main section.pedido {
 
 main section.pedido .box1 {
   width: 50%;
+  min-height: 716.36px;
   border-radius: 63px 0px 63px 0px;
   background: #aea393;
-  padding: 40px 30px;
+  padding: 30px 30px;
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
 }
 
@@ -77,6 +90,11 @@ label {
   line-height: 150%;
   letter-spacing: -0.48px;
   opacity: 0.9;
+}
+@media (max-width: 373px) {
+  main section.pedido label {
+    font-size: 12px;
+  }
 }
 
 main section.pedido input {
@@ -128,20 +146,394 @@ main section.pedido input[type="number"] {
   /* Firefox */
 }
 
-main section.pedido .box2 {
+/* Formas de Pagamento INÍCIO */
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 50%;
+  min-height: 716.36px;
   border-radius: 63px 0px 63px 0px;
   background: #aea393;
-  padding: 40px 30px;
+  padding: 30px 30px;
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
 }
 
-main section.pedido .box2 .box2-parte1 {
+@media (max-width: 1024px) {
+  .box2 {
+    width: 100%;
+    margin-top: 5%;
+  }
+}
+
+.box-pagamento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.flip-card {
+  display: none;
+  width: 382px;
+  height: 250px;
+  perspective: 1000px; /* Define a perspectiva para a animação 3D */
+  animation: aparecer 1s forwards;
+}
+
+@media (max-width: 470px) {
+  .flip-card {
+    width: 290px;
+    height: 193px;
+  }
+}
+@media (max-width: 365px) {
+  .flip-card {
+    width: 240px;
+    height: 180px;
+  }
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0; /* Começa totalmente transparente */
+  }
+  to {
+    opacity: 1; /* Termina completamente visível */
+  }
+}
+
+/* Define o estilo interno do cartão (frente e verso) */
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s; /* Define a transição suave entre os estados */
+  transform-style: preserve-3d; /* Mantém o eixo 3D */
+  position: relative;
+}
+
+/* Define o estilo do lado frontal do cartão */
+.flip-card-front,
+.flip-card-back {
+  font-family: "Source Code Pro", monospace;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden; /* Oculta o lado de trás do cartão */
+}
+
+@media (max-width: 365px) {
+  .flip-card-front,
+  .flip-card-back {
+    height: 91%;
+  }
+}
+
+/* Estilo do lado frontal */
+.flip-card-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../src/cardFrontOff.png");
+  border-radius: 20px;
+  box-shadow: -3px 2px 5px 1px rgba(0, 0, 0, 0.65);
+}
+
+@media (max-width: 470px) {
+  .flip-card-front {
+    background-image: url("../src/cardFrontOffResp.png");
+  }
+}
+
+.front-master {
+  background-image: url("../src/cardFrontMaster.png");
+}
+
+@media (max-width: 470px) {
+  .front-master {
+    background-image: url("../src/cardFrontMasterResp.png");
+  }
+}
+@media (max-width: 365px) {
+  .front-master {
+    background-image: url("../src/cardFrontMasterResp2.png");
+  }
+}
+
+.front-visa {
+  background-image: url("../src/cardFrontVisa.png");
+}
+
+@media (max-width: 470px) {
+  .front-visa {
+    background-image: url("../src/cardFrontVisaResp.png");
+  }
+}
+@media (max-width: 365px) {
+  .front-visa {
+    background-image: url("../src/cardFrontVisaResp2.png");
+  }
+}
+
+.box-numero-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 62px;
+  align-items: start;
+  margin-top: 32%;
+  padding: 0 31px;
+}
+
+.numero-card {
+  font-size: 37px;
+  color: white;
+  font-weight: 500;
+}
+
+.texto-bottom {
+  display: flex;
+  margin-top: 2%;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.titulo-card {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  opacity: 0.4;
+  white-space: nowrap;
+}
+
+.descricao-card {
+  font-size: 22px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.box-titular {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.box-vencimento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo do lado de trás */
+.flip-card-back {
+  background-image: url("../src/cardBackOff.png");
+  border-radius: 20px;
+  transform: rotateY(180deg); /* Começa girado para trás */
+  text-align: end;
+}
+
+@media (max-width: 470px) {
+  .flip-card-back {
+    background-image: url("../src/cardbackOffResp.png");
+  }
+}
+
+.back-master {
+  background-image: url("../src/cardBackMaster.png");
+}
+
+@media (max-width: 470px) {
+  .back-master {
+    background-image: url("../src/cardBackMasterResp.png");
+  }
+}
+
+.back-visa {
+  background-image: url("../src/cardBackVisa.png");
+}
+
+@media (max-width: 470px) {
+  .back-visa {
+    background-image: url("../src/cardBackVisaResp.png");
+  }
+}
+
+.box-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25%;
+}
+
+.box-secure-code {
+  background-image: url("../src/backgroundB.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  width: 80%;
+  height: 40px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.secure-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(190, 190, 190);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 57px;
+  height: 40px;
+}
+
+.cod-name {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  opacity: 0.4;
+  white-space: nowrap;
+  margin-right: 5%;
+  letter-spacing: -1px;
+}
+
+/* Define o efeito de rotação para mostrar o verso */
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.section-form {
+  display: none;
+  margin-top: 20px;
+}
+
+.formulario {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 90px 90px 90px;
+  grid-template-areas:
+    "nome-form nome-form"
+    "numero-form numero-form"
+    "validade-form codigo-form";
+  max-width: 400px;
+}
+
+.campo-container {
+  position: relative;
+}
+.formulario .campo-container:first-of-type {
+  grid-area: nome-form;
+}
+
+.formulario .campo-container:nth-of-type(2) {
+  grid-area: numero-form;
+}
+
+.formulario .campo-container:nth-of-type(3) {
+  grid-area: validade-form;
+}
+
+.formulario .campo-container:nth-of-type(4) {
+  grid-area: codigo-form;
+}
+
+input {
+  margin-top: 3px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+#boleto {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+#boleto img {
+  width: 400px;
+}
+
+.btn-pag {
+  background-color: #2a130a;
+  border: 0;
+  width: 263px;
+  height: 55px;
+  font-size: 22px;
+  color: #ac9675;
+  font-style: normal;
+  font-weight: 500;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 100ms linear;
+  letter-spacing: 0.2em;
+  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 680px) {
+  .btn-pag {
+    font-size: 14px;
+  }
+}
+
+.btn-pag:active {
+  transform: translateY(5px);
+}
+
+#pix {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.pix-texto {
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pix-img {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #4d423e;
+  border-radius: 20px;
+}
+
+/* Formas de Pagamento FIM */
+
+main section.pedido .box3 {
+  width: 50%;
+  min-height: 716.36px;
+  border-radius: 63px 0px 63px 0px;
+  background: #aea393;
+  padding: 30px 30px;
+  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
+}
+
+main section.pedido .box3 .box3-parte1 {
   display: flex;
   justify-content: space-between;
 }
 /* @media (max-width: 518px) {
-  main section.pedido .box2 .box2-parte1 {
+  main section.pedido .box3 .box3-parte1 {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -151,32 +543,32 @@ main section.pedido .box2 .box2-parte1 {
   }
 } */
 
-main section.pedido .box2 .box2-parte1 img {
+main section.pedido .box3 .box3-parte1 img {
   width: 140px;
   height: 140px;
 }
 
 @media (max-width: 600px) {
-  main section.pedido .box2 .box2-parte1 img {
+  main section.pedido .box3 .box3-parte1 img {
     width: 120px;
     height: 120px;
   }
 }
 @media (max-width: 518px) {
-  main section.pedido .box2 .box2-parte1 img {
+  main section.pedido .box3 .box3-parte1 img {
     width: 80px;
     height: 80px;
   }
 }
-main section.pedido .box2 .box2-parte1 h1 {
+main section.pedido .box3 .box3-parte1 h1 {
   padding-top: 20px;
 }
 
-main section.pedido .box2 .box2-parte1 input {
+main section.pedido .box3 .box3-parte1 input {
   margin-top: 20px;
 }
 
-main section.pedido .box2 .box2-parte1 input::-webkit-inner-spin-button {
+main section.pedido .box3 .box3-parte1 input::-webkit-inner-spin-button {
   all: unset;
   min-width: 21px;
   min-height: 45px;
@@ -208,7 +600,7 @@ main section.pedido .box2 .box2-parte1 input::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
-main section.pedido .box2 hr {
+main section.pedido .box3 hr {
   width: 100%;
   height: 2px;
   margin-top: 40px;
@@ -216,38 +608,38 @@ main section.pedido .box2 hr {
   background: #2a130a;
 }
 
-main section.pedido .box2 .box2-parte2 {
+main section.pedido .box3 .box3-parte2 {
   display: flex;
   justify-content: space-between;
 }
 
-main section.pedido .box2 .box2-parte2 h1 {
+main section.pedido .box3 .box3-parte2 h1 {
   display: flex;
   justify-content: space-between;
   font-size: 24px;
 }
 
-main section.pedido .box2 .titulo {
+main section.pedido .box3 .titulo {
   display: flex;
   flex-direction: column;
   gap: 80px;
 }
 
-main section.pedido .box2 .valores {
+main section.pedido .box3 .valores {
   display: flex;
   flex-direction: column;
   gap: 80px;
 }
 
-main section.pedido .box2 .botao {
+main section.pedido .box3 .botao {
   display: flex;
   justify-content: center;
 }
 
-main section.pedido .box2 input[type="submit"] {
+main section.pedido .box3 input[type="submit"] {
   background-color: #2a130a;
   border: 0;
-  width: 60%;
+  width: 252px;
   height: 55px;
   font-size: 22px;
   color: #ac9675;
@@ -262,14 +654,13 @@ main section.pedido .box2 input[type="submit"] {
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
 }
 
-@media only screen and (min-width: 250px) and (max-width: 600px) {
-  main section.pedido .box2 input[type="submit"] {
+@media only screen and (min-width: 250px) and (max-width: 680px) {
+  main section.pedido .box3 input[type="submit"] {
     background-color: #2a130a;
     border: 0;
     width: 75%;
     padding: 1%;
     height: 55px;
-    font-size: 22px;
     color: #ac9675;
     margin-top: 100px;
     font-style: normal;
@@ -281,9 +672,8 @@ main section.pedido .box2 input[type="submit"] {
     transition: all 100ms linear;
     letter-spacing: 0.2em;
     box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
-    font-size: 11px;
+    font-size: 14px;
   }
-
   .completar-pedido {
     font-size: 22px;
     margin-left: 15px;
@@ -293,11 +683,10 @@ main section.pedido .box2 input[type="submit"] {
     font-size: 14px;
   }
 }
-@media only screen and (min-width: 1025px) and (max-width: 1333px) {
-  main section.pedido .box2 input[type="submit"] {
+@media only screen and (min-width: 1241px) and (max-width: 1333px) {
+  main section.pedido .box3 input[type="submit"] {
     background-color: #2a130a;
     border: 0;
-    width: 60%;
     height: 55px;
     font-size: 22px;
     color: #ac9675;
@@ -310,18 +699,51 @@ main section.pedido .box2 input[type="submit"] {
     transition: all 200ms linear;
     letter-spacing: 0.2em;
     box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
-    font-size: 14px;
   }
   .completar-pedido {
     font-size: 28px;
     margin-left: 15px;
   }
 }
-
-main section.pedido .box2 input[type="submit"]:hover {
+main section.pedido .box3 input[type="submit"]:hover {
   background-color: #160801;
   color: #ac9675;
-  width: 30rem;
+  width: 28rem;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1240px) {
+  main section.pedido .box3 input[type="submit"] {
+    background-color: #2a130a;
+    border: 0;
+    height: 55px;
+    color: #ac9675;
+    margin-top: 100px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 200ms linear;
+    letter-spacing: 0.2em;
+    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
+  }
+  .completar-pedido {
+    font-size: 28px;
+    margin-left: 15px;
+  }
+  main section.pedido .box3 input[type="submit"]:hover {
+    width: 22rem;
+  }
+}
+
+@media only screen and (min-width: 791px) and (max-width: 1024px) {
+  main section.pedido .box3 input[type="submit"] {
+    width: 50%;
+  }
+  main section.pedido .box3 input[type="submit"]:hover {
+    background-color: #160801;
+    color: #ac9675;
+    width: 22rem;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -333,7 +755,7 @@ main section.pedido .box2 input[type="submit"]:hover {
   }
 
   main section.pedido .box1,
-  main section.pedido .box2 {
+  main section.pedido .box3 {
     width: 100%;
     margin-top: 5%;
   }
@@ -367,21 +789,19 @@ main section.pedido .box2 input[type="submit"]:hover {
     font-size: 10px;
   }
 
-  main section.pedido .box2 .box2-parte2 h1 {
+  main section.pedido .box3 .box3-parte2 h1 {
     display: flex;
     justify-content: space-between;
     font-size: 18px;
   }
 
-  main section.pedido .box2 .botao {
+  main section.pedido .box3 .botao {
     justify-content: center;
     font-size: 12px;
   }
 }
 
-
 /*------ MODAL -----*/
-
 
 #modal {
   display: none;
@@ -403,7 +823,6 @@ main section.pedido .box2 input[type="submit"]:hover {
 #modal img {
   width: 130px;
   height: 30px;
-  
 }
 
 #modal p {
@@ -417,7 +836,7 @@ main section.pedido .box2 input[type="submit"]:hover {
   margin: 0;
 }
 
-#botoes-modal{
+#botoes-modal {
   display: flex;
   gap: 10%;
 }
@@ -440,7 +859,7 @@ main section.pedido .box2 input[type="submit"]:hover {
   cursor: pointer;
   transition: all 100ms linear;
   letter-spacing: 0.2em;
-  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, .35);    
+  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
 }
 
 .btn-modal:hover {
@@ -452,7 +871,6 @@ main section.pedido .box2 input[type="submit"]:hover {
 .btn-modal:active {
   transform: translateY(5px);
 }
-
 
 #overlay {
   display: none;
