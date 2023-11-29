@@ -160,6 +160,10 @@ main section.pedido input[type="number"] {
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
 }
 
+#errorPag {
+  color: red;
+}
+
 @media (max-width: 1024px) {
   .box2 {
     width: 100%;

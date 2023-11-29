@@ -151,6 +151,7 @@
         </div>
         <div class="box2">
           <h1>FORMA DE PAGAMENTO*</h1>
+          <p id="errorPag"></p>
           <div class="box-pagamento">
             <select id="pagamento" name="pagamento" required>
               <option value="" disabled selected>Selecione</option>
@@ -189,7 +190,7 @@
             </div>
             <section class="section-form">
               <div class="formulario">
-                <form action="">
+                <form action="" id="formulario-cartao">
                   <div class="campo-container">
                     <label for="nome-form">Nome</label>
                     <input type="text" name="nome-form" id="nome-form" maxlength="27"/>

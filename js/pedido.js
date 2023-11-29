@@ -42,23 +42,29 @@ if (totalPedidos && totalPedidos.length > 0) {
 
 // Armazenar os dados do formulário de pedido 
 
-
-
 document.getElementById('enviarPedido').addEventListener('click', function (event) {
   event.preventDefault();
 
+  
   const endereco = document.getElementById('endereco').value;
   const numero = document.getElementById('numero').value;
   const cidade = document.getElementById('cidade').value;
   const estado = document.getElementById('estado').value; 
   const pagamento = document.getElementById('pagamento').value;
   const pedido = totalValores; // add para não confirmar sem ter este campo válido
-
-  if (!endereco || !numero || !cidade || !estado || !pagamento || !pedido) {
+  if (!endereco || !numero || !cidade || !estado || !pedido) {
     mensagemErro.textContent = 'Por favor, preencha todos os campos obrigatórios.';
     return;
-  }
-  else {
+  
+  } else if (!pagamento) {
+    errorPag.textContent = 'Selecione uma forma de pagamento.';
+
+  } else if (sectionForm.style.display === "flex" && (!nomeInput.value || !numeroInput.value || !validadeInput.value || !codigoInput.value )) { 
+    errorPag.textContent = 'Preencha corretamente todos os campos.'
+         
+  } else {
+
+    errorPag.textContent = '';
 
     localStorage.setItem('endereco', endereco);
     localStorage.setItem('numero', numero);
@@ -206,3 +212,7 @@ function flipcard() {
       pixPag.style.display = "flex"
     }
   });
+
+  function limparFormularioCartao() {
+    document.getElementById('formulario-cartao').reset();
+  }
