@@ -1,7 +1,8 @@
 /*------ CONFIRMAR PEDIDO -----*/
 
 main {
-  padding-top: 50px;
+  padding-top: 30px;
+  margin: 2rem;
 }
 
 main section.pedido {
@@ -30,6 +31,13 @@ main section.pedido h1 {
   font-weight: 800;
   line-height: 121.2%;
   text-transform: uppercase;
+  margin: 1rem;
+}
+
+@media (max-width: 415px) {
+  main section.pedido h1 {
+    font-size: 20px;
+  }
 }
 
 main section.pedido p {

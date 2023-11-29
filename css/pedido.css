@@ -2,11 +2,18 @@
 
 main {
   padding-top: 50px;
-  margin: 5px;
+  margin: 1rem;
 }
 
 main .container {
   max-width: 1700px;
+}
+
+.titulo-pedido {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 main span {
@@ -18,19 +25,16 @@ main span {
   text-transform: capitalize;
   margin-top: 30px;
 }
-
+@media (max-width: 480px) {
+  main span {
+    font-size: 22px;
+  }
+}
 main section.pedido {
   display: flex;
   margin-top: 40px;
   margin-bottom: 100px;
   gap: 5%;
-}
-
-.titulo-pedido {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
 }
 
 main section.pedido .box1 {
@@ -86,6 +90,11 @@ label {
   line-height: 150%;
   letter-spacing: -0.48px;
   opacity: 0.9;
+}
+@media (max-width: 373px) {
+  main section.pedido label {
+    font-size: 12px;
+  }
 }
 
 main section.pedido input {
@@ -175,12 +184,17 @@ main section.pedido input[type="number"] {
   animation: aparecer 1s forwards;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 470px) {
   .flip-card {
     width: 290px;
     height: 193px;
   }
-  
+}
+@media (max-width: 365px) {
+  .flip-card {
+    width: 240px;
+    height: 180px;
+  }
 }
 
 @keyframes aparecer {
@@ -204,11 +218,18 @@ main section.pedido input[type="number"] {
 /* Define o estilo do lado frontal do cartão */
 .flip-card-front,
 .flip-card-back {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   width: 100%;
   height: 100%;
   position: absolute;
   backface-visibility: hidden; /* Oculta o lado de trás do cartão */
+}
+
+@media (max-width: 365px) {
+  .flip-card-front,
+  .flip-card-back {
+    height: 91%;
+  }
 }
 
 /* Estilo do lado frontal */
@@ -218,10 +239,10 @@ main section.pedido input[type="number"] {
   align-items: center;
   background-image: url("../src/cardFrontOff.png");
   border-radius: 20px;
-  box-shadow: -3px 2px 5px 1px rgba( 0, .0, .0, .65);
+  box-shadow: -3px 2px 5px 1px rgba(0, 0, 0, 0.65);
 }
 
-@media (max-width: 415px) {
+@media (max-width: 470px) {
   .flip-card-front {
     background-image: url("../src/cardFrontOffResp.png");
   }
@@ -231,42 +252,51 @@ main section.pedido input[type="number"] {
   background-image: url("../src/cardFrontMaster.png");
 }
 
-@media (max-width: 415px) {
+@media (max-width: 470px) {
   .front-master {
     background-image: url("../src/cardFrontMasterResp.png");
   }
-  
+}
+@media (max-width: 365px) {
+  .front-master {
+    background-image: url("../src/cardFrontMasterResp2.png");
+  }
 }
 
 .front-visa {
   background-image: url("../src/cardFrontVisa.png");
 }
 
-@media (max-width: 415px) {
+@media (max-width: 470px) {
   .front-visa {
     background-image: url("../src/cardFrontVisaResp.png");
   }
 }
+@media (max-width: 365px) {
+  .front-visa {
+    background-image: url("../src/cardFrontVisaResp2.png");
+  }
+}
 
 .box-numero-card {
-display: flex;
-flex-direction: column;
-width: 100%;
-height: 62px;
-align-items: start;
-margin-top: 32%;
-padding: 0 31px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 62px;
+  align-items: start;
+  margin-top: 32%;
+  padding: 0 31px;
 }
 
 .numero-card {
-font-size: 37px;
-color: white;
-font-weight: 500;
+  font-size: 37px;
+  color: white;
+  font-weight: 500;
 }
 
 .texto-bottom {
   display: flex;
-  margin-top:2%;
+  margin-top: 2%;
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
@@ -297,10 +327,10 @@ font-weight: 500;
 }
 
 .box-vencimento {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Estilo do lado de trás */
@@ -311,18 +341,17 @@ justify-content: center;
   text-align: end;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 470px) {
   .flip-card-back {
     background-image: url("../src/cardbackOffResp.png");
   }
 }
 
-
 .back-master {
   background-image: url("../src/cardBackMaster.png");
 }
 
-@media (max-width: 415px) {
+@media (max-width: 470px) {
   .back-master {
     background-image: url("../src/cardBackMasterResp.png");
   }
@@ -332,7 +361,7 @@ justify-content: center;
   background-image: url("../src/cardBackVisa.png");
 }
 
-@media (max-width: 415px) {
+@media (max-width: 470px) {
   .back-visa {
     background-image: url("../src/cardBackVisaResp.png");
   }
@@ -392,9 +421,10 @@ justify-content: center;
   grid-column-gap: 10px;
   grid-template-columns: auto auto;
   grid-template-rows: 90px 90px 90px;
-  grid-template-areas: "nome-form nome-form"
-                        "numero-form numero-form"
-                        "validade-form codigo-form";
+  grid-template-areas:
+    "nome-form nome-form"
+    "numero-form numero-form"
+    "validade-form codigo-form";
   max-width: 400px;
 }
 
@@ -439,20 +469,20 @@ input {
 }
 
 .btn-pag {
-    background-color: #2a130a;
-    border: 0;
-    width: 263px;
-    height: 55px;
-    font-size: 22px;
-    color: #ac9675;
-    font-style: normal;
-    font-weight: 500;
-    border-radius: 10px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 100ms linear;
-    letter-spacing: 0.2em;
-    box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
+  background-color: #2a130a;
+  border: 0;
+  width: 263px;
+  height: 55px;
+  font-size: 22px;
+  color: #ac9675;
+  font-style: normal;
+  font-weight: 500;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 100ms linear;
+  letter-spacing: 0.2em;
+  box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.35);
 }
 
 @media (max-width: 680px) {
@@ -469,7 +499,7 @@ input {
   display: none;
   flex-direction: column;
   align-items: center;
-  gap: 30px
+  gap: 30px;
 }
 
 .pix-texto {
