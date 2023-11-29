@@ -29,6 +29,8 @@ if (totalPedidos && totalPedidos.length > 0) {
 
     mostrarItens.appendChild(itemPedido);
 
+   
+
   });
 
   let valores = document.querySelector(".valores p");
@@ -51,6 +53,7 @@ document.getElementById('enviarPedido').addEventListener('click', function (even
   const cidade = document.getElementById('cidade').value;
   const estado = document.getElementById('estado').value; 
   const pagamento = document.getElementById('pagamento').value;
+  const detalhesPedidoString = JSON.stringify(totalPedidos);
   const pedido = totalValores; // add para não confirmar sem ter este campo válido
   if (!endereco || !numero || !cidade || !estado || !pedido) {
     mensagemErro.textContent = 'Por favor, preencha todos os campos obrigatórios.';
@@ -71,6 +74,8 @@ document.getElementById('enviarPedido').addEventListener('click', function (even
     localStorage.setItem('cidade', cidade);
     localStorage.setItem('estado', estado);
     localStorage.setItem('pagamento', pagamento);
+    localStorage.setItem('detalhesPedido', detalhesPedidoString);
+
 
     // Exibe o modal de sucesso
     document.getElementById('overlay').style.display = 'flex';
