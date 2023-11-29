@@ -216,35 +216,35 @@ main section.pedido input[type="number"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(/src/card-front-off.png);
+  background-image: url(/src/cardFrontOff.png);
   border-radius: 20px;
   box-shadow: -3px 2px 5px 1px rgba( 0, .0, .0, .65);
 }
 
 @media (max-width: 415px) {
   .flip-card-front {
-    background-image: url(/src/card-front-off-Resp.png);
+    background-image: url(/src/cardFrontOffResp.png);
   }
 }
 
 .front-master {
-  background-image: url(/src/card-front-master.png);
+  background-image: url(/src/cardFrontMaster.png);
 }
 
 @media (max-width: 415px) {
   .front-master {
-    background-image: url(/src/card-front-master-Resp.png);
+    background-image: url(/src/cardFrontMasterResp.png);
   }
   
 }
 
 .front-visa {
-  background-image: url(/src/card-front-visa.png);
+  background-image: url(/src/cardFrontVisa.png);
 }
 
 @media (max-width: 415px) {
   .front-visa {
-    background-image: url(/src/card-front-visa-Resp.png);
+    background-image: url(/src/cardFrontVisaResp.png);
   }
 }
 
@@ -305,7 +305,7 @@ justify-content: center;
 
 /* Estilo do lado de trás */
 .flip-card-back {
-  background-image: url(/src/card-back-off.png);
+  background-image: url(/src/cardBackOff.png);
   border-radius: 20px;
   transform: rotateY(180deg); /* Começa girado para trás */
   text-align: end;
@@ -313,28 +313,28 @@ justify-content: center;
 
 @media (max-width: 415px) {
   .flip-card-back {
-    background-image: url(/src/card-back-off-Resp.png);
+    background-image: url(/src/cardbackOffResp.png);
   }
 }
 
 
 .back-master {
-  background-image: url(/src/card-back-master.png);
+  background-image: url(/src/cardBackMaster.png);
 }
 
 @media (max-width: 415px) {
   .back-master {
-    background-image: url(/src/card-back-master-Resp.png);
+    background-image: url(/src/cardBackMasterResp.png);
   }
 }
 
 .back-visa {
-  background-image: url(/src/card-back-visa.png);
+  background-image: url(/src/cardBackVisa.png);
 }
 
 @media (max-width: 415px) {
   .back-visa {
-    background-image: url(/src/card-back-visa-Resp.png);
+    background-image: url(/src/cardBackVisaResp.png);
   }
 }
 
@@ -346,7 +346,7 @@ justify-content: center;
 }
 
 .box-secure-code {
-  background-image: url(/src/background-back.png);
+  background-image: url(/src/backgroundBack.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
