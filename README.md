@@ -32,8 +32,6 @@
 
 **Front-end:** HTML, CSS, JAVASCRIPT
 
-**Back-end:** PHP, MYSQL
-
 
 ## Demonstração
 
