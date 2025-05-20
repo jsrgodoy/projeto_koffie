@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="projeto_koffie">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/projeto_koffie-main.zip!/" />
+      <root url="jar://$PROJECT_DIR$/projeto_koffie-danillo.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
